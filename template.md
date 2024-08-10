@@ -5,7 +5,7 @@
 | Institute | Charbonneau Cancer Institute |
 | Site | Arthur J.E. Child Comprehensive Cancer Center, YC083402|
 | Date Created | May 2024 |
-| Current Version | |
+| Current Version |  |
 #### :no_entry: Authorization
 - Requires Completion of U of C Safety Training
 - Requires Pre-Authorization by PI 
@@ -23,7 +23,10 @@
 
 #### :fire: Emergency Procedures
 
-#### :arrow_forward: Step by Step Procedures
+<details>
+<summary> <b>Step by Step Procedures</b></summary>
+  
+</details>
 
 #### :broom: Clean Up 
 
@@ -31,4 +34,4 @@
 
 #### :wrench: Maintenance
 
-#### :pen: Approval(s)
+#### :pen: Approval(s): 
