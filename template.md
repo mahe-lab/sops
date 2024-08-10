@@ -1,33 +1,34 @@
-|  | Standard Operating Procedure |
+| ![UC-horz-rgb](https://github.com/user-attachments/assets/b23cb20c-39a3-4344-b092-9806de30c089) | Standard Operating Procedure |
 ---|---
-| Protocol | |
+| Protocol Name | |
 | Faculty | Cumming School of Medicine |
 | Institute | Charbonneau Cancer Institute |
 | Site | Arthur J.E. Child Comprehensive Cancer Center, YC083402|
 | Date Created | May 2024 |
-
+| Current Version | |
 #### :no_entry: Authorization
-- Requires pre-authorization by MAHELAB
-- Safety certification 
-- Once-through observed training session
+- Requires Completion of U of C Safety Training
+- Requires Pre-Authorization by PI 
 #### :warning: Potential Hazards
 
-#### :lab_coat: Personal protective equipment
-- Lab coat/gown
-- Eye protection
-- Nitrile gloves
-#### :classical_building: Where Tasks are to be Undertaken
+#### :goggles: Personal protective equipment
+- Lab Coat
+- Eye Protection
+- Nitrile Gloves
+#### :factory: Where Tasks are to be Undertaken
 
 #### :vertical_traffic_light: Before You Start Work
 
 #### :book: Reference(s)
 
-#### :: Emergency Procedures
+#### :fire: Emergency Procedures
+
+#### :arrow_forward: Step by Step Procedures
 
 #### :broom: Clean Up 
 
-#### :: Waste Disposal
+#### :wastebasket: Waste Disposal
 
-#### :: Maintenance
+#### :wrench: Maintenance
 
-#### :: Approval(s)
+#### :pen: Approval(s)
