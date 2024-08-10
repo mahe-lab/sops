@@ -16,7 +16,10 @@
 - Eye Protection
 - Nitrile Gloves
 #### :factory: Where Tasks are to be Undertaken
-
+- [ ] Reagent Prep-Room
+- [ ] Pre-PCR Bench
+- [ ] PCR Workstation
+- [ ] Post-PCR Bench
 #### :vertical_traffic_light: Before You Start Work
 
 #### :book: Reference(s)
