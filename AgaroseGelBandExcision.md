@@ -23,7 +23,8 @@
 - [ ] PCR Workstation
 - [ ] Post-PCR Bench
 #### :vertical_traffic_light: Before You Start Work
-
+- This SOP assumes an Agarose gel stained with Ethidium Bromide has already been prepared/run and that GelDoc Images/Reports have been generated
+- Prepare one 1.5/2.0 mL labelled tube per specimen band being excised
 #### :book: Reference(s)
 
 #### :fire: Emergency Procedures
