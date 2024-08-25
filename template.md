@@ -1,4 +1,4 @@
-| ![UC-horz-rgb](https://github.com/user-attachments/assets/b23cb20c-39a3-4344-b092-9806de30c089) | Standard Operating Procedure |
+| <img src="https://digitalcollections.ucalgary.ca/Assets/V2/ChFDVTFTNTAwMDAwMDAwMDAwMxIGVFJNaXNjGiRcVFJNaXNjXGI2XDcyXDc1XDk2XGNkXENVM01TQzQ1NC5wbmciBAgBEA8-~/p@bFDQZjT99fna3W/p@bFDQZjT99fna3W/CU3MSC454.png" width="100"/> | Standard Operating Procedure |
 ---|---
 | Protocol Name | |
 | Faculty | Cumming School of Medicine |
@@ -6,35 +6,42 @@
 | Site | Arthur J.E. Child Comprehensive Cancer Center, YC083402|
 | Date Created | May 2024 |
 | Current Version |  |
-#### :no_entry: Authorization
+
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6d1.png?v88" width="20"/> Authorization
 - Requires Completion of U of C Safety Training
 - Requires Pre-Authorization by PI 
-#### :warning: Potential Hazards
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png?v8" width="20"/> Potential Hazards
 
-#### :goggles: Personal protective equipment
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f97d.png?v8" width="20"/> Personal protective equipment
 - Lab Coat
 - Eye Protection
 - Nitrile Gloves
-#### :factory: Where Tasks are to be Undertaken
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f3ed.png?v8" width="20"/> Where Tasks are to be Undertaken
 - [ ] Reagent Prep-Room
 - [ ] Pre-PCR Bench
 - [ ] PCR Workstation
 - [ ] Post-PCR Bench
-#### :vertical_traffic_light: Before You Start Work
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a5.png?v8" width="20"/> Before You Start Work
 
-#### :book: Reference(s)
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png?v8" width="20"/> Reference(s)
 
-#### :fire: Emergency Procedures
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f9ef.png?v8" width="20"/> Emergency Procedures
 
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/25b6.png?v8" width="20"/> Step by Step Procedures
 <details>
-<summary> <b>Step by Step Procedures</b></summary>
+<summary> <b>
+  
+</b></summary>
   
 </details>
 
-#### :broom: Clean Up 
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f9f9.png?v8" width="20"/> Clean Up 
 
-#### :wastebasket: Waste Disposal
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f5d1.png?v8" width="20"/> Waste Disposal
 
-#### :wrench: Maintenance
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f527.png?v8" width="20"/> Maintenance
 
-#### :pen: Approval(s): ermahe@ucalgary.ca
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f58a.png?v8" width="20"/> Approval(s) 
+
+
+ermahe@ucalgary.ca
