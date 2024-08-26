@@ -1,6 +1,6 @@
-| <img src="https://digitalcollections.ucalgary.ca/Assets/V2/ChFDVTFTNTAwMDAwMDAwMDAwMxIGVFJNaXNjGiRcVFJNaXNjXGI2XDcyXDc1XDk2XGNkXENVM01TQzQ1NC5wbmciBAgBEA8-~/p@bFDQZjT99fna3W/p@bFDQZjT99fna3W/CU3MSC454.png" width="100"/> | Standard Operating Procedure |
+| <img src="https://digitalcollections.ucalgary.ca/Assets/V2/ChFDVTFTNTAwMDAwMDAwMDAwMxIGVFJNaXNjGiRcVFJNaXNjXGI2XDcyXDc1XDk2XGNkXENVM01TQzQ1NC5wbmciBAgBEA8-~/p@bFDQZjT99fna3W/p@bFDQZjT99fna3W/CU3MSC454.png" width="150"/> | Standard Operating Procedure |
 ---|---
-| Protocol Name | title: |
+| Protocol Name |  |
 | Faculty | Cumming School of Medicine |
 | Institute | Charbonneau Cancer Institute |
 | Site | Arthur J.E. Child Comprehensive Cancer Center, YC083402|
@@ -45,4 +45,4 @@
 
 
 ermahe@ucalgary.ca
-etiennemahe/mahelab_sops@SHA
+
