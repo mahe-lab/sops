@@ -1,10 +1,10 @@
 | <img src="https://digitalcollections.ucalgary.ca/Assets/V2/ChFDVTFTNTAwMDAwMDAwMDAwMxIGVFJNaXNjGiRcVFJNaXNjXGI2XDcyXDc1XDk2XGNkXENVM01TQzQ1NC5wbmciBAgBEA8-~/p@bFDQZjT99fna3W/p@bFDQZjT99fna3W/CU3MSC454.png" width="100"/> | Standard Operating Procedure |
 ---|---
-| Protocol Name | |
+| Protocol Name | title: |
 | Faculty | Cumming School of Medicine |
 | Institute | Charbonneau Cancer Institute |
 | Site | Arthur J.E. Child Comprehensive Cancer Center, YC083402|
-| Date Created | May 2024 |
+| Date Created |  |
 | Current Version |  |
 
 ## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6d1.png?v88" width="20"/> Authorization
@@ -45,3 +45,4 @@
 
 
 ermahe@ucalgary.ca
+etiennemahe/mahelab_sops@SHA
