@@ -8,7 +8,7 @@
 | Current Version |  |
 
 ## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6d1.png?v88" width="20"/> Authorization
-- Requires Completion of U of C Safety Training
+- Requires Completion of Safety Training
 - Requires Pre-Authorization by PI 
 ## <img src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png?v8" width="20"/> Potential Hazards
 
@@ -27,6 +27,16 @@
 
 ## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f9ef.png?v8" width="20"/> Emergency Procedures
 
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f9f9.png?v8" width="20"/> Clean Up 
+
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f5d1.png?v8" width="20"/> Waste Disposal
+
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f527.png?v8" width="20"/> Maintenance
+
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f58a.png?v8" width="20"/> Approval
+
+ermahe@ucalgary.ca
+
 ## <img src="https://github.githubassets.com/images/icons/emoji/unicode/25b6.png?v8" width="20"/> Step by Step Procedures
 <details>
 <summary> </summary>
@@ -34,15 +44,3 @@
   
 </b>
 </details>
-
-## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f9f9.png?v8" width="20"/> Clean Up 
-
-## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f5d1.png?v8" width="20"/> Waste Disposal
-
-## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f527.png?v8" width="20"/> Maintenance
-
-## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f58a.png?v8" width="20"/> Approval(s) 
-
-
-ermahe@ucalgary.ca
-
