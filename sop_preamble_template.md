@@ -25,7 +25,6 @@
 - [ ] Pre-PCR Bench
 - [ ] PCR Workstation
 - [ ] Post-PCR Bench
-## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a5.png?v8" width="20"/> Before You Start Work
 ## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png?v8" width="20"/> References
 ## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f9ef.png?v8" width="20"/> Emergency Procedures
 ## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f9f9.png?v8" width="20"/> Clean Up 
@@ -36,4 +35,4 @@ ermahe@ucalgary.ca
 </b>
 </details>
 
-## <img src="https://github.githubassets.com/images/icons/emoji/unicode/25b6.png?v8" width="20"/> Step by Step Procedures
+## <img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a5.png?v8" width="20"/> Before You Start Work
