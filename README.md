@@ -2,4 +2,4 @@
 
 ## Quantification:
 
-[Qubit hs dsDNA/RNA](https://etiennemahe.github.io/mahelab_sops/qubit_hs_rna_dna_quantification.html)
+[Qubit hs dsDNA/RNA](https://mahe-lab.github.io/sops/qubit_hs_rna_dna_quantification.html)
