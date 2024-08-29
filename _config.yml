@@ -1,7 +1,2 @@
-theme: jekyll-theme-minimal
+theme: minima
 title: 
-markdown: kramdown
-highlighter: rouge
-
-kramdown:
-  input: GFM
