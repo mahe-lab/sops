@@ -1,4 +1,3 @@
-# MAHE LAB Standard Operating Procedures (SOPs)
 
 ## Extraction:
 
