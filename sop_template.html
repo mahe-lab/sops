@@ -120,8 +120,9 @@
 	  					return lines = data.split("\n");
 					}
 					let data_array = get_md_sop(sop_file_name);
-					let hash_inds = data_array.filter(word => word.includes("#"));
-					console.log(hash_inds)
+					console.log(data_array)
+					let hash_inds = data_array.filter(word=> word.includes("#"));
+					
 				}
 				catch(err) {
 					console.log(err);
