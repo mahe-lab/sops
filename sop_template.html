@@ -3,30 +3,12 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="mahe-lab_style.css">
-		<script type="text/javascript">
-			window.onload = init();
-			function init() {
-				try {
-					const sop_file_name = (location.search).replace("?","");
-					async function get_md_sop(sop_file_name) {
-						const response = await fetch(sop_file_name);
-	  					const data = await response.text();
-	  					return lines = data.split("\n");
-					}
-					let data_array = get_md_sop(sop_file_name);
-					
-				}
-				catch(err) {
-					console.log(err);
-				}
-			}
-		</script>
-		<title>MAHELAB Standard Operating Procedure | Name</title>
+		<title>MAHELAB Standard Operating Procedure</title>
 	</head>
 	<body>
 		<div>
 			<h1>MAHELAB Standard Operating Procedure</h1>
-			<table id="protocol_header">
+			<table id="protocol">
 				<tr><td></td><td></td></tr>
 			</table>
 			<p></p>
@@ -126,4 +108,25 @@
 			<p></p>
 		</div>
 	</body>
+	<foot>
+		<script type="text/javascript">
+			window.onload = init();
+			function init() {
+				try {
+					const sop_file_name = (location.search).replace("?","");
+					async function get_md_sop(sop_file_name) {
+						const response = await fetch(sop_file_name);
+	  					const data = await response.text();
+	  					return lines = data.split("\n");
+					}
+					let data_array = get_md_sop(sop_file_name);
+					let hash_inds = data_array.filter(word => word.includes("#"));
+					console.log(hash_inds)
+				}
+				catch(err) {
+					console.log(err);
+				}
+			}
+		</script>
+	</foot>
 </html>
