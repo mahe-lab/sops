@@ -121,7 +121,7 @@
 					}
 					let data_array = get_md_sop(sop_file_name);
 					const possible_sections = ["# protocol","# authorization","# hazards","# ppe","# where","# references","# emergency","# cleanup","# waste","# maintenance","# before_starting","# calculator","# procedures"];
-					console.log(data_array[0])
+					console.log(data_array)
 					let hash_inds = data_array.filter(word=> word.includes("#"));
 					
 				}
