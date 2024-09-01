@@ -117,7 +117,7 @@
 					async function get_md_sop(sop_file_name) {
 						const response = await fetch(sop_file_name);
 	  					const data = await response.text();
-	  					return lines = data.split("\n");
+	  					return data.split("\n");
 					}
 					let data_array = get_md_sop(sop_file_name);
 					const possible_sections = ["# protocol","# authorization","# hazards","# ppe","# where","# references","# emergency","# cleanup","# waste","# maintenance","# before_starting","# calculator","# procedures"];
