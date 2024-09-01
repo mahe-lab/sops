@@ -30,8 +30,9 @@
 - Pre-PCR Bench
 
 # references
-- Qubit 4.0 Manual: https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0017209_Qubit_4_Fluorometer_UG.pdf
+- Qubit 4.0 Manual:
 - Qubit dsDNA hs Full Protocol: 
+- Qubit RNA hs Full Protocol: 
 
 # emergency
 - See SDS
