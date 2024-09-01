@@ -31,6 +31,7 @@
 
 # references
 - Qubit 4.0 Manual: https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0017209_Qubit_4_Fluorometer_UG.pdf
+- Qubit dsDNA hs Full Protocol: 
 
 # emergency
 - See SDS
@@ -43,13 +44,14 @@
 - Tips/Tubes should be disposed of in yellow biohazard bag/tub
 
 # maintenance
-- See Qubit 4.0 Manual above for
+- If required, clean the surface of the Qubit instrument with a damp cloth. DO NOT USE DETERGENT
 
 # before_starting
 - Identify the specimens requiring Qubit assay quantification and obtain sufficient Qubit tubes 
 - NOTE: ONLY Qubit tubes can be used with the Qubit instrument
 - NOTE: ONLY label Qubit tubes on the top cap
 - NOTE: new standards need to be read whenever a new batch of working solution is made
+- NOTE: ensure that the correct Qubit reagent and Qubit buffer are used (i.e. DNA hs or RNA hs)
 
 # calculator
 ~~~~
@@ -58,7 +60,6 @@
 				<tr><td>Scan/enter the specimen accession numbers:</td><td></tr>
 			</table>
 			<table id="table1">
-				<tr><td></td><td></td><td></td><td></td><td></td></tr>
 				<tr><td></td><td></td><td></td><td></td><td></td></tr>
 				<tr><td><input type="text" size="10px" id="00"/></td><td><input type="text" size="10px" id="01"/></td><td><input type="text" size="10px" id="02"/></td><td><input type="text" size="10px" id="03"/></td></tr>
 				<tr><td><input type="text" size="10px" id="10"/></td><td><input type="text" size="10px" id="11"/></td><td><input type="text" size="10px" id="12"/></td><td><input type="text" size="10px" id="13"/></td></tr>
@@ -72,7 +73,7 @@
 				<tr><td>Reagent/Input Calculations:</td><td></td></tr>
 				<tr>
 				<td>
-<!-- name of calculated parameter: --> (mL):
+Volume of required Working Solution (mL):
 				</td>
 				<td>
 <!-- calculation: -->
@@ -81,7 +82,7 @@
 				</tr>
 				<tr>
 				<td>
-<!-- name of calculated parameter: --> (uL):
+Volume of required Qubit Reagent (uL) to make Working Solution:
 				</td>
 				<td>
 <!-- calculation: -->
@@ -90,7 +91,7 @@
 				</tr>
 				<tr>
 				<td>
-<!-- name of calculated parameter: --> (uL):
+Volume of required Qubit Buffer (uL) to make Working Solution:
 				</td>
 				<td>
 <!-- calculation: -->
@@ -130,9 +131,9 @@
 			    }
 			    //console.log(count)
 			    if(count>0) {
-			        //document.getElementById("calc1").value = ;
-			        //document.getElementById("calc2").value = ;
-			        //document.getElementById("calc3").value = ;
+			        document.getElementById("calc1").value = (0.22 * ( 2 + count )).toFixed(1);
+			        document.getElementById("calc2").value = (1.1 * ( 2 + count )).toFixed(1);
+			        document.getElementById("calc3").value = (218.9 * ( 2 + count )).toFixed(1);
 			    }
 			}
 		</script>
@@ -141,10 +142,10 @@
 1. Add 10 uL of standard 1 to 190 uL working solution
 2. Add 10 uL of standard 2 to 190 uL working solution
 3. Add 5 uL of each query specimen to 195 uL working solution
-4.	Vortex each tube x 5 seconds; incubate the tubes at room temperature x 2 minutes
-5.	Tap to wake the QUBIT; select the appropriate specimen and assay type
-6.	If the WS is fresh, read the new standards
-7.	Read each query specimen one at a time, ensuring that specimen volume is set accordingly (ie at 5 uL); record the concentrations (in ng/uL)
-8.	Update the specimen database with the concentrations
-9.	Any leftover WS should be stored in the 4C fridge
+4. Vortex each tube x 5 seconds; incubate the tubes at room temperature x 2 minutes
+5. Tap to wake the QUBIT; select the appropriate specimen and assay type
+6. If the WS is fresh, read the new standards
+7. Read each query specimen one at a time, ensuring that specimen volume is set accordingly (ie at 5 uL); record the concentrations (in ng/uL)
+8. Update the specimen database with the concentrations
+9. Any leftover WS should be stored in the 4C fridge
 
