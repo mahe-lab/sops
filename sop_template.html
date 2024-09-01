@@ -117,11 +117,12 @@
 					async function get_md_sop(sop_file_name) {
 						const response = await fetch(sop_file_name);
 	  					const data = await response.text();
-	  					return data.split("\n");
+	  					const ret_array = data.split("\n");
+						return ret_array;
 					}
 					let data_array = get_md_sop(sop_file_name);
 					const possible_sections = ["# protocol","# authorization","# hazards","# ppe","# where","# references","# emergency","# cleanup","# waste","# maintenance","# before_starting","# calculator","# procedures"];
-					console.log(data_array.array)
+					console.log(data_array)
 					let hash_inds = data_array.filter(word=> word.includes("#"));
 					
 				}
