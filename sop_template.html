@@ -126,6 +126,7 @@
 				try {
 					const sections = ["# protocol","# authorization","# hazards","# ppe","# where","# references","# emergency","# cleanup","# waste","# maintenance","# before_starting","# calculator","# procedures"];
 					const file_name = (location.search).replace("?","");
+					let section_number = -1;
 					async function* makeTextFileLineIterator(fileURL) {
 						const response = await fetch(fileURL);
 						if (!response.ok) {
@@ -156,8 +157,7 @@
 						}
 					}
 					async function run(urlOfFile) {
-  						let section_number = -1;
-						for await (const line of makeTextFileLineIterator(urlOfFile)) {
+  						for await (const line of makeTextFileLineIterator(urlOfFile)) {
     							processLine(line,section_number);
   						}
 					}
@@ -165,14 +165,14 @@
   						// section number has not been set, so keep looking for a header line while section_number < 0
 						if(section_number < 0) {
 							section_number = sections.findIndex((element) => element === line);
-							console.log(section_number)
+							console.log(`${section_number} ${line}`)
 						}
 						// section number has been previously set, so ...
 						else {
 							// if a new header is detected, set this as the new section number 
 							if(sections.findIndex((element) => element === line) >= 0) {
 								section_number = sections.findIndex((element) => element === line);
-								console.log(section_number)
+								console.log(`${section_number} ${line}`)
 							}
 							// otherwise, add the line to the section indicated by the section number
 							else {
