@@ -128,7 +128,7 @@
 					const file_name = (location.search).replace("?","");
 					//fetch file data as text
 					var textPromise = fetch(file_name).then((response) => response.text());
-					console.log(textPromise)
+					console.log(textPromise.result)
 					
 				}
 				catch(err) {
