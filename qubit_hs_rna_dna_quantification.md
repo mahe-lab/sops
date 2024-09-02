@@ -144,9 +144,9 @@ Volume of required Qubit Buffer (uL) to make Working Solution:
 2. Add 10 uL of standard 2 to 190 uL working solution
 3. Add 5 uL of each query specimen to 195 uL working solution
 4. Vortex each tube x 5 seconds; incubate the tubes at room temperature x 2 minutes
-5. Tap to wake the QUBIT; select the appropriate specimen and assay type
-6. If the WS is fresh, read the new standards
+5. Tap to wake the Qubit; select the appropriate specimen and assay type
+6. Read the standards
 7. Read each query specimen one at a time, ensuring that specimen volume is set accordingly (ie at 5 uL); record the concentrations (in ng/uL)
 8. Update the specimen database with the concentrations
-9. Any leftover WS should be stored in the 4C fridge
+9. Any leftover working solution should be stored in the 4C fridge
 
