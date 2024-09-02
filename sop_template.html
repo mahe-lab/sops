@@ -128,7 +128,7 @@
 					const file_name = (location.search).replace("?","");
 					//fetch file data as json
 					function fetchData(file_name) {
-  						return fetch(file_name).then((response) => response.json());
+  						return fetch(file_name).then((response) => response.text());
 					}
 					//
 					console.log(fetchData(file_name))
