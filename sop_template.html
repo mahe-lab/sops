@@ -115,13 +115,9 @@
 				try {
 					const sop_file_name = (location.search).replace("?","");
 					async function getData(pageId) {
-  						console.log(pageId);
-  						const myRequest = new Request(pageId);
-  						fetch(myRequest)
-    						.then((response) => response.text())
-    						.then((text) => {
-      						return text;
-    						});
+  						let f_object = await fetch(pageId);
+						let f_text = await f_object.text();
+						return f_text.split("\n");
 					}
 					text = getData(sop_file_name);
 					console.log(text);
