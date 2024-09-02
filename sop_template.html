@@ -123,10 +123,10 @@
 		<script type="text/javascript">
 			window.onload = init();
 			function init() {
+				let section_number = -1;	
 				try {
 					const sections = ["# protocol","# authorization","# hazards","# ppe","# where","# references","# emergency","# cleanup","# waste","# maintenance","# before_starting","# calculator","# procedures"];
 					const file_name = (location.search).replace("?","");
-					let section_number = -1;
 					async function* makeTextFileLineIterator(fileURL) {
 						const response = await fetch(fileURL);
 						if (!response.ok) {
