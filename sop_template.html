@@ -143,9 +143,15 @@
 	    					yield chunk.substring(startIndex);
 						}
 					}
-					for await (const line of makeTextFileLineIterator(sop_file_name)) {
-    						console.log(line);
-  					}
+					async function run(urlOfFile) {
+  						for await (const line of makeTextFileLineIterator(urlOfFile)) {
+    							processLine(line);
+  						}
+					}
+					function processLine(line) {
+  						console.log(line);
+					}
+					run(sop_file_name);
 				}
 				catch(err) {
 					console.log(err);
