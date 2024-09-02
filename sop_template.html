@@ -126,12 +126,10 @@
 				try {
 					const sections = ["# protocol","# authorization","# hazards","# ppe","# where","# references","# emergency","# cleanup","# waste","# maintenance","# before_starting","# calculator","# procedures"];
 					const file_name = (location.search).replace("?","");
-					//fetch file data as json
-					function fetchData(file_name) {
-  						return fetch(file_name).then((response) => response.text());
-					}
-					//
-					console.log(fetchData(file_name))
+					//fetch file data as text
+					var textPromise = fetch(file_name).then((response) => response.text());
+					console.log(textPromise)
+					
 				}
 				catch(err) {
 					console.log(err);
