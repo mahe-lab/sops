@@ -114,9 +114,9 @@
 			function init() {
 				try {
 					const sop_file_name = (location.search).replace("?","");
-					function getData(pageId) {
+					async function getData(pageId) {
   						console.log(pageId);
-  						const myRequest = new Request(`${pageId}.txt`);
+  						const myRequest = new Request(pageId);
   						fetch(myRequest)
     						.then((response) => response.text())
     						.then((text) => {
@@ -126,7 +126,7 @@
 					text = getData(sop_file_name);
 					console.log(text);
 					const possible_sections = ["# protocol","# authorization","# hazards","# ppe","# where","# references","# emergency","# cleanup","# waste","# maintenance","# before_starting","# calculator","# procedures"];
-					let hash_inds = data_array.filter(word=> word.includes("#"));
+					//let hash_inds = data_array.filter(word=> word.includes("#"));
 					
 				}
 				catch(err) {
