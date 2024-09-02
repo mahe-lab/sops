@@ -165,17 +165,19 @@
   						// section number has not been set, so keep looking for a header line while section_number < 0
 						if(section_number < 0) {
 							section_number = sections.findIndex((element) => element === line);
+							console.log(section_number)
 						}
 						// section number has been previously set, so ...
 						else {
 							// if a new header is detected, set this as the new section number 
 							if(sections.findIndex((element) => element === line) >= 0) {
 								section_number = sections.findIndex((element) => element === line);
+								console.log(section_number)
 							}
 							// otherwise, add the line to the section indicated by the section number
 							else {
 								const section_id = sections[section_number].replace("# ","");
-								const el = document.getElementById();
+								const el = document.getElementById(section_id);
 								// el is a table, so add rows based on the specific section
 								if(el.tagName.toLowerCase() === "table") {
 									// procedure
