@@ -19,7 +19,7 @@
 			<h2><img src="https://github.githubassets.com/images/icons/emoji/unicode/26d4.png?v8" width="20"/> Authorization</h2>
 			<table id="authorization">
 				<!-- one column table -->
-				<tr><td></td></tr>
+				<tr><td> </td></tr>
 			</table>
 			<p></p>
 		</div>
@@ -28,7 +28,7 @@
 			<h2><img src="https://github.githubassets.com/images/icons/emoji/unicode/26a0.png?v8" width="20"/> Potential Hazards</h2>
 			<table id="hazards">
 				<!-- one column table -->
-				<tr><td></td></tr>
+				<tr><td> </td></tr>
 			</table>
 			<p></p>
 		</div>
@@ -37,7 +37,7 @@
 			<h2><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f97d.png?v8" width="20"/> Personal protective equipment</h2>
 			<table id="ppe">
 				<!-- one column table -->
-				<tr><td></td></tr>
+				<tr><td> </td></tr>
 			</table>
 			<p></p>
 		</div>
@@ -46,7 +46,7 @@
 			<h2><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f3ed.png?v8" width="20"/> Where Tasks are to be Undertaken</h2>
 			<table id="where">
 				<!-- one column table -->
-				<tr><td></td></tr>
+				<tr><td> </td></tr>
 			</table>
 			<p></p>
 		</div>
@@ -55,7 +55,7 @@
 			<h2><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f4d6.png?v8" width="20"/> References</h2>
 			<table id="references">
 				<!-- one column table -->
-				<tr><td></td></tr>
+				<tr><td> </td></tr>
 			</table>
 			<p></p>
 		</div>
@@ -64,7 +64,7 @@
 			<h2><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f9ef.png?v8" width="20"/> Emergency Procedures</h2>
 			<table id="emergency">
 				<!-- one column table -->
-				<tr><td></td></tr>
+				<tr><td> </td></tr>
 			</table>
 			<p></p>
 		</div>
@@ -73,7 +73,7 @@
 			<h2><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f9f9.png?v8" width="20"/> Clean Up</h2>
 			<table id="cleanup">
 				<!-- one column table -->
-				<tr><td></td></tr>
+				<tr><td> </td></tr>
 			</table>
 			<p></p>
 		</div>
@@ -82,7 +82,7 @@
 			<h2><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f5d1.png?v8" width="20"/> Waste Disposal</h2>
 			<table id="waste">
 				<!-- one column table -->
-				<tr><td></td></tr>
+				<tr><td> </td></tr>
 			</table>
 			<p></p>
 		</div>
@@ -91,7 +91,7 @@
 			<h2><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f527.png?v8" width="20"/> Maintenance</h2>
 			<table id="maintenance">
 				<!-- one column table -->
-				<tr><td></td></tr>
+				<tr><td> </td></tr>
 			</table>
 			<p></p>
 		</div>
@@ -100,7 +100,7 @@
 			<h2><img src="https://github.githubassets.com/images/icons/emoji/unicode/1f6a5.png?v8" width="20" class="rotate-image"/> Before You Start Work</h2>
 			<table id="before_starting">
 				<!-- one column table -->
-				<tr><td></td></tr>
+				<tr><td> </td></tr>
 				<tr><td>Preparation Tasks:</td></tr>
 			</table>
 			<p></p>
@@ -113,7 +113,7 @@
 			<h2><img src="https://github.githubassets.com/images/icons/emoji/unicode/25b6.png?v8" width="20"/> Step by Step Procedures</h2>
 			<table id="procedures">
 				<!-- two column table -->
-				<tr> <td></td> <td></td> </tr>
+				<tr><td> </td><td> </td></tr>
 				
 			</table>
 			<p></p>
@@ -123,87 +123,15 @@
 		<script type="text/javascript">
 			window.onload = init();
 			function init() {
-				let section_number = -1;	
 				try {
 					const sections = ["# protocol","# authorization","# hazards","# ppe","# where","# references","# emergency","# cleanup","# waste","# maintenance","# before_starting","# calculator","# procedures"];
 					const file_name = (location.search).replace("?","");
-					async function* makeTextFileLineIterator(fileURL) {
-						const response = await fetch(fileURL);
-						if (!response.ok) {
-	      						throw new Error(`Response status: ${response.status}`);
-	    					}
-						const reader = response.body.pipeThrough(new TextDecoderStream()).getReader();
-	  					let { value: chunk, done: readerDone } = await reader.read();
-	  					chunk = chunk || "";
-	  					const newline = /\r?\n/gm;
-	  					let startIndex = 0;
-	  					let result;
-						while (true) {
-		   					const result = newline.exec(chunk);
-	    						if (!result) {
-	      							if (readerDone) break;
-	      							const remainder = chunk.substr(startIndex);
-	      							({ value: chunk, done: readerDone } = await reader.read());
-	      							chunk = remainder + (chunk || "");
-	      							startIndex = newline.lastIndex = 0;
-	      							continue;
-	    						}
-	    						yield chunk.substring(startIndex, result.index);
-	    						startIndex = newline.lastIndex;
-	  					}
-	  					if (startIndex < chunk.length) {
-	    					// Last line didn't end in a newline char
-	    					yield chunk.substring(startIndex);
-						}
+					//fetch file data as json
+					function fetchData(file_name) {
+  						return fetch(file_name).then((response) => response.json());
 					}
-					async function run(urlOfFile) {
-  						for await (const line of makeTextFileLineIterator(urlOfFile)) {
-    							processLine(line,section_number);
-  						}
-					}
-					function processLine(line, section_number) {
-  						// section number has not been set, so keep looking for a header line while section_number < 0
-						if(section_number < 0) {
-							section_number = sections.findIndex((element) => element === line);
-							console.log(`${section_number} ${line}`)
-						}
-						// section number has been previously set, so ...
-						else {
-							// if a new header is detected, set this as the new section number 
-							if(sections.findIndex((element) => element === line) >= 0) {
-								section_number = sections.findIndex((element) => element === line);
-								console.log(`${section_number} ${line}`)
-							}
-							// otherwise, add the line to the section indicated by the section number
-							else {
-								const section_id = sections[section_number].replace("# ","");
-								const el = document.getElementById(section_id);
-								// el is a table, so add rows based on the specific section
-								if(el.tagName.toLowerCase() === "table") {
-									// procedure
-									if(section_id === "protocol") {
-										line_array = line.split(":");
-										el.innerHTML += "<tr><td> `${line_array[0]}` </td><td> `${line_array[1]}` </td></tr>";
-									}
-									//
-									if(section_id === "procedures") {
-										const row_num = el.rows.length;
-										el.innerHTML += "<tr> <td><input type=\"checkbox\" id=\"sbs`${row_num}.toString()`\" name=\"sbs`${row_num}.toString()`\"> <label for=\"sbs`${row_num}.toString()`\"> `${line}` </label></td> <td> <input type=\"text\" size=\"40px\" id=\"sbsc`${row_num}.toString()`\" placeholder=\"notes\"/> </td></tr>";
-			
-									}
-									else {
-										el.innerHTML += "<tr><td> `${line}` </td></tr>";
-									}
-								}
-								// el is a div, so add raw text
-								if(el.tagName.toLowerCase() === "div") {
-									el.innerHTML += line;
-								}
-								// otherwise, do nothing since the element can't be managed
-							}
-						}
-					}
-					run(file_name);
+					//
+					console.log(fetchData(file_name))
 				}
 				catch(err) {
 					console.log(err);
