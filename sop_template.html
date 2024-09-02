@@ -114,16 +114,38 @@
 			function init() {
 				try {
 					const sop_file_name = (location.search).replace("?","");
-					async function getData(pageId) {
-  						let f_object = await fetch(pageId);
-						let f_text = await f_object.text();
-						return f_text.split("\n");
+					async function* makeTextFileLineIterator(fileURL) {
+						const response = await fetch(fileURL);
+						if (!response.ok) {
+	      						throw new Error(`Response status: ${response.status}`);
+	    					}
+						const reader = response.body.pipeThrough(new TextDecoderStream()).getReader();
+	  					let { value: chunk, done: readerDone } = await reader.read();
+	  					chunk = chunk || "";
+	  					const newline = /\r?\n/gm;
+	  					let startIndex = 0;
+	  					let result;
+						while (true) {
+		   					const result = newline.exec(chunk);
+	    						if (!result) {
+	      							if (readerDone) break;
+	      							const remainder = chunk.substr(startIndex);
+	      							({ value: chunk, done: readerDone } = await reader.read());
+	      							chunk = remainder + (chunk || "");
+	      							startIndex = newline.lastIndex = 0;
+	      							continue;
+	    						}
+	    						yield chunk.substring(startIndex, result.index);
+	    						startIndex = newline.lastIndex;
+	  					}
+	  					if (startIndex < chunk.length) {
+	    					// Last line didn't end in a newline char
+	    					yield chunk.substring(startIndex);
+						}
 					}
-					text = getData(sop_file_name);
-					console.log(text);
-					const possible_sections = ["# protocol","# authorization","# hazards","# ppe","# where","# references","# emergency","# cleanup","# waste","# maintenance","# before_starting","# calculator","# procedures"];
-					//let hash_inds = data_array.filter(word=> word.includes("#"));
-					
+					for await (const line of makeTextFileLineIterator(sop_file_name)) {
+    						console.log(line);
+  					}
 				}
 				catch(err) {
 					console.log(err);
