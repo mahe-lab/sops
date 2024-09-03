@@ -1,4 +1,4 @@
-# protocol
+### protocol
 - Protocol: DNA/RNA hs Qubit Quantification
 - Faculty: Cumming School of Medicine
 - Institute: Charbonneau Cancer Institute
@@ -7,11 +7,11 @@
 - Version: 2
 - Approver: ermahe@ucalgary.ca
 
-# authorization
+### authorization
 - Requires Completion of Safety Training
 - Requires Pre-Authorization by PI
 
-# hazards
+### hazards
 - dsDNA HS Reagent: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32851COMPONENTA_MTR-NALT_EN.pdf
 - dsDNA HS Buffer: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32851COMPONENTB_MTR-NALT_EN.pdf
 - dsDNA HS DNA Standard 1: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32851COMPONENTC_MTR-NALT_EN.pdf
@@ -21,40 +21,40 @@
 - RNA HS Standard 1: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32852COMPONENTC_MTR-NALT_EN.pdf
 - RNA HS Standard 2: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32852COMPONENTD_MTR-NALT_EN.pdf
 
-# ppe
+### ppe
 - Lab Coat
 - Eye Protection
 - Nitrile Gloves
 
-# where
+### where
 - Pre-PCR Bench
 
-# references
+### references
 - Qubit 4.0 Manual:
 - Qubit dsDNA hs Full Protocol: 
 - Qubit RNA hs Full Protocol: 
 
-# emergency
+### emergency
 - See SDS
 
-# cleanup
+### cleanup
 - Wipe down work surfaces with 70% isopropanol
 - NOTE: Do not use isopropanol on instruments
 
-# waste
+### waste
 - Tips/Tubes should be disposed of in yellow biohazard bag/tub
 
-# maintenance
+### maintenance
 - If required, clean the surface of the Qubit instrument with a damp cloth. DO NOT USE DETERGENT
 
-# before_starting
+### before_starting
 - Identify the specimens requiring Qubit assay quantification and obtain sufficient Qubit tubes 
 - NOTE: ONLY Qubit tubes can be used with the Qubit instrument
 - NOTE: ONLY label Qubit tubes on the top cap
 - NOTE: new standards need to be read whenever a new batch of working solution is made
 - NOTE: ensure that the correct Qubit reagent and Qubit buffer are used (i.e. DNA hs or RNA hs)
 
-# calculator
+### calculator
 ~~~~
 <!--configure reagent prep details here, with calculations based on the table inputs below-->
 			<table id="table0">
@@ -139,7 +139,7 @@ Volume of required Qubit Buffer (uL) to make Working Solution:
 			}
 		</script>
 ~~~~
-# procedures
+### procedures
 1. Add 10 uL of standard 1 to 190 uL working solution
 2. Add 10 uL of standard 2 to 190 uL working solution
 3. Add 5 uL of each query specimen to 195 uL working solution
@@ -149,4 +149,3 @@ Volume of required Qubit Buffer (uL) to make Working Solution:
 7. Read each query specimen one at a time, ensuring that specimen volume is set accordingly (ie at 5 uL); record the concentrations (in ng/uL)
 8. Update the specimen database with the concentrations
 9. Any leftover working solution should be stored in the 4C fridge
-
