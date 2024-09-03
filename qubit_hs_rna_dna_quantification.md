@@ -61,7 +61,7 @@
 				<tr><td>Scan/enter the specimen accession numbers:</td><td></tr>
 			</table>
 			<table id="table1">
-				<tr><td></td><td></td><td></td><td></td><td></td></tr>
+				<tr><td> </td><td> </td><td> </td><td> </td></tr>
 				<tr><td><input type="text" size="10px" id="00"/></td><td><input type="text" size="10px" id="01"/></td><td><input type="text" size="10px" id="02"/></td><td><input type="text" size="10px" id="03"/></td></tr>
 				<tr><td><input type="text" size="10px" id="10"/></td><td><input type="text" size="10px" id="11"/></td><td><input type="text" size="10px" id="12"/></td><td><input type="text" size="10px" id="13"/></td></tr>
 			</table>
