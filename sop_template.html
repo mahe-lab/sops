@@ -179,7 +179,7 @@
 						//console.log(`${i}`)
 						//console.log(`${line}`)
 						if(line !== "") {
-							var row = document.getElementById(section_lines[0]).insertRow(i+1);
+							var row = document.getElementById(first]).insertRow(i+1);
 							var cell0 = row.insertCell(0);
 							var cell1 = row.insertCell(1);
 							cell0.innerHTML = "<input type=\"checkbox\" id=\"proc`${i}`\" name=\"proc`${i}`\"><label for=\"proc`${i}`\"> " + line + " </label>";
@@ -190,14 +190,14 @@
 				else if(first === "calculator") {
 					rest = rest.join('\n');
 					rest.replace(/~~~~/g,"");
-					document.getElementById(section_lines[0]).innerHTML += rest;
+					document.getElementById(first).innerHTML += rest;
 				}
 				else {
 					for(i=0; i<rest.length; i++) {
 						if(rest[i] !== "") {
 							var row = document.getElementById(first).insertRow(i+1);
 							var cell = row.insertCell(0);
-							cell.innerHTML = rest[i];
+							cell.innerHTML = rest[i].replace(/^- /,"");
 						}
 					}
 				}
