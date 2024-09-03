@@ -160,7 +160,7 @@
 			}
 			function processLine(section) {
 				//console.log(section)
-				section_lines = section.replace(/^-/).split("\n");
+				section_lines = section.replace("~~~~","").replace(/^-/,"").split("\n");
 				if(section_lines[0] === "protocol") {
 					for(i=1; i<section_lines.length; i++) {
 						if(section_lines[i] !== "") {
@@ -175,11 +175,13 @@
 				}
 				else if(section_lines[0] === "procedures") {
 					for(i=1; i<section_lines.length; i++) {
-						if(section_lines[i] !== "") {
+						var line = section_lines[i];
+						console.log(line)
+						if(line !== "") {
 							var row = document.getElementById(section_lines[0]).insertRow(i);
 							var cell0 = row.insertCell(0);
 							var cell1 = row.insertCell(1);
-							cell0.innerHTML = "<input type=\"checkbox\" id=\"proc`${i}`\" name=\"proc`${i}`\"><label for=\"proc`${i}`\"> `${section_lines[i]}` </label>";
+							cell0.innerHTML = "<input type=\"checkbox\" id=\"proc`${i}`\" name=\"proc`${i}`\"><label for=\"proc`${i}`\"> `${line}` </label>";
 							cell1.innerHTML = "<input type=\"text\" width=\"80px\" placeholder=\"notes\">";
 						}
 					}
