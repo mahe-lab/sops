@@ -110,6 +110,22 @@
 		<div>
 			<!-- add section to commit an SOP to LabKey -->
 		</div>
+		<script type='text/javascript'>
+			function addRows() {
+			    var table = document.getElementById("table1");
+			    var trows = table.rows.length;
+			    var tcols = table.rows[0].cells.length;
+			    var row = table.insertRow(trows);
+			    for (var i=0;i<tcols;i++) {
+				var txt = document.createElement("input")
+				txt.setAttribute('type','text');
+				txt.setAttribute('size','10px');
+				txt.setAttribute('id',`${trows}${i}`);
+				var col = row.insertCell(i);
+				col.appendChild(txt);
+			    }
+			}
+		</script>
 	</body>
 	<foot>
 		<script type="text/javascript">
@@ -191,7 +207,6 @@
 					}
 				}
 			}
-			
 		</script>
 	</foot>
 </html>
