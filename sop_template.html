@@ -130,7 +130,7 @@
 				const reader = response.body.pipeThrough(new TextDecoderStream()).getReader();
 				let { value: chunk, done: readerDone } = await reader.read();
 				chunk = chunk || "";
-				const newsection = /# [a-zA-Z_]+/gm;
+				const newsection = /### /gm;
 				let startIndex = 0;
 				let result;
 				while (true) {
