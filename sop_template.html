@@ -174,15 +174,15 @@
 					}
 				}
 				else if(first === "procedures") {
-					for(i=1; i<section_lines.length; i++) {
-						var line = section_lines[i];
-						console.log(`${i}`)
-						console.log(`${line}`)
+					for(i=0; i<rest.length; i++) {
+						var line = rest[i];
+						//console.log(`${i}`)
+						//console.log(`${line}`)
 						if(line !== "") {
-							var row = document.getElementById(section_lines[0]).insertRow(i);
+							var row = document.getElementById(section_lines[0]).insertRow(i+1);
 							var cell0 = row.insertCell(0);
 							var cell1 = row.insertCell(1);
-							cell0.innerHTML = "<input type=\"checkbox\" id=\"proc`${i}`\" name=\"proc`${i}`\"><label for=\"proc`${i}`\"> `${line}` </label>";
+							cell0.innerHTML = "<input type=\"checkbox\" id=\"proc`${i}`\" name=\"proc`${i}`\"><label for=\"proc`${i}`\"> " + line + " </label>";
 							cell1.innerHTML = "<input type=\"text\" width=\"80px\" placeholder=\"notes\">";
 						}
 					}
@@ -193,11 +193,11 @@
 					document.getElementById(section_lines[0]).innerHTML += rest;
 				}
 				else {
-					for(i=1; i<section_lines.length; i++) {
-						if(section_lines[i] !== "") {
-							var row = document.getElementById(section_lines[0]).insertRow(i);
+					for(i=0; i<rest.length; i++) {
+						if(rest[i] !== "") {
+							var row = document.getElementById(first).insertRow(i+1);
 							var cell = row.insertCell(0);
-							cell.innerHTML = section_lines[i];
+							cell.innerHTML = rest[i];
 						}
 					}
 				}
