@@ -179,7 +179,7 @@
 						//console.log(`${i}`)
 						//console.log(`${line}`)
 						if(line !== "") {
-							var row = document.getElementById(first]).insertRow(i+1);
+							var row = document.getElementById(first).insertRow(i+1);
 							var cell0 = row.insertCell(0);
 							var cell1 = row.insertCell(1);
 							cell0.innerHTML = "<input type=\"checkbox\" id=\"proc`${i}`\" name=\"proc`${i}`\"><label for=\"proc`${i}`\"> " + line + " </label>";
