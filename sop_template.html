@@ -188,8 +188,7 @@
 					}
 				}
 				else if(first === "calculator") {
-					rest = rest.join('\n');
-					rest.replace(/~~~~/g,"");
+					rest = rest.join('\n').replace(/~~~~/g,"");
 					document.getElementById(first).innerHTML += rest;
 				}
 				else {
