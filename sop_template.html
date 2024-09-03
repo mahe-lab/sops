@@ -122,18 +122,44 @@
 	<foot>
 		<script type="text/javascript">
 			window.onload = init();
+			async function* makeTextFileLineIterator(fileURL) {
+				const response = await fetch(fileURL);
+				if (!response.ok) {
+					throw new Error(`Response status: ${response.status}`);
+				}
+				const reader = response.body.pipeThrough(new TextDecoderStream()).getReader();
+				let { value: chunk, done: readerDone } = await reader.read();
+				chunk = chunk || "";
+				const newsection = /# [a-zA-Z_]+/gm;
+				let startIndex = 0;
+				let result;
+				while (true) {
+					const result = newsection.exec(chunk);
+					if (!result) {
+							if (readerDone) break;
+							const remainder = chunk.substr(startIndex);
+							({ value: chunk, done: readerDone } = await reader.read());
+							chunk = remainder + (chunk || "");
+							startIndex = newsection.lastIndex = 0;
+							continue;
+					}
+					yield chunk.substring(startIndex, result.index);
+					startIndex = newsection.lastIndex;
+				}
+				if (startIndex < chunk.length) {
+					yield chunk.substring(startIndex);
+				}
+			}
+			async function run(urlOfFile) {
+					for await (const section of makeTextFileLineIterator(urlOfFile)) {
+						processLine(section);
+					}
+			}
+			function processLine(section) {
+				console.log(section)
+			}
 			function init() {
-				try {
-					const sections = ["# protocol","# authorization","# hazards","# ppe","# where","# references","# emergency","# cleanup","# waste","# maintenance","# before_starting","# calculator","# procedures"];
-					const file_name = (location.search).replace("?","");
-					//fetch file data as text
-					var textPromise = fetch(file_name).then((response) => response.text());
-					console.log(textPromise.result)
-					
-				}
-				catch(err) {
-					console.log(err);
-				}
+				run((location.search).replace("?",""));
 			}
 		</script>
 	</foot>
