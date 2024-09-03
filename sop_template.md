@@ -1,4 +1,5 @@
-# protocol_header
+
+### protocol_header
 - Protocol:
 - Faculty:
 - Institute:
@@ -7,39 +8,39 @@
 - Version:
 - Approver:
 
-# authorization
+### authorization
 - 
 
-# hazards
+### hazards
 -
 
-# ppe
+### ppe
 - Lab Coat
 - Eye Protection
 - Nitrile Gloves
 
-# where
+### where
 - 
 
-# references
+### references
 - 
 
-# emergency
+### emergency
 - 
 
-# cleanup
+### cleanup
 - 
 
-# waste
+### waste
 - 
 
-# maintenance
+### maintenance
 - 
 
-# before_starting
+### before_starting
 - 
 
-# calculator
+### calculator
 
-# procedures
+### procedures
 1. 
