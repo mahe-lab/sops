@@ -128,12 +128,12 @@
 				while (true) {
 					const result = newsection.exec(chunk);
 					if (!result) {
-							if (readerDone) break;
-							const remainder = chunk.substr(startIndex);
-							({ value: chunk, done: readerDone } = await reader.read());
-							chunk = remainder + (chunk || "");
-							startIndex = newsection.lastIndex = 0;
-							continue;
+						if (readerDone) break;
+						const remainder = chunk.substr(startIndex);
+						({ value: chunk, done: readerDone } = await reader.read());
+						chunk = remainder + (chunk || "");
+						startIndex = newsection.lastIndex = 0;
+						continue;
 					}
 					yield chunk.substring(startIndex, result.index);
 					startIndex = newsection.lastIndex;
@@ -174,8 +174,13 @@
 					}
 				}
 				else if(first === "calculator") {
-					rest = rest.join('\n').replace(/~~~~/g,"");
-					document.getElementById(first).innerHTML = rest;
+					let body_start = rest.findIndex("<body>");
+					let script_start = rest.findIndex("<script>");
+					let bodyscript_end = rest.findIndex("<\/script>");
+					console.log(body_start)
+					console.log(script_start)
+					console.log(bodyscript_end)
+					//document.getElementById(first).
 				}
 				else {
 					for(i=0; i<rest.length; i++) {
