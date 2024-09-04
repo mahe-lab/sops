@@ -175,7 +175,7 @@
 				}
 				else if(first === "calculator") {
 					rest = rest.join('\n').replace(/~~~~/g,"");
-					document.getElementById(first).insertAdjacentHTML("afterend",rest);
+					document.getElementById(first).innerHTML = rest;
 				}
 				else {
 					for(i=0; i<rest.length; i++) {
