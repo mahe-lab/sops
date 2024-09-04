@@ -42,7 +42,7 @@
 			}
 			function processLine(section) {
 				let [first, ...rest] = section.split('\n');
-		                let newDiv = document.createElement('div');
+		                let newDiv = document.body.createElement('div');
 		                newDiv.innerHTML += "<h2>" + first.replace(":","") + "<\/h2><br><br>";
 		                for(i=0; i<rest.length; i++) {
 		                    let link_name = rest[i].match(/([^(\[])(.*)[^\]]/g);
@@ -57,6 +57,5 @@
     <body>
     </body>
     <footer>
-        
     </footer>
 </html>
