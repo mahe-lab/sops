@@ -175,13 +175,11 @@
 				}
 				else if(first === "calculator") {
 					let js_part = document.createElement("script");
-					
 					let body_start = rest.findIndex((arel) => {return arel === "<body>";});
-					let script_start = rest.findIndex((arel) => {return arel === "<script>";});
+					let script_start = rest.findIndex((arel) => {return arel === "<script type='text\/javascript'>";});
 					let bodyscript_end = rest.findIndex((arel) => {return arel === "<\/script>";});
-					console.log(body_start)
-					console.log(script_start)
-					console.log(bodyscript_end)
+					document.getElementById(first).innerHTML = (rest.slice(body_start, script_start)).join('\n');
+					
 					//document.getElementById(first).
 				}
 				else {
