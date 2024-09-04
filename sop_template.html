@@ -182,8 +182,8 @@
 					//add js parts
 					let js_part = document.createElement("script");
 					js_part.type = "text/javascript";
-					//js_part.innerHTML = (rest.slice(script_start,bodyscript_end)).join('\n');
-					console.log(rest.slice(script_start,bodyscript_end).join('\n'))
+					//js_part.innerHTML = (rest.slice(script_start+1,bodyscript_end)).join('\n');
+					console.log(rest.slice(script_start+1,bodyscript_end).join('\n'))
 					//document.head.appendChild(js_part);
 				}
 				else {
