@@ -64,7 +64,7 @@
 		<title>MAHELAB SOP Calculator</title>
 	</head>
 <body>
-<!--configure reagent prep details here, with calculations based on the table inputs below-->
+<!--configure reagent prep details here, with calculations based on the table inputs below; four column format-->
 <table id="table0">
 	<tr><td>Scan/enter the specimen accession numbers:</td><td></tr>
 </table>
@@ -72,10 +72,9 @@
 	<tr><td><input type="text" size="10px" id="00"/></td><td><input type="text" size="10px" id="01"/></td><td><input type="text" size="10px" id="02"/></td><td><input type="text" size="10px" id="03"/></td></tr>
 	<tr><td><input type="text" size="10px" id="10"/></td><td><input type="text" size="10px" id="11"/></td><td><input type="text" size="10px" id="12"/></td><td><input type="text" size="10px" id="13"/></td></tr>
 </table>
-<br>
 <button type="button" onclick="addRows()">Add Rows</button>
-<br>
-<!-- insert the necessary calculations here.-->
+<br><br>
+<!-- insert the necessary calculations here; two column table format.-->
 <table id="table2">
 	<tr><td></td><td></td></tr>
 	<tr><td>Reagent/Input Calculations:</td><td></td></tr>
@@ -89,8 +88,8 @@
 <!-- calculation: -->
 	<td><input readonly type="text" size="10px" id="calc3"/></td></tr>
 </table>
-<br>
 <button type="button" onclick="calculate()">Calculate</button>
+<br>
 <script type='text/javascript'>
 function addRows() {
     var table = document.getElementById("table1");
