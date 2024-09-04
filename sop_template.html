@@ -149,8 +149,6 @@
 			}
 			function processLine(section) {
 				let [first, ...rest] = section.split('\n');
-				console.log(first)
-				console.log(rest)
 				if(first === "protocol") {
 					for(i=0; i<rest.length; i++) {
 						if(rest[i] !== "") {
@@ -166,8 +164,6 @@
 				else if(first === "procedures") {
 					for(i=0; i<rest.length; i++) {
 						var line = rest[i];
-						//console.log(`${i}`)
-						//console.log(`${line}`)
 						if(line !== "") {
 							var row = document.getElementById(first).insertRow(i+1);
 							var cell0 = row.insertCell(0);
@@ -179,7 +175,7 @@
 				}
 				else if(first === "calculator") {
 					rest = rest.join('\n').replace(/~~~~/g,"");
-					document.getElementById(first).innerHTML += rest;
+					document.getElementById(first).insertAdjacentHTML("afterend",rest);
 				}
 				else {
 					for(i=0; i<rest.length; i++) {
