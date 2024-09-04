@@ -45,9 +45,9 @@
 		                let newDiv = document.createElement('div');
 		                newDiv.innerHTML += "<h2>" + first.replace(":","") + "<\/h2><br><br>";
 		                for(i=0; i<rest.length; i++) {
-			                if(rest !== "") {
-						let link_name = rest[i].match(/^\[([\s\S]*?)]/g);
-				                let md_file = rest[i].match(/\(([\s\S]*?)\)/g);
+			                if(rest[i] !== "") {
+						let link_name = ((rest[i].match(/^\[([\s\S]*?)]/g)).replace("[","")).replace("]","");
+				                let md_file = ((rest[i].match(/\(([\s\S]*?)\)/g)).replace("(","")).replace(")","");
 				                console.log(link_name)
 				                console.log(md_file)
 						newDiv.innerHTML += '<a href=\"https://mahe-lab.github.io/sops/sop_template.html?' + md_file + '\">' + link_name + '<\/a><br>';
