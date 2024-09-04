@@ -57,52 +57,34 @@
 ### calculator
 ~~~~
 <!--configure reagent prep details here, with calculations based on the table inputs below-->
-			<table id="table0">
-				<tr><td>Scan/enter the specimen accession numbers:</td><td></tr>
-			</table>
-			<table id="table1">
-				<tr><td> </td><td> </td><td> </td><td> </td></tr>
-				<tr><td><input type="text" size="10px" id="00"/></td><td><input type="text" size="10px" id="01"/></td><td><input type="text" size="10px" id="02"/></td><td><input type="text" size="10px" id="03"/></td></tr>
-				<tr><td><input type="text" size="10px" id="10"/></td><td><input type="text" size="10px" id="11"/></td><td><input type="text" size="10px" id="12"/></td><td><input type="text" size="10px" id="13"/></td></tr>
-			</table>
-			<p></p>
-		<button type="button" onclick="addRows()">Add Rows</button>
-		<p></p>
+<table id="table0">
+	<tr><td>Scan/enter the specimen accession numbers:</td><td></tr>
+</table>
+<table id="table1">
+	<tr><td> </td><td> </td><td> </td><td> </td></tr>
+	<tr><td><input type="text" size="10px" id="00"/></td><td><input type="text" size="10px" id="01"/></td><td><input type="text" size="10px" id="02"/></td><td><input type="text" size="10px" id="03"/></td></tr>
+	<tr><td><input type="text" size="10px" id="10"/></td><td><input type="text" size="10px" id="11"/></td><td><input type="text" size="10px" id="12"/></td><td><input type="text" size="10px" id="13"/></td></tr>
+</table>
+<p></p>
+<button type="button" onclick="addRows()">Add Rows</button>
+<p></p>
 <!-- insert the necessary calculations here.-->
-			<table id="table2">
-				<tr><td></td><td></td></tr>
-				<tr><td>Reagent/Input Calculations:</td><td></td></tr>
-				<tr>
-				<td>
-Volume of required Working Solution (mL):
-				</td>
-				<td>
+<table id="table2">
+	<tr><td></td><td></td></tr>
+	<tr><td>Reagent/Input Calculations:</td><td></td></tr>
+	<tr><td>Volume of required Working Solution (mL):</td>
 <!-- calculation: -->
-				<input readonly type="text" size="10px" id="calc1"/>
-				</td>
-				</tr>
-				<tr>
-				<td>
-Volume of required Qubit Reagent (uL) to make Working Solution:
-				</td>
-				<td>
+	<td><input readonly type="text" size="10px" id="calc1"/></td></tr>
+	<tr><td>Volume of required Qubit Reagent (uL) to make Working Solution:</td>
 <!-- calculation: -->
-				<input readonly type="text" size="10px" id="calc2"/>
-				</td>
-				</tr>
-				<tr>
-				<td>
-Volume of required Qubit Buffer (uL) to make Working Solution:
-				</td>
-				<td>
+	<td><input readonly type="text" size="10px" id="calc2"/></td></tr>
+	<tr><td>Volume of required Qubit Buffer (uL) to make Working Solution:</td>
 <!-- calculation: -->
-				<input readonly type="text" size="10px" id="calc3"/>
-				</td>
-				</tr>
-			</table>
-			<p></p>
-		<button type="button" onclick="calculate()">Calculate</button>
-		
+	<td><input readonly type="text" size="10px" id="calc3"/></td></tr>
+</table>
+<p></p>
+<button type="button" onclick="calculate()">Calculate</button>
+	
 ~~~~
 ### procedures
 1. Add 10 uL of standard 1 to 190 uL working solution
