@@ -42,7 +42,7 @@
 			}
 			function processLine(section) {
 				let [first, ...rest] = section.split('\n');
-		                let newDiv = document.body.createElement('div');
+		                let newDiv = document.createElement('div');
 		                newDiv.innerHTML += "<h2>" + first.replace(":","") + "<\/h2><br><br>";
 		                for(i=0; i<rest.length; i++) {
 		                    let link_name = rest[i].match(/([^(\[])(.*)[^\]]/g);
@@ -51,6 +51,7 @@
 		                    console.log(md_file)
 		                    newDiv.innerHTML += '<a href=\"https://mahe-lab.github.io/sops/sop_template.html?' + md_file + '\">' + link_name + '<\/a><br>';
 		                }
+				document.body.appendChild(newDiv);
 			}
 	</script>  
     </head>
