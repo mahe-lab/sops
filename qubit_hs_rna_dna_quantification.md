@@ -92,12 +92,12 @@
 <br>
 <script type='text/javascript'>
 function addRows() {
-    var table = document.getElementById("table1");
+    var table = document.getElementById('table1');
     var trows = table.rows.length;
     var tcols = table.rows[0].cells.length;
     var row = table.insertRow(trows);
     for (var i=0;i<tcols;i++) {
-	var txt = document.createElement("input")
+	var txt = document.createElement('input')
 	txt.setAttribute('type','text');
 	txt.setAttribute('size','10px');
 	txt.setAttribute('id',`${trows}${i}`);
@@ -107,22 +107,22 @@ function addRows() {
 }	
 function calculate() {
     var count = 0;
-    var table = document.getElementById("table1");
+    var table = document.getElementById('table1');
     var trows = table.rows.length;
     var tcols = table.rows[0].cells.length;
     for (var i=0;i<trows;i++) {
         for (var j=0;j<tcols;j++) {
             var txtcontent = document.getElementById(`${i}${j}`).value;
-            if(txtcontent != "") {
+            if(txtcontent != '') {
                 count++;
             }
         }
     }
     //console.log(count)
     if(count>0) {
-        document.getElementById("calc1").value = (0.22 * ( 2 + count )).toFixed(1);
-        document.getElementById("calc2").value = (1.1 * ( 2 + count )).toFixed(1);
-        document.getElementById("calc3").value = (218.9 * ( 2 + count )).toFixed(1);
+        document.getElementById('calc1').value = (0.22 * ( 2 + count )).toFixed(1);
+        document.getElementById('calc2').value = (1.1 * ( 2 + count )).toFixed(1);
+        document.getElementById('calc3').value = (218.9 * ( 2 + count )).toFixed(1);
     }
 }
 </script>
