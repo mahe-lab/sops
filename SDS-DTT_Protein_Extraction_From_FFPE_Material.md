@@ -43,6 +43,6 @@
 ### calculator
 <!Doctype html>
   
-</Doctype html>
+</Doctype>
 ### procedures
 1. 
