@@ -1,10 +1,11 @@
-## Mahe-Lab Standard Operating Procedures
+## MAHELAB Standard Operating Procedures
 
 ## Enrichment:
 
 
 ## Extraction:
 
+[Acetone Protein Precipitation](acetone_protein_precipitation.md)<br>
 
 ## Quantification:
 
