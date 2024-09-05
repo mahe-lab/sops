@@ -1,11 +1,11 @@
 
 ### protocol_header
 - Protocol: SDS-DTT Protein Extraction From FFPE Material
-- Faculty:
-- Institute:
-- Site:
-- Date:
-- Version:
+- Faculty: Cumming School of Medicine
+- Institute: Charbonneau Cancer Institute
+- Site: Arthur J.E. Child Comprehensive Cancer Center, YC
+- Date: 5SEPT2024
+- Version: 2
 - Approver:
 
 ### authorization
@@ -41,6 +41,8 @@
 - 
 
 ### calculator
-
+<Doctype html>
+  
+</Doctype>
 ### procedures
 1. 
