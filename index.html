@@ -46,9 +46,11 @@
 		                newDiv.innerHTML += "<h2>" + first.replace(":","") + "<\/h2><br><br>";
 		                for(i=0; i<rest.length; i++) {
 			                if(rest[i] !== "") {
-						let link_name = rest[i].match(/^\[([\s\S]*?)]/g)
+						let link_name = rest[i].match(/^\[([\s\S]*?)]/g);
+						console.log(link_name)
 						link_name = (link_name.replace("\[","")).replace("\]","");
-				                let md_file = rest[i].match(/\(([\s\S]*?)\)/g)
+				                let md_file = rest[i].match(/\(([\s\S]*?)\)/g);
+						console.log(md_file)
 						md_file = (md_file.replace("\(","")).replace("\)","");
 				                console.log(link_name)
 				                console.log(md_file)
@@ -57,7 +59,7 @@
 				}
 				document.body.appendChild(newDiv);
 			}
-	</script>  
+		</script>  
     </head>
     <body>
     </body>
