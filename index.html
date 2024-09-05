@@ -55,7 +55,8 @@
 						newDiv.innerHTML += '<a href=\"https://mahe-lab.github.io/sops/sop_template.html?' + file + '\">' + name + '<\/a><br>';
 					}
 				}
-				document.body.appendChild(newDiv + "<br><br>");
+				newDiv.innerHTML += "<br><br>";
+				document.body.appendChild(newDiv);
 			}
 		</script>  
     </head>
