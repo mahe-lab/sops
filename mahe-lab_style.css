@@ -204,7 +204,7 @@
 	}
 
 	footer {
-	  width:270px;
+	 /* width:270px; */
 	  position:fixed;
 	 /* bottom:50px; */
 		background-color: #fff;
