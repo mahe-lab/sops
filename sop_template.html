@@ -168,8 +168,8 @@
 							var row = document.getElementById(first).insertRow(i+1);
 							var cell0 = row.insertCell(0);
 							var cell1 = row.insertCell(1);
-							cell0.innerHTML = "<input type=\"checkbox\" id=\"proc`${i}`\" name=\"proc`${i}`\"><label for=\"proc`${i}`\"> " + line + " </label>";
-							cell1.innerHTML = "<input type=\"text\" id=\"txt`${i}`\" width=\"80px\" placeholder=\"notes\">";
+							cell0.innerHTML = "<input type=\"checkbox\" id=\"proc" + i + "\" name=\"proc" + i + "\"><label for=\"proc" + i + "\"> " + line + " </label>";
+							cell1.innerHTML = "<input type=\"text\" id=\"txt" + i + "\" width=\"80px\" placeholder=\"notes\">";
 						}
 					}
 				}
@@ -199,7 +199,8 @@
 		</script>
 	</foot>
 	<footer>
-	      	<h5>About</h5>
+	      	<br><br><br><br><br>
+		<h5><i>About</i></h5>
 		<h5><b>MAHELAB</b><br>A Translational Research Laboratory of<br>Charbonneau Cancer Institute<br>The Cumming School of Medicine<br>The University of Calgary</h5>
 		<h5><a href="mailto:ermahe@ucalgary.ca">Contact</a></h5>
 	        <h5>Copyright &copy; 2024 All Rights Reserved by Etienne Mahe</h5>        
