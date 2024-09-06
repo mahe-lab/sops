@@ -1,4 +1,3 @@
-
 ### protocol_header
 - Protocol: SDS-DTT Protein Extraction From FFPE Material
 - Faculty: Cumming School of Medicine
@@ -64,16 +63,17 @@
 <table id="table2">
 	<tr><td></td><td></td></tr>
 	<tr><td>Working Solution Preparation</td><td></td></tr>
-	<tr><td>Volume of required Working Solution Assuming ~10 mg of tissue per sample (mL):</td>
+	<tr><td>Volume of required Working Solution Assuming ~10 mg of tissue per sample (uL):</td>
+	<td><input readonly type="text" size="10px" id="TotalVol"/></td></tr>
 <!--- calculation: --->
-	<td><input readonly type="text" size="10px" id="calc1"/></td></tr>
-	<tr><td>Volume of 10x SDS-Tris Stock Required for Working Solution (uL):</td>
+	<tr><td><input readonly type="text" size="10px" id="calc1"/></td>
+	<td>Volume of 10x SDS-Tris Stock Required for Working Solution (uL):</td></tr>
 <!--- calculation: --->
-	<td><input readonly type="text" size="10px" id="calc2"/></td></tr>
-	<tr><td>Volume of 1M DTT Required for Working Solution (uL):</td>
+	<tr><td><input readonly type="text" size="10px" id="calc2"/></td>
+	<td>Volume of 1M DTT Required for Working Solution (uL):</td></tr>
 <!--- calculation: --->
-	<td><input readonly type="text" size="10px" id="calc3"/></td></tr>
-	<tr><td>Volume of ddH2O Required for Working Solution (uL):</td></tr>
+	<tr><td><input readonly type="text" size="10px" id="calc3"/></td>
+	<td>Volume of ddH2O Required for Working Solution (uL):</td></tr>
 </table>
 <br>
 <button type="button" onclick="calculate()">Calculate</button>
@@ -107,6 +107,7 @@ function calculate() {
     }
     //console.log(count)
     if(count>0) {
+	document.getElementById('TotalVol').value = (110 * (count)).toFixed(1);
         document.getElementById('calc1').value = (11 * (count)).toFixed(1);
         document.getElementById('calc2').value = (11 * (count)).toFixed(1);
         document.getElementById('calc3').value = (88 * (count)).toFixed(1);
