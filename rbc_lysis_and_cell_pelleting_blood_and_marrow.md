@@ -32,13 +32,20 @@
 - 
 
 ### waste
-- 
+- Dispose of specimen tubes/containers/pipettes or any other contaminated materials in biohazard bags/containers
+- When work is complete, allow waste container (containing bleach) to stand in biosafety cabinet for 30 minutes before disposing in the sink with ample tap water 
+- Dispose of any unused 1x RBC Lysis Working Solution after 3 months of non-use
 
 ### maintenance
 - 
 
 ### before_starting
-- 
+- Disposable Plastic pipettes (one per specimen)
+- 50 mL falcon tubes (labelled; one per specimen)
+- Ice container/bucket
+- Waste container (e.g. 1L bucket with ~100 mL of bleach)
+- If required, make sufficient 10x Stock RBC Lysis Solution: Weight out NH4Cl (ammonium chloride) 8.02 g, NaHCO3 (sodium bicarbonate) 0.84 g; EDTA (disodium) 0.37 g and dissolve in RNAse-free (or DEPC-sterile) water up to 100 mL
+- 10x Stock RBC Lysis Solution is diluted to 1x RBC Lysis Working Solution (RLWS) with RNAse-free (or DEPC-sterile) on demand. Use the calculator below to determine the required volume
 
 ### calculator
 
