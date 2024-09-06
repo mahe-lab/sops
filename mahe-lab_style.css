@@ -35,7 +35,7 @@
 	}
 	body {
 	  background-color: #fff;
-	  padding:50px 50px 500px 50px;
+	  padding:50px;
 	  
 	  font: 14px/1.5;
 	  color:#595959;
@@ -203,7 +203,7 @@
 	  margin:0 0 20px;
 	}
 
-	footer {
+	.footer {
 	    position: absolute;
 	      bottom: 0;
 	      width: 100%;
