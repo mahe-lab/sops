@@ -204,6 +204,7 @@
 	}
 
 	footer {
+	  position:absolute;
 	  width:270px;
 	  float:left;
 	  bottom:50px;
