@@ -1,7 +1,7 @@
 ## MAHELAB Standard Operating Procedures
 
 ## Enrichment:
-
+[RBC Lysis and Cell Pelleting of Blood and Bone Marrow](rbc_lysis_and_cell_pelleting_blood_and_marrow.md)<br>
 
 ## Extraction:
 
