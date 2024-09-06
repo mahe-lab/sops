@@ -204,10 +204,11 @@
 	}
 
 	.footer {
-	    position: fixed;
-	      bottom: 0;
-	      width: 100%;
-	      height: 50px; 
+	    width:270px;
+	  float:left;
+	  position:fixed;
+	  bottom:50px;
+	  -webkit-font-smoothing:subpixel-antialiased;
 	}
 
 	@media print, screen and (max-width: 960px) {
