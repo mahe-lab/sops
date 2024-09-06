@@ -6,6 +6,7 @@
 ## Extraction:
 
 [Acetone Protein Precipitation](acetone_protein_precipitation.md)<br>
+[SDS-DTT Protein Extraction From FFPE Material](SDS-DTT_Protein_Extraction_From_FFPE_Material.md)<br>
 
 ## Quantification:
 
