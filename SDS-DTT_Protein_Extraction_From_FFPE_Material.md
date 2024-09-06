@@ -66,14 +66,14 @@
 	<tr><td>Volume of required Working Solution Assuming ~10 mg of tissue per sample (uL):</td>
 	<td><input readonly type="text" size="10px" id="TotalVol"/></td></tr>
 <!--- calculation: --->
-	<td>Volume of 10x SDS-Tris Stock Required for Working Solution (uL):</td></tr>
-	<tr><td><input readonly type="text" size="10px" id="calc1"/></td>
+	<tr><td>Volume of 10x SDS-Tris Stock Required for Working Solution (uL):</td>
+	<td><input readonly type="text" size="10px" id="calc1"/></td></tr>
 <!--- calculation: --->
-	<td>Volume of 1M DTT Required for Working Solution (uL):</td></tr>
-	<tr><td><input readonly type="text" size="10px" id="calc2"/></td>
+	<tr><td>Volume of 1M DTT Required for Working Solution (uL):</td>
+	<td><input readonly type="text" size="10px" id="calc2"/></td></tr>
 <!--- calculation: --->
-	<td>Volume of ddH2O Required for Working Solution (uL):</td></tr>
-	<tr><td><input readonly type="text" size="10px" id="calc3"/></td>
+	<tr><td>Volume of ddH2O Required for Working Solution (uL):</td>
+	<td><input readonly type="text" size="10px" id="calc3"/></td></tr>
 </table>
 <br>
 <button type="button" onclick="calculate()">Calculate</button>
