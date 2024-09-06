@@ -204,10 +204,11 @@
 	}
 
 	footer {
-	    width:270px;
+	  width:270px;
 	  float:left;
 	  position:fixed;
 	  bottom:50px;
+	font-size:10px;
 	  -webkit-font-smoothing:subpixel-antialiased;
 	}
 
