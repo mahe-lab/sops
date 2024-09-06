@@ -45,7 +45,7 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="mahe-lab_style.css">
-		<title>MAHELAB SOP Calculator</title>
+		<title>Working Solution Calculator</title>
 	</head>
 <body>
 <!---configure reagent prep details here, with calculations based on the table inputs below--->
@@ -66,14 +66,14 @@
 	<tr><td>Volume of required Working Solution Assuming ~10 mg of tissue per sample (uL):</td>
 	<td><input readonly type="text" size="10px" id="TotalVol"/></td></tr>
 <!--- calculation: --->
-	<tr><td><input readonly type="text" size="10px" id="calc1"/></td>
 	<td>Volume of 10x SDS-Tris Stock Required for Working Solution (uL):</td></tr>
+	<tr><td><input readonly type="text" size="10px" id="calc1"/></td>
 <!--- calculation: --->
-	<tr><td><input readonly type="text" size="10px" id="calc2"/></td>
 	<td>Volume of 1M DTT Required for Working Solution (uL):</td></tr>
+	<tr><td><input readonly type="text" size="10px" id="calc2"/></td>
 <!--- calculation: --->
-	<tr><td><input readonly type="text" size="10px" id="calc3"/></td>
 	<td>Volume of ddH2O Required for Working Solution (uL):</td></tr>
+	<tr><td><input readonly type="text" size="10px" id="calc3"/></td>
 </table>
 <br>
 <button type="button" onclick="calculate()">Calculate</button>
