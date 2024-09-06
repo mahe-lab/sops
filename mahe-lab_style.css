@@ -8,14 +8,7 @@
 	::-webkit-input-placeholder {
 			font-style: italic;
 	}
-	.page-container {
-      position: relative;
-      min-height: 100vh;
-    }
-    
-    .content-wrap {
-      padding-bottom: 2.5rem;    /* Footer height */
-    }
+	
 	table {
 	  width:100%;
 	  border-collapse:collapse;
@@ -42,7 +35,7 @@
 	}
 	body {
 	  background-color: #fff;
-	  padding:50px 50px 50px 500px
+	  padding:50px 50px 500px 50px 
 	  
 	  font: 14px/1.5;
 	  color:#595959;
