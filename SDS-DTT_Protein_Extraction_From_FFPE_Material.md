@@ -63,16 +63,17 @@
 <!--- insert the necessary calculations here.--->
 <table id="table2">
 	<tr><td></td><td></td></tr>
-	<tr><td>Reagent/Input Calculations:</td><td></td></tr>
-	<tr><td>Volume of required Working Solution (mL):</td>
+	<tr><td>Working Solution Preparation</td><td></td></tr>
+	<tr><td>Volume of required Working Solution Assuming ~10 mg of tissue per sample (mL):</td>
 <!--- calculation: --->
 	<td><input readonly type="text" size="10px" id="calc1"/></td></tr>
-	<tr><td>Volume of required Qubit Reagent (uL) to make Working Solution:</td>
+	<tr><td>Volume of 10x SDS-Tris Stock Required for Working Solution (uL):</td>
 <!--- calculation: --->
 	<td><input readonly type="text" size="10px" id="calc2"/></td></tr>
-	<tr><td>Volume of required Qubit Buffer (uL) to make Working Solution:</td>
+	<tr><td>Volume of 1M DTT Required for Working Solution (uL):</td>
 <!--- calculation: --->
 	<td><input readonly type="text" size="10px" id="calc3"/></td></tr>
+	<tr><td>Volume of ddH2O Required for Working Solution (uL):</td></tr>
 </table>
 <br>
 <button type="button" onclick="calculate()">Calculate</button>
@@ -106,9 +107,9 @@ function calculate() {
     }
     //console.log(count)
     if(count>0) {
-        document.getElementById('calc1').value = (0.22 * ( 3 + count )).toFixed(1);
-        document.getElementById('calc2').value = (1.1 * ( 3 + count )).toFixed(1);
-        document.getElementById('calc3').value = (218.9 * ( 3 + count )).toFixed(1);
+        document.getElementById('calc1').value = (11 * (count)).toFixed(1);
+        document.getElementById('calc2').value = (11 * (count)).toFixed(1);
+        document.getElementById('calc3').value = (88 * (count)).toFixed(1);
     }
 }
 </script>
