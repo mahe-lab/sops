@@ -206,7 +206,7 @@
 	footer {
 	  width:auto;
 	  position:sticky;
-	  bottom:10px;
+	  bottom:0px;
 	  background-color: #fff;
 	  -webkit-font-smoothing:subpixel-antialiased;
 	}
