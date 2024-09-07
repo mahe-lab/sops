@@ -204,10 +204,10 @@
 	}
 
 	footer {
-	 /* width:270px; */
-	  position:fixed;
-	 /* bottom:50px; */
-		background-color: #fff;
+	  width:auto;
+	  position:sticky;
+	  bottom:10px;
+	  background-color: #fff;
 	  -webkit-font-smoothing:subpixel-antialiased;
 	}
 
