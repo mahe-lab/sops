@@ -5,7 +5,12 @@
         <link rel="stylesheet" href="mahe-lab_style.css">
         <title>MAHELAB Standard Operating Procedures</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/javascript">
+    </head>
+    <body>
+	    
+    </body>
+	<foot>
+		<script type="text/javascript">
 			window.onload = run();
 			async function* makeTextFileLineIterator(fileURL) {
 				const response = await fetch(fileURL);
@@ -42,16 +47,16 @@
 			}
 			function processLine(section) {
 				let [first, ...rest] = section.split('\n');
-		                let newDiv = document.createElement('div');
-		                newDiv.innerHTML += "<h2>" + first.replace(":","") + "<\/h2><br>";
-		                for(i=0; i<rest.length; i++) {
-			                if(rest[i] !== "") {
+				let newDiv = document.createElement('div');
+				newDiv.innerHTML += "<h2>" + first.replace(":","") + "<\/h2><br>";
+				for(i=0; i<rest.length; i++) {
+					if(rest[i] !== "") {
 						let link_name = rest[i].match(/^\[([\s\S]*?)]/g);
 						let name = (link_name[0].replace("\[","")).replace("\]","");
-				                let md_file = rest[i].match(/\(([\s\S]*?)\)/g);
+						let md_file = rest[i].match(/\(([\s\S]*?)\)/g);
 						let file = (md_file[0].replace("\(","")).replace("\)","");
-				                console.log(name)
-				                console.log(file)
+						console.log(name)
+						console.log(file)
 						newDiv.innerHTML += '<a href=\"https://mahe-lab.github.io/sops/sop_template.html?' + file + '\">' + name + '<\/a><br>';
 					}
 				}
@@ -59,10 +64,8 @@
 				document.body.appendChild(newDiv);
 			}
 		</script>  
-    </head>
-    <body>
-    </body>
-    <footer>
+	</foot>
+    	<footer>
 	      	<br>
 		<h5><b>MAHELAB</b> | A Translational Research Laboratory of Charbonneau Cancer Institute | Cumming School of Medicine | University of Calgary<br>
 		Copyright &copy; 2024 All Rights Reserved by Etienne Mahe | <a href="mailto:ermahe@ucalgary.ca">Contact</a></h5>
