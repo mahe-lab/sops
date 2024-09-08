@@ -13,7 +13,8 @@
 - Requires Pre-Authorization by PI
 
 ### hazards
-- add
+- Acetone is volatile, flammable and toxic; see SDS
+- See SDS: https://www.fishersci.com/msds?productName=AC177170100&productDescription=ACETO
 
 ### ppe
 - Lab Coat
@@ -21,27 +22,32 @@
 - Nitrile Gloves
 
 ### where
-- add
+- Fumehood
+- Pre-PCR bench
 
 ### references
 - Thermo Technical Note on Acetone Protein Precipitation: https://assets.thermofisher.com/TFS-Assets/LSG/Application-Notes/TR0049-Acetone-precipitation.pdf 
 
 ### emergency
-- See SDS
+- IF INHALED: Remove victim to fresh air and keep at rest in a position comfortable for breathing
+- IF ON SKIN (or hair): Immediately remove contaminated clothing; rinse skin with water/shower
+- IF IN EYES: Rinse cautiously with water for several minutes; remove contact lenses, if present and easy to do; continue rinsing. If eye irritation persists get medical advice/attention
+- In case of fire use CO2, dry chemical, or foam for extinction
 
 ### cleanup
 - Wipe down work surfaces with 70% isopropanol
 - NOTE: Do not use isopropanol on instruments
 
 ### waste
-- Tips/Tubes should be disposed of in yellow biohazard bag/tub
+- Tips/Tubes should be disposed of in biohazard bags
 
 ### maintenance
-- add
+- Wipe down fumehood with 70% isopropanol; close sash when done & turn out light
 
 ### before_starting
-- This protocol assumes that protein extraction has already been performed, and that removal of extract buffer is required (ie to remove SDS, DTT, etc), with re-suspension in
-- 
+- This protocol assumes that protein extraction has already been performed, and that removal of extract buffer is required (i.e. to remove SDS, DTT, etc)
+- Well-cooled (-20C) acetone is required; overnight cooling may be required
+- This protocol assumes re-suspension will be performed in 100 mM Tris; ensure that sufficient 100 mM Tris is available for resuspension using the calculator below
 
 ### calculator
 ~~~~
@@ -68,15 +74,18 @@
 <table id="table2">
 	<tr><td></td><td></td></tr>
 	<tr><td>Reagent/Input Calculations:</td><td></td></tr>
-	<tr><td>Total volume of required Working Solution (mL):</td>
+	<tr><td>Total volume of required Cool Acetone (mL):</td>
 <!--- calculation: --->
 	<td><input readonly type="text" size="10px" id="calc1"/></td></tr>
-	<tr><td>Volume of *** reagent (uL) to make Working Solution:</td>
+	<tr><td>Volume of 100 mM Tris required for re-suspension (mL):</td>
 <!--- calculation: --->
 	<td><input readonly type="text" size="10px" id="calc2"/></td></tr>
-	<tr><td>Volume of *** reagent (uL) to make Working Solution:</td>
+	<tr><td>Volume of 1 M Tris required to make the above solution (uL):</td>
 <!--- calculation: --->
 	<td><input readonly type="text" size="10px" id="calc3"/></td></tr>
+	<tr><td>Volume of ddH2O required to make the above solution (mL):</td>
+<!--- calculation: --->
+	<td><input readonly type="text" size="10px" id="calc4"/></td></tr>
 </table>
 <br>
 <button type="button" onclick="calculate()">Calculate</button>
@@ -111,12 +120,10 @@ function calculate() {
     //console.log(count)
     if(count>0) {
         // uncomment and adjust here with correct calculations for the correct text boxes above:
-        //
-        // document.getElementById('calc1').value = (0.22 * ( 2 + count )).toFixed(1);
-        
-        // document.getElementById('calc2').value = (1.1 * ( 2 + count )).toFixed(1);
-
-        // document.getElementById('calc3').value = (218.9 * ( 2 + count )).toFixed(1);
+        document.getElementById('calc1').value = (0.66 * (count)).toFixed(1);
+        document.getElementById('calc2').value = (0.11 * (count)).toFixed(1);
+        document.getElementById('calc3').value = (11 * (count)).toFixed(1);
+	document.getElementById('calc4').value = (0.099 * (count)).toFixed(1);
     }
 }
 </script>
@@ -124,4 +131,14 @@ function calculate() {
 </html>
 ~~~~
 ### procedures
-1. add
+1. Add 4 volumes of cooled acetone (i.e. if continuing from previous extraction SOP, add 400 uL of acetone directly to 100 uL of the extract supernatant)
+2. Cap and vortex
+3. Place in the -20C freezer to incubate for 60 minutes
+4. Centrifuge 10 minutes at 13,000-15,000 × g
+5. Without dislodging the pellet, discard the supernatant and allow the remaining acetone to evaporate from the uncapped tube in the fumehood (room temperature ~ 30 minutes)
+6. Add 2 original volumes of cooled acetone to the pellet
+7. Cap and vortex
+8. Place in the -20C freezer to incubate for 60 minutes
+9. Centrifuge 10 minutes at 13,000-15,000 × g
+10. Without dislodging the pellet, discard the supernatant and allow the remaining acetone to evaporate from the uncapped tube in the fumehood (room temperature ~ 30 minutes)
+11. Resuspend the pellet in 100 uL of 100 mM Tris
