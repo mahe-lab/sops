@@ -22,6 +22,7 @@
 
 ## Electrophoresis:
 
+[Agarose Band Excision](agarose_gel_band_excision.md)<br>
 
 ## Blotting:
 
