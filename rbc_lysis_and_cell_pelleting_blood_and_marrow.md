@@ -1,5 +1,5 @@
 
-### protocol_header
+### protocol
 - Protocol: RBC Lysis & Cell Pelleting, Blood & Bone Marrow
 - Faculty: Cumming School of Medicine
 - Institute: Charbonneau Cancer Institute
