@@ -4,6 +4,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="mahe-lab_style.css">
 		<title>MAHELAB Standard Operating Procedure</title>
+		<div> <h5> <a href="https://mahe-lab.github.io/sops/index.html">Return to SOP Index</a></h5>
+		</div>
 	</head>
 	<body>
 		<div>
@@ -188,11 +190,13 @@
 				}
 				else {
 					console.log(first)
-					for(i=0; i<rest.length; i++) {
-						if(rest[i] !== "") {
-							var row = document.getElementById(first).insertRow(i+1);
-							var cell = row.insertCell(0);
-							cell.innerHTML = (rest[i].replace(/^- /,"")).replace(/(https?:\/\/[^\s]+)/g, (url) => {return '<a href="' + url + '">' + url + '</a>';});
+					if(first != null) {
+						for(i=0; i<rest.length; i++) {
+							if(rest[i] !== "") {
+								var row = document.getElementById(first).insertRow(i+1);
+								var cell = row.insertCell(0);
+								cell.innerHTML = (rest[i].replace(/^- /,"")).replace(/(https?:\/\/[^\s]+)/g, (url) => {return '<a href="' + url + '">' + url + '</a>';});
+							}
 						}
 					}
 				}
