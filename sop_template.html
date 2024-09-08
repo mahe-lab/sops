@@ -151,6 +151,7 @@
 			}
 			function processLine(section) {
 				let [first, ...rest] = section.split('\n');
+				console.log(first)
 				if(first === "protocol") {
 					for(i=0; i<rest.length; i++) {
 						if(rest[i] !== "") {
@@ -189,7 +190,6 @@
 					document.head.appendChild(js_part);
 				}
 				else {
-					console.log(first)
 					if(first != null) {
 						for(i=0; i<rest.length; i++) {
 							if(rest[i] !== "") {
