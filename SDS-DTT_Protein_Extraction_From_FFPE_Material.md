@@ -1,4 +1,4 @@
-### protocol_header
+### protocol
 - Protocol: SDS/DTT Protein Extraction From FFPE Material
 - Faculty: Cumming School of Medicine
 - Institute: Charbonneau Cancer Institute
