@@ -12,14 +12,11 @@
 - Requires Pre-Authorization by PI
 
 ### hazards
-- dsDNA HS Reagent: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32851COMPONENTA_MTR-NALT_EN.pdf
-- dsDNA HS Buffer: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32851COMPONENTB_MTR-NALT_EN.pdf
-- dsDNA HS DNA Standard 1: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32851COMPONENTC_MTR-NALT_EN.pdf
-- dsDNA HS DNA Standard 2: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32851COMPONENTD_MTR-NALT_EN.pdf
-- RNA HS Reagent: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32852COMPONENTA_MTR-NALT_EN.pdf
-- RNA HS Buffer: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32852COMPONENTB_MTR-NALT_EN.pdf
-- RNA HS Standard 1: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32852COMPONENTC_MTR-NALT_EN.pdf
-- RNA HS Standard 2: https://assets.thermofisher.com/TFS-Assets%2FLSG%2FSDS%2FQ32852COMPONENTD_MTR-NALT_EN.pdf
+- Qubit Protein Assay Reagent: https://assets.thermofisher.com/TFS-Assets/LSG/SDS/Q33212COMPONENTA_MTR-NALT_EN.pdf
+- Qubit Protein Buffer: https://assets.thermofisher.com/TFS-Assets/LSG/SDS/Q33212COMPONENTB_MTR-NALT_EN.pdf
+- Qubit Protein Standard 1: https://assets.thermofisher.com/TFS-Assets/LSG/SDS/Q33212COMPONENTC_MTR-NALT_EN.pdf
+- Qubit Protein Standard 2: https://assets.thermofisher.com/TFS-Assets/LSG/SDS/Q33212COMPONENTD_MTR-NALT_EN.pdf
+- Qubit Protein Standard 3: https://assets.thermofisher.com/TFS-Assets/LSG/SDS/Q33212COMPONENTE_MTR-NALT_EN.pdf
 
 ### ppe
 - Lab Coat
@@ -30,9 +27,8 @@
 - Pre-PCR Bench
 
 ### references
-- Qubit 4.0 Manual:
-- Qubit dsDNA hs Full Protocol: 
-- Qubit RNA hs Full Protocol: 
+- Qubit 4.0 Manual: https://assets.thermofisher.com/TFS-Assets/LSG/manuals/MAN0017209_Qubit_4_Fluorometer_UG.pdf
+- Qubit Protein Assay Full Manufacturer Protocol: https://assets.thermofisher.com/TFS-Assets/LSG/manuals/Qubit_Protein_Assay_UG.pdf
 
 ### emergency
 - See SDS
@@ -133,10 +129,11 @@ function calculate() {
 ### procedures
 1. Add 10 uL of standard 1 to 190 uL working solution
 2. Add 10 uL of standard 2 to 190 uL working solution
-3. Add 5 uL of each query specimen to 195 uL working solution
-4. Vortex each tube x 5 seconds; incubate the tubes at room temperature x 2 minutes
-5. Tap to wake the Qubit; select the appropriate specimen and assay type
-6. Read the standards
-7. Read each query specimen one at a time, ensuring that specimen volume is set accordingly (ie at 5 uL); record the concentrations (in ng/uL)
-8. Update the specimen database with the concentrations
-9. Any leftover working solution should be stored in the 4C fridge
+3. Add 10 uL of Standard 3 to 190 uL working solution
+4. Add 5 uL of each query specimen to 195 uL working solution
+5. Vortex each tube x 5 seconds; incubate the tubes at room temperature x 2 minutes
+6. Tap to wake the Qubit; select the appropriate specimen and assay type
+7. Read the standards
+8. Read each query specimen one at a time, ensuring that specimen volume is set accordingly (ie at 5 uL); record the concentrations (in ng/uL)
+9. Update the specimen database with the concentrations
+10. Any leftover working solution should be stored in the 4C fridge
