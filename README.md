@@ -1,5 +1,9 @@
 ## MAHELAB Standard Operating Procedures
 
+## Templates:
+
+[SOP Template][sop_template.md)<br>
+
 ## Enrichment:
 [RBC Lysis and Cell Pelleting of Blood and Bone Marrow](rbc_lysis_and_cell_pelleting_blood_and_marrow.md)<br>
 
