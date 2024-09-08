@@ -27,7 +27,7 @@
 - Pre-PCR bench
 
 ### references
-- 
+- NA
 
 ### emergency
 - If skin/eye contact with chemicals, flush aggressively and continuously with water using an eyewash, sink or shower
@@ -43,7 +43,7 @@
 - Dispose of tips/tubes in biohazard bags or tubs
 
 ### maintenance
-- 
+- NA
 
 ### before_starting
 - Ensure specimens are accessioned and that sufficient labelled tubes are available
