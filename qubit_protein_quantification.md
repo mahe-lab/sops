@@ -48,7 +48,7 @@
 - NOTE: ONLY Qubit tubes can be used with the Qubit instrument
 - NOTE: ONLY label Qubit tubes on the top cap
 - NOTE: new standards need to be read whenever a new batch of working solution is made
-- NOTE: ensure that the correct Qubit reagent and Qubit buffer are used (i.e. DNA hs or RNA hs)
+- NOTE: ensure that the correct Qubit reagent and Qubit buffer are used (i.e. Qubit Protein)
 
 ### calculator
 ~~~~
