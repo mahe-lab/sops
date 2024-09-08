@@ -13,8 +13,7 @@
 - Requires Pre-Authorization by PI
 
 ### hazards
-- Acetone is volatile, flammable and toxic; see SDS
-- See SDS: https://www.fishersci.com/msds?productName=AC177170100&productDescription=ACETO
+- Acetone is volatile, flammable and toxic; see SDS: https://www.fishersci.com/msds?productName=AC177170100&productDescription=ACETO
 
 ### ppe
 - Lab Coat
