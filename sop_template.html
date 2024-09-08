@@ -151,7 +151,6 @@
 			}
 			function processLine(section) {
 				let [first, ...rest] = section.split('\n');
-				console.log(first)
 				if(first === "protocol") {
 					for(i=0; i<rest.length; i++) {
 						if(rest[i] !== "") {
@@ -193,6 +192,7 @@
 					if(first != null) {
 						for(i=0; i<rest.length; i++) {
 							if(rest[i] !== "") {
+								console.log(first)
 								var row = document.getElementById(first).insertRow(i+1);
 								var cell = row.insertCell(0);
 								cell.innerHTML = (rest[i].replace(/^- /,"")).replace(/(https?:\/\/[^\s]+)/g, (url) => {return '<a href="' + url + '">' + url + '</a>';});
