@@ -25,13 +25,17 @@
 - Nitrile Gloves
 
 ### where
-- add
+- Fumehood
+- Pre-PCR Bench (casting and electrophoreis only)
 
 ### references
-- add 
+- ADD
 
 ### emergency
 - See SDS
+- If skin/eye contact with chemicals, flush aggressively and continuously with water using an eyewash, sink or shower
+- Use spill kit to clean up small spills; Contact maintenance and log incident for large spills
+- Contact emergency services and log any injuries
 
 ### cleanup
 - Wipe down work surfaces with 70% isopropanol
@@ -41,10 +45,14 @@
 - Tips/Tubes should be disposed of in yellow biohazard bag/tub
 
 ### maintenance
-- add
+- rinse equipment with distilled water after use
+- DO NOT USE UNIVERSAL CLEANER ON GEL APARATUS (This will cause caustic damage)
+- Can wipe down glass plates with isopropanol to remove debris and ensure re-use without leaks
 
 ### before_starting
-- add
+- Prepare 0.5M Tris (pH 6.8): in a beaker, dissolve 6g Tris base in 60mL ddH2O (heat/stir) and adjust pH 6.8 with 12 M HCL (slowly, as an overshoot is not salvageable); pout into 100mL graduated cylinder and top off to 100mL with ddH2O, sore in a labled 100mL bottle at 4°C
+- Prepare 1.5M Tris (pH 8.8):  in a beaker, dissolve 18.15g Tris base in 60mL ddH2O (heat/stir) and adjust pH 8.8 with 12 M HCL (slowly, as an overshoot is not salvageable); pout into 100mL graduated cylinder and top off to 100mL with ddH2O, sore in a labled 100mL bottle at 4°C
+- Prepare 10% w/v SDS:
 
 ### calculator
 ~~~~
