@@ -4,8 +4,8 @@
 - Faculty: Cumming School of Medicine
 - Institute: Charbonneau Cancer Institute
 - Site: Arthur J.E. Child Comprehensive Cancer Center, YC
-- Date: add
-- Version: add
+- Date: 9SEPT2024
+- Version: 1
 - Approver: ermahe@ucalgary.ca
 
 ### authorization
@@ -13,7 +13,11 @@
 - Requires Pre-Authorization by PI
 
 ### hazards
-- add
+- Acrylamide is a potent neurotoxin and is absorbed through the skin. Powdered and stock liquid acrylamide solutions should be handled in the fumehood
+- 2-mercaptoethanol is toxic and very pungent in smell. handle in the fumehood
+- TEMED (N,N,N',N'-tetramethylethylenediamine) is flammable/ volitile and toxic, handle in the fumehood
+- APS is highly reactive/flammable and is an oxidizer; handle gently, and dispense only a small amount
+- Care must be taken during electrophoresis to avoid electric shock
 
 ### ppe
 - Lab Coat
