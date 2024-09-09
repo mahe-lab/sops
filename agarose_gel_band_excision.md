@@ -26,7 +26,7 @@
 - Post-PCR bench
 
 ### references
-- add 
+- See QIAGEN handbook 
 
 ### emergency
 - If skin/eye contact with chemicals, flush aggressively and continuously with water using an eyewash, sink or shower
@@ -63,9 +63,9 @@
     <tr><td>Scan/enter Accession Number</td><td>W1 (mg)</td><td>W2 (mg)</td><td>Volume Buffer QG (uL)</td><td>Volume Isopropanol (uL)</td></tr>
 </table>
 <table id="table1">
-    <tr><td><input type="text" size="10px" id="00"/></td> <td><input type="text" size="10px" id="01"/></td> <td><input type="text" size="10px" id="02"/></td><td><input readonly type="text" size="10px" id="03"/></td><td><input readonly type="text" size="10px" id="04"/></td></tr>
+    <tr><td><input type="text" size="100px" id="00"/></td> <td><input type="text" size="10px" id="01"/></td> <td><input type="text" size="10px" id="02"/></td><td><input readonly type="text" size="10px" id="03"/></td><td><input readonly type="text" size="10px" id="04"/></td></tr>
     
-    <tr><td><input type="text" size="10px" id="10"/></td><td><input type="text" size="10px" id="11"/></td><td><input type="text" size="10px" id="12"/></td><td><input readonly type="text" size="10px" id="13"/></td><td><input readonly type="text" size="10px" id="14"/></td></tr>
+    <tr><td><input type="text" size="100px" id="10"/></td><td><input type="text" size="10px" id="11"/></td><td><input type="text" size="10px" id="12"/></td><td><input readonly type="text" size="10px" id="13"/></td><td><input readonly type="text" size="10px" id="14"/></td></tr>
 </table>
 <br>
 <button type="button" onclick="addRows()">Add Rows</button>
@@ -77,9 +77,14 @@ function addRows() {
     var tcols = table.rows[0].cells.length;
     var row = table.insertRow(trows);
     for (var i=0;i<tcols;i++) {
-    var txt = document.createElement('input')
+        var txt = document.createElement('input')
         txt.setAttribute('type','text');
-        txt.setAttribute('size','10px');
+        if(i == 0) {
+            txt.setAttribute('size','100px');
+        }
+        else {
+            txt.setAttribute('size','10px');
+        }
         txt.setAttribute('id',`${trows}${i}`);
         if(i == tcols-2 || i == tcols-1) {
             txt.setAttribute('readonly','readonly')
