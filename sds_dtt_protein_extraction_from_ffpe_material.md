@@ -47,8 +47,9 @@
 
 ### before_starting
 - Ensure specimens are accessioned and that sufficient labelled tubes are available
+- Block out approximately 3 hours and 30 minutes
 - If required, make 1M Tris stock: Dissolve 121 g Tris base in 800 ml ddH2O; warm to dissolve as required; adjust to desired pH with concentrated HCl (approximately 42 mL HCl is needed to achieve pH 8.0 solution); top up to 1L total volume with ddH2O
-- If required, make 10x SDS-Tris Stock: Dissolve 40 g SDS in ~80 mL of 1M Tris solution; warm to dissolve as required; add additional 1M Tris up to 100 mL; store at 4°C
+- If required, make 10x SDS-Tris Stock: Dissolve 40 g SDS in ~80 mL of 1M Tris solution; warm to dissolve as required (place container in boiling water and mix agressively until clear, needs to be done every use of 10x SDS-Tris Stock); add additional 1M Tris up to 100 mL; store at 4°C
 - If required, make 1M DTT Stock: Slowly dissolve 1.55 g of DTT in 10 mL ddH2O, dispense into Eppendorf tubes in 1-mL aliquots, and store in the dark (eg wrapped in foil) at -20°C
 - Enter the accession numbers of the specimens in the table below to calculate the required volumes of reagents required
 
@@ -136,13 +137,13 @@ function calculate() {
 1. IF CURLS/SCROLLS ARE PROVIDED: Ensure the tube(s) are correctly labelled; move to step 5
 2. IF SLIDES ARE PROVIDED:
 3. If coverslipped, soak with xylene in a Coplin jar in fume hood for ~4 hours; use gentle traction (applied using forceps or another slide) to remove the coverslip
-4. Use fresh blade to scrape off the materials into a labelled 1.5 mL microfuge tube
+4. Use fresh blade to scrape off the materials into a labelled 1.5 mL microfuge tube, try to remove the wax as one piece by curling it before sliding it into a tube.  After each slide tap tube against desktop to move material to the bottem to mitigate static electricity.
 5. In the fumehood, add 1 ml xylene per labelled tube containing the FFPE tissue materials.
 6. Vortex 10 s and incubate 5 min at RT
 7. Centrifuge 3 min at 16,000 × g at RT and pipette off the supernatant
 8. In the fumehood, add 1 ml xylene per labelled tube containing the FFPE tissue materials.
 9. Vortex 10 s and incubate 5 min at RT
-10. Centrifuge 3 min at 16,000 × g at RT and pipette off the supernatant
+10. Centrifuge 3 min at 16,000 × g at RT and pipette off the supernatant.  Pellet can be transparent and difficult to see, tip tube sideways and press the pipette against the tube wall while pipetting off supernatent to avoid removing the pellet.  Put supernatants in organic waste. 
 11. In the fumehood, add 1 ml 100 % ethanol per tube
 12. Vortex 10 s and incubate 5 min at RT
 13. Centrifuge 3 min at 16,000 × g at RT and pipette off the supernatant
@@ -153,7 +154,7 @@ function calculate() {
 18. Vortex 10 s and incubate 5 min at RT
 19. Centrifuge 3 min at 16,000 × g at RT and pipette off the supernatant
 20. Spin down, remove all remaining supernatant and let the tube stand open in the hood for 5 min to dry the pellet
-21. Add ~100 μL extraction buffer per ~10 mg tissue and gently pipette up & down to dissolve
+21. Add ~100 μL extraction buffer per ~10 mg tissue and gently pipette up & down to dissolve (Typical of 5 extracted slides)
 22. Incubate at 100 °C for 20 min at 500 rpm in the thermomixer
 23. Incubate at 60 °C for 2 h at 500 rpm in the thermomixer
 24. Centrifuge for 10 min at 16,000 × g, collect the extracted protein supernatant and transfer it to a clean labelled tube
