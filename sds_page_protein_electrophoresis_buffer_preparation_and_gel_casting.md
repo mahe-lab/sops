@@ -1,6 +1,6 @@
 
 ### protocol
-- Protocol: add
+- Protocol: SDS Protein Electrophoresis Preparation and Casting
 - Faculty: Cumming School of Medicine
 - Institute: Charbonneau Cancer Institute
 - Site: Arthur J.E. Child Comprehensive Cancer Center, YC
