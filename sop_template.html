@@ -11,6 +11,7 @@
 	<body>
 		<div id="tp">
 			<h1>MAHELAB Standard Operating Procedure</h1>
+			<h5 hidden id="datetime">Protocol Date: </h5>
 			<table id="protocol">
 				<!-- two column table -->
 				<tr><td> </td><td> </td></tr>
@@ -117,6 +118,10 @@
 	<foot>
 		<script type="text/javascript">
 			window.onload = run((location.search).replace("?",""));
+			var now = new Date();
+  			var datetime = now.toLocaleString();
+			var dt = document.getElementById("datetime").innerHTML;
+			document.getElementById("datetime").innerHTML = dt + datetime;
 			async function* makeTextFileLineIterator(fileURL) {
 				const response = await fetch(fileURL);
 				if (!response.ok) {
