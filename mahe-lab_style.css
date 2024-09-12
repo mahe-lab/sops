@@ -295,7 +295,7 @@ width:33%;
 }
 
 @media print {
-body * { visibility:hidden; }
+body * { visibility:none; }
 .printable * { visibility:visible; }
 #header, #footer { display:none; }
 }
