@@ -263,6 +263,9 @@ top:52px;
 }
 
 @media print, screen and (max-width: 720px) {
+#datetime {
+display: none;
+}
 body {
 word-wrap:break-word;
 }
@@ -281,6 +284,9 @@ word-wrap:normal;
 }
 
 @media print, screen and (max-width: 480px) {
+#datetime {
+display: none;
+}
 body {
 padding:15px;
 }
@@ -296,7 +302,7 @@ width:33%;
 
 @media print {
 div { display:none; }
-#tp, #calculator, #procs {
+#tp, #datetime, #calculator, #procs {
 display: block;
 }
 }
