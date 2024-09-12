@@ -56,6 +56,8 @@
 
 ### calculator
 
+
+
 ### procedures
 1. In the biosafety cabinet, pipette the specimens into their respective labelled 50 mL falcon tubes and place on ice; keep the specimen tubes in the rack to store the pipettes in while working
 2. Add 5x RLWS lysis buffer (eg if 5 mL specimen, pour in RLWS up to 30 mL total volume)
