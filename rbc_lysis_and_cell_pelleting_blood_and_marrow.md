@@ -9,10 +9,11 @@
 - Approver: ermahe@ucalgary.ca
 
 ### authorization
-- Requires completion of 
+- Requires Completion of Safety Training
+- Requires Pre-Authorization by PI
 
 ### hazards
--
+- All blood and bone marrow specimens should be considered infectious; universal precautions are required
 
 ### ppe
 - Lab Coat
@@ -20,16 +21,21 @@
 - Nitrile Gloves
 
 ### where
-- 
+- Biosafety Cabinet
+- Pre-PCR bench
 
 ### references
-- 
+- See UAMS Red Cell Lysis Protocol
 
 ### emergency
-- 
+- Spills are assumed to be infectious
+- Clean spills of blood/fluids using universal cleaning solution and/or 70% isopropanol surface disinfectant
+- Cuts/wounds/skin contact with infectious materials should be thoroughly cleaned, wounds cared for and immediately reported to WHS
+- Seek emergency medical attention as reasonably required
 
 ### cleanup
-- 
+- Use 70% isopropanol for surface cleaning (including biosafety cabinet)
+- Use bleach to clean waste container or any other blood-contaminated equipment
 
 ### waste
 - Dispose of specimen tubes/containers/pipettes or any other contaminated materials in biohazard bags/containers
@@ -37,7 +43,8 @@
 - Dispose of any unused 1x RBC Lysis Working Solution after 3 months of non-use
 
 ### maintenance
-- 
+- Centrifuge maintenance/cleaning may be required – see separate manual/SOP
+- Dispose of any unused 1x RBC Lysis Working Solution after 3 months of non-use
 
 ### before_starting
 - Disposable Plastic pipettes (one per specimen)
