@@ -295,14 +295,7 @@ width:33%;
 }
 
 @media print {
-body * {
-visibility:hidden;
-}
-.printable * {
-visibility: visible;
-padding:10px;
-font-size:10pt;
-color:var(--darkgray1);
-}
+body * { visibility:hidden; }
+.printable * { visibility:visible; }
 #header, #footer { display:none; }
 }
