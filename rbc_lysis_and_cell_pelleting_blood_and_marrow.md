@@ -55,8 +55,70 @@
 - 10x Stock RBC Lysis Solution is diluted to 1x RBC Lysis Working Solution (RLWS) with RNAse-free (or DEPC-sterile) on demand. Use the calculator below to determine the required volume
 
 ### calculator
-
-
+~~~~
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mahe-lab_style.css">
+        <title>MAHELAB SOP Calculator</title>
+    </head>
+<body>
+<!---configure reagent prep details here, with calculations based on the table inputs below--->
+<table id="table0">
+    <tr><td>Scan/enter Accession Number</td><td>Estimated Total Volume (mL)</td></tr>
+</table>
+<table id="table1">
+    <tr> <td><input type="text" size="10px" id="00"/></td> <td><input type="text" size="10px" id="01"/></td> </tr>
+    <tr> <td><input type="text" size="10px" id="10"/></td> <td><input type="text" size="10px" id="11"/></td> </tr>
+</table>
+<br>
+<button type="button" onclick="addRows()">Add Rows</button>
+<br>
+<!--- insert the necessary calculations here.--->
+<table id="table2">
+    <tr><td></td><td></td></tr>
+    <tr><td>Reagent/Input Calculations:</td><td></td></tr>
+    <tr><td>Volume of (1x) RLWS required (mL): </td>
+<!--- calculation: --->
+    <td><input readonly type="text" size="10px" id="calc1"/></td></tr>
+</table>
+<br>
+<button type="button" onclick="calculate()">Calculate</button>
+<script type='text/javascript'>
+function addRows() {
+    var table = document.getElementById('table1');
+    var trows = table.rows.length;
+    var tcols = table.rows[0].cells.length;
+    var row = table.insertRow(trows);
+    for (var i=0;i<tcols;i++) {
+    var txt = document.createElement('input')
+        txt.setAttribute('type','text');
+        txt.setAttribute('size','10px');
+        txt.setAttribute('id',`${trows}${i}`);
+        var col = row.insertCell(i);
+        col.appendChild(txt);
+    }
+}   
+function calculate() {
+    var count = 0;
+    var table = document.getElementById('table1');
+    var trows = table.rows.length;
+    for (var i=0;i<trows;i++) {
+        var vol = parseFloat(document.getElementById(`${i}1`).value);
+        if( isNaN(vol) ) {}
+        else {
+            count += 5*vol;
+        }
+    }
+    if (count>0) {
+        document.getElementById('calc1').value = count;
+    }
+}
+</script>
+</body>
+</html>
+~~~~
 
 ### procedures
 1. In the biosafety cabinet, pipette the specimens into their respective labelled 50 mL falcon tubes and place on ice; keep the specimen tubes in the rack to store the pipettes in while working
