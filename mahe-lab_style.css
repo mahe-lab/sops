@@ -300,6 +300,7 @@ width:33%;
 @media print {
 div { display:none; }
 #tp, #datetime, #calculator, #procs {
+font-size:10px;
 display: block;
 }
 }
