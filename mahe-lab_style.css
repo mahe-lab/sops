@@ -295,8 +295,8 @@ width:33%;
 }
 
 @media print {
-body * { display:none; }
-.printable * { display:contents;
-visibility:visible; }
-#header, #footer { display:none; }
+div { display:none; }
+#tp, #calculator, #procs {
+display: block;
+}
 }
