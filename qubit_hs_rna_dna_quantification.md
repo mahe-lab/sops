@@ -35,7 +35,7 @@
 - Qubit RNA hs Full Protocol: https://assets.thermofisher.com/TFS-Assets/LSG/manuals/Qubit_RNA_HS_Assay_UG.pdf
 
 ### emergency
-- See SDS
+- See hazard documents listed above
 
 ### cleanup
 - Wipe down work surfaces with 70% isopropanol
