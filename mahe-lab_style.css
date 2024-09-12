@@ -304,5 +304,5 @@ padding:0.4in;
 font-size:12pt;
 color:var(--darkgray1);
 }
-#header, #footer, .btn { display:none; }
+#header, #footer { display:none; }
 }
