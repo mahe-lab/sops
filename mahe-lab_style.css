@@ -23,6 +23,9 @@ transform: rotate(270deg);
 ::-webkit-input-placeholder {
 font-style: italic;
 }
+#datetime {
+display: none;
+}
 
 table {
 width:100%;
@@ -263,9 +266,6 @@ top:52px;
 }
 
 @media print, screen and (max-width: 720px) {
-#datetime {
-display: none;
-}
 body {
 word-wrap:break-word;
 }
@@ -284,9 +284,6 @@ word-wrap:normal;
 }
 
 @media print, screen and (max-width: 480px) {
-#datetime {
-display: none;
-}
 body {
 padding:15px;
 }
