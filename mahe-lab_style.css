@@ -302,9 +302,10 @@ width:33%;
 
 @media print {
 div { display:none; }
-.button { display:none; }
 #tp, #datetime, #calculator, #procs {
 display: block;
 font-size:9px;
 }
+.button { display:none; }
+.header_image { display:none; }
 }
