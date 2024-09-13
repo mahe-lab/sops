@@ -23,7 +23,7 @@ transform: rotate(270deg);
 ::-webkit-input-placeholder {
 font-style: italic;
 }
-
+#datetime { display:none; }
 table {
 width:100%;
 table-layout: fixed;
