@@ -134,8 +134,6 @@ border:1px solid var(--lightgray1);
 overflow-x: auto;
 }
 
-
-
 img {
 max-width:100%;
 }
@@ -298,7 +296,7 @@ width:33%;
 }
 
 @media print {
-div { display:none; }
+div, .button { display:none; }
 #tp, #datetime, #calculator, #procs {
 font-size:10px;
 display: block;
