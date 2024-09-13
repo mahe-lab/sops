@@ -304,5 +304,6 @@ width:33%;
 div { display:none; }
 #tp, #datetime, #calculator, #procs {
 display: block;
+font-size:10px;
 }
 }
