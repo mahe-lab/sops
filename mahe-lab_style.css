@@ -228,13 +228,6 @@ background-color: var(--white);
 -webkit-font-smoothing:subpixel-antialiased;
 }
 
-@media print, screen and (max-width: 960px) {
-
-div.wrapper {
-width:auto;
-margin:0;
-}
-
 header, section, footer {
 float:none;
 position:static;
@@ -281,11 +274,6 @@ word-wrap:normal;
 }
 }
 
-@media print, screen and (max-width: 480px) {
-body {
-padding:15px;
-}
-
 header ul {
 width:99%;
 }
@@ -295,8 +283,20 @@ width:33%;
 }
 }
 
+@media print, screen and (max-width: 960px) {
+div.wrapper {
+width:auto;
+margin:0;
+}
+
+@media print, screen and (max-width: 480px) {
+body {
+padding:15px;
+}
+
 @media print {
-div, .button { display:none; }
+div { display:none; }
+button { display:none; }
 #tp, #datetime, #calculator, #procs {
 font-size:10px;
 display: block;
