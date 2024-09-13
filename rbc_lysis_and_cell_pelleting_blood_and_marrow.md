@@ -73,7 +73,7 @@
     <tr> <td><input type="text" size="10px" id="10"/></td> <td><input type="text" size="10px" id="11"/></td> </tr>
 </table>
 <br>
-<button type="button" onclick="addRows()">Add Rows</button>
+<button type="button" class="button" onclick="addRows()">Add Rows</button>
 <br>
 <!--- insert the necessary calculations here.--->
 <table id="table2">
@@ -84,7 +84,7 @@
     <td><input readonly type="text" size="10px" id="calc1"/></td></tr>
 </table>
 <br>
-<button type="button" onclick="calculate()">Calculate</button>
+<button type="button" class="button" onclick="calculate()">Calculate</button>
 <script type='text/javascript'>
 function addRows() {
     var table = document.getElementById('table1');
