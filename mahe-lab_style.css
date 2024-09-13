@@ -302,6 +302,7 @@ width:33%;
 
 @media print {
 div { display:none; }
+.icon-button { display:none; }
 #tp, #datetime, #calculator, #procs {
 display: block;
 font-size:10px;
