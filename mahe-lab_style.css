@@ -296,7 +296,6 @@ padding:15px;
 
 @media print {
 div { display:none; }
-button { display:none; }
 #tp, #datetime, #calculator, #procs {
 font-size:10px;
 display: block;
