@@ -68,8 +68,8 @@
     <tr><td><input type="text" size="10px" id="10"/></td><td><input type="text" size="10px" id="11"/></td><td><input type="text" size="10px" id="12"/></td><td><input readonly type="text" size="10px" id="13"/></td><td><input readonly type="text" size="10px" id="14"/></td></tr>
 </table>
 <br>
-<button type="button" onclick="addRows()">Add Rows</button>
-<button type="button" onclick="calculate()">Calculate</button>
+<button type="button" class="button" onclick="addRows()">Add Rows</button>
+<button type="button" class="button" onclick="calculate()">Calculate</button>
 <script type='text/javascript'>
 function addRows() {
     var table = document.getElementById('table1');
