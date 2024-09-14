@@ -25,7 +25,7 @@
 - Pre-PCR bench
 
 ### references
-- See UAMS Red Cell Lysis Protocol
+- [UAMS Red Cell Lysis Protocol]()
 
 ### emergency
 - Spills are assumed to be infectious
