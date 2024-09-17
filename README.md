@@ -22,6 +22,7 @@
 
 ## Electrophoresis:
 
+[BioMax Agarose Gel Electrophoresis](biomax_agarose_gel_electrophoresis.md)<br>
 [Agarose Band Excision](agarose_gel_band_excision.md)<br>
 [SDS-Page Protein Electrophoresis and Gel Casting](sds_page_protein_electrophoresis_buffer_preparation_and_gel_casting.md)<br>
 
