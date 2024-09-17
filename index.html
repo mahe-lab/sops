@@ -6,12 +6,7 @@
         <link rel="stylesheet" href="mahe-lab_style.css">
         <title>MAHELAB Standard Operating Procedures</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-	    
-    </body>
-	<foot>
-		<script type="text/javascript">
+	    <script type="text/javascript">
 			window.onload = run();
 			async function* makeTextFileLineIterator(fileURL) {
 				const response = await fetch(fileURL);
@@ -45,6 +40,7 @@
 				for await (const section of makeTextFileLineIterator('https://mahe-lab.github.io/sops/README.md')) {
 					processLine(section);
 				}
+				document.footer.innerHTML += "<br><h5><b>MAHELAB</b> | A Translational Research Laboratory of Charbonneau Cancer Institute | Cumming School of Medicine | University of Calgary<br>Copyright &copy; 2024 All Rights Reserved by Etienne Mahe | <a href=\"mailto:ermahe@ucalgary.ca\">Contact</a></h5><br>";
 			}
 			function processLine(section) {
 				let [first, ...rest] = section.split('\n');
@@ -64,12 +60,11 @@
 				newDiv.innerHTML += "<br><br>";
 				document.body.appendChild(newDiv);
 			}
-		</script>  
-	</foot>
-    	<footer>
-	      	<br>
-		<h5><b>MAHELAB</b> | A Translational Research Laboratory of Charbonneau Cancer Institute | Cumming School of Medicine | University of Calgary<br>
-		Copyright &copy; 2024 All Rights Reserved by Etienne Mahe | <a href="mailto:ermahe@ucalgary.ca">Contact</a></h5>
-	    	<br>
+		</script>
+	    
+	</head>
+	<body>	    
+	</body>
+	<footer>
 	</footer>
 </html>
