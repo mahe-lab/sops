@@ -10,6 +10,7 @@
 	<body>	    
 	</body>
 	<footer>
+		<br><h5><b>MAHELAB</b> | A Translational Research Laboratory of Charbonneau Cancer Institute | Cumming School of Medicine | University of Calgary<br>Copyright &copy; 2024 All Rights Reserved by Etienne Mahe | <a href=\"mailto:ermahe@ucalgary.ca\">Contact</a></h5><br>
 	</footer>
 	<script type="text/javascript">
 			window.onload = run();
@@ -45,9 +46,6 @@
 				for await (const section of makeTextFileLineIterator('https://mahe-lab.github.io/sops/README.md')) {
 					processLine(section);
 				}
-				let newDiv = document.createElement('div');
-				newDiv.innerHTML += "<br><h5><b>MAHELAB</b> | A Translational Research Laboratory of Charbonneau Cancer Institute | Cumming School of Medicine | University of Calgary<br>Copyright &copy; 2024 All Rights Reserved by Etienne Mahe | <a href=\"mailto:ermahe@ucalgary.ca\">Contact</a></h5><br>";
-				document.footer.appendChild(newDiv);
 			}
 			function processLine(section) {
 				let [first, ...rest] = section.split('\n');
