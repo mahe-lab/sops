@@ -26,7 +26,7 @@
 - Post-PCR Bench
 
 ### references
-- add 
+- See BioMax Manual: MAHELAB_SOP_Assets/BioMax_QS710_Manual.pdf 
 
 ### emergency
 - If skin/eye contact with chemicals, flush aggressively and continuously with water using an eyewash, sink or shower
