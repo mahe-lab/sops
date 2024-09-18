@@ -47,10 +47,7 @@
 - If required, make 50xTAE stock:
 - Prepare 0.5 M EDTA: 93.05 g of EDTA disodium salt (MW=372.24 g/mol); dissolve in 400 mL ddH2O and adjust the pH to 8; top up to 500 mL with ddH2O
 - Weigh out 242 g of Tris-base (MW = 121.14 g/mol) and dissolve in ~700 mL of ddH2O; carefully add 57.1 mL of 100 % glacial acetic acid (in fumehood!) and 100 mL of 0.5 M EDTA (pH 8.0); adjust to a final volume of 1 L with ddH2O
-
-- Prepare 1xTAE buffer:
-- Small size gel: 400 mL required: 8 mL 50x stock in 392 mL ddH2O
-- Large size gel: 600 are required: 12 mL 50x stock in 588 mL ddH2O
+- Prepare 1xTAE buffer: Small size gel: 400 mL required: 8 mL 50x stock in 392 mL ddH2O; Large size gel: 600 are required: 12 mL 50x stock in 588 mL ddH2O
 
 ### calculator
 ~~~~
