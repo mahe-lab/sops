@@ -130,14 +130,10 @@ function calculate() {
 </html>
 ~~~~
 ### procedures
-1. Weigh out (in an Erlenmeyer flask) the appropriate amount of agarose
-- For 1% Agarose in a small size gel: 0.5 g & 50 mL 1xTAE
-- For 1% Agarose in a large size gel: 1.0 g & 100 mL 1xTAE
+1. Weigh out (in an Erlenmeyer flask) the appropriate amount of agarose: For 1% Agarose in a small size gel mix 0.5 g Agarose in 50 mL 1xTAE; for 1% Agarose in a large size gel mix 1.0 g Agarose in 100 mL 1xTAE
 2. Microwave agarose slurry on high in 30 s increments until boiling
 3. Allow agarose solution to cool to ~60C
-4. Add Ethidium bromide:
-- 25 uL for small gel
-- 50 uL for large gel
+4. Add Ethidium bromide: 25 uL for small gel; 50 uL for large gel
 5. Assemble gel cast apparatus and insert combs (one for small gel and 1-2 for large gel)
 6. Pour in agarose; remove bubbles with a pipette tip; allow to cool for at least 30 minutes
 7. Remove comb(s) and remove the cast gel base from the casting stand.
