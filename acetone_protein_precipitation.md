@@ -47,6 +47,7 @@
 - This protocol assumes that protein extraction has already been performed, and that removal of extract buffer is required (i.e. to remove SDS, DTT, etc)
 - Well-cooled (-20C) acetone is required; overnight cooling may be required
 - This protocol assumes re-suspension will be performed in 100 mM Tris; ensure that sufficient 100 mM Tris is available for resuspension using the calculator below
+- To make 1M Tris stock: Dissolve 121 g Tris base in 800 ml ddH2O; warm to dissolve as required; adjust to desired pH with concentrated HCl (approximately 42 mL HCl is needed to achieve pH 8.0 solution); top up to 1L total volume with ddH2O
 
 ### calculator
 ~~~~
