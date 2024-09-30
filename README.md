@@ -6,7 +6,7 @@
 
 ## Enrichment:
 [RBC Lysis and Cell Pelleting of Blood and Bone Marrow](rbc_lysis_and_cell_pelleting_blood_and_marrow.md)<br>
-[Tissue Transfer](tissue_transfer.md)<br>
+[Tissue Transfer for Extraction](tissue_transfer_extraction.md)<br>
 
 ## Extraction:
 
