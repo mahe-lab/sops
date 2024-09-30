@@ -6,6 +6,7 @@
 
 ## Enrichment:
 [RBC Lysis and Cell Pelleting of Blood and Bone Marrow](rbc_lysis_and_cell_pelleting_blood_and_marrow.md)<br>
+[Tissue Transfer](tissue_transfer.md)<br>
 
 ## Extraction:
 
@@ -16,6 +17,7 @@
 
 [Qubit hs dsDNA/RNA Quantification](qubit_hs_rna_dna_quantification.md)<br>
 [Qubit Protein Quantification](qubit_protein_quantification.md)<br>
+[Iron Extraction and Quantification](iron_extraction_quantification.md)<br>
 
 ## PCR Protocols:
 
