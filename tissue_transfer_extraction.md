@@ -15,7 +15,7 @@
 ### hazards
 - MountQuick is toxic, volatile, flammable, and poisonous. See SDS
 - Scrape-blades/glass slides may cause sharps injury
-- 
+
 ### ppe
 - Lab Coat
 - Eye Protection
