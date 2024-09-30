@@ -1,6 +1,6 @@
 
 ### protocol
-- Protocol: MountQuick Tissue Transfer
+- Protocol: Tissue Transfer
 - Faculty: Cumming School of Medicine
 - Institute: Charbonneau Cancer Institute
 - Site: Arthur J.E. Child Comprehensive Cancer Center, YC
@@ -25,7 +25,7 @@
 - Fumehood
 
 ### references
-- add 
+- Technical notes can be found [here](MAHELAB_SOP_Assets/1-s2.0-S0023683723000041-mmc1.pdf) 
 
 ### emergency
 - Use spill kit to clean up small spills; Contact maintenance and log incident for large spills
