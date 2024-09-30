@@ -1,11 +1,11 @@
 
 ### protocol
-- Protocol: add
+- Protocol: MountQuick Tissue Transfer
 - Faculty: Cumming School of Medicine
 - Institute: Charbonneau Cancer Institute
 - Site: Arthur J.E. Child Comprehensive Cancer Center, YC
-- Version: add
-- Version Date: add
+- Version: 2
+- Version Date: 30MAY2024
 - Approver: ermahe@ucalgary.ca
 
 ### authorization
@@ -13,21 +13,24 @@
 - Requires Pre-Authorization by PI
 
 ### hazards
-- add
-
+- MountQuick is toxic, volatile, flammable, and poisonous. See SDS
+- Scrape-blades/glass slides may cause sharps injury
+- 
 ### ppe
 - Lab Coat
 - Eye Protection
 - Nitrile Gloves
 
 ### where
-- add
+- Fumehood
 
 ### references
 - add 
 
 ### emergency
-- See SDS
+- Use spill kit to clean up small spills; Contact maintenance and log incident for large spills
+- If skin/eye contact with chemicals, flush aggressively and continuously with water using an eyewash, sink or shower
+- Contact emergency services and log any injuries as required
 
 ### cleanup
 - Wipe down work surfaces with 70% isopropanol
@@ -35,12 +38,20 @@
 
 ### waste
 - Tips/Tubes should be disposed of in yellow biohazard bag/tub
+- Xylene/ethanol should be disposed of in chemical waste container (fumehood)
+- Sharps disposal: U of C approved biohazard bucket (benchtop)
 
 ### maintenance
 - add
 
 ### before_starting
-- add
+- Setup a 60°C oven/incubator
+- Identify the donor slide(s); if required, accession the specimen(s)
+- Scan/type in the accession numbers below for record keeping
+- If applicable, encircle the area(s) being transferred using a tungsten pen on the slide UNDERsurface
+- If applicable, soak the original slide(s) in xylene until coverslip(s) is/are easily removed without damage to the tissue section(s)
+- Run the slide(s) through several xylene soaks to ensure removal of residual mounting media as required
+- Allow slide(s) to dry in fume hood for 30-60 minutes after xylene soaks
 
 ### calculator
 ~~~~
