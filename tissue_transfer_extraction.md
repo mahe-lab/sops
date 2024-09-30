@@ -25,7 +25,7 @@
 - Fumehood
 
 ### references
-- Technical notes can be found [here](MAHELAB_SOP_Assets/1-s2.0-S0023683723000041-mmc1.pdf) 
+- Technical notes can be found here: https://mahe-lab.github.io/sops/MAHELAB_SOP_Assets/1-s2.0-S0023683723000041-mmc1.pdf
 
 ### emergency
 - Use spill kit to clean up small spills; Contact maintenance and log incident for large spills
@@ -102,7 +102,7 @@ function calculate() {
         var W2 = parseFloat(document.getElementById(`${i}2`).value);
         if( isNaN(W1) || isNaN(W2) || document.getElementById(`${i}0`).value == "") {}
         else {
-            document.getElementById(`${i}3`).value = Math.ceil(W2-W1);
+            document.getElementById(`${i}3`).value = Math.ceil(W1-W2);
         }
     }
 }
