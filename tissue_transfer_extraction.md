@@ -102,7 +102,7 @@ function calculate() {
         var W2 = parseFloat(document.getElementById(`${i}2`).value);
         if( isNaN(W1) || isNaN(W2) || document.getElementById(`${i}0`).value == "") {}
         else {
-            document.getElementById(`${i}3`).value = Math.ceil(W1-W2);
+            document.getElementById(`${i}3`).value = W1-W2;
         }
     }
 }
