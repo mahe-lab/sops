@@ -25,7 +25,7 @@
 - Pre-PCR bench
 
 ### references
-- [UAMS Red Cell Lysis Protocol](MAHELAB_SOP_Assets/UAMSRedCellLysisProtocol.pdf)
+- UAMS Red Cell Lysis Protocol: https://github.com/mahe-lab/sops/blob/main/MAHELAB_SOP_Assets/UAMSRedCellLysisProtocol.pdf
 
 ### emergency
 - Spills are assumed to be infectious
