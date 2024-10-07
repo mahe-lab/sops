@@ -277,26 +277,28 @@ function addCalcTable() {
 ### procedures
 1. In the fumehood, dissolve the mount quick curls in the glass volumetric tubes with 500 uL xylene
 2. Vortex gently and incubate 5 min at RT in the fumehood
-3. When the gel has fully dissolved, spin gently in the Dade centrifuge (low setting x 2 minutes; NOT Eppendorf centrifuge)
-4. Carefully pipette off the supernatant (discard in the organic waste in fumehood) without disturbing the tissue pellet
-5. Allow the pellet to dry fully in the fumehood (can be left overnight, without the stopper on, to allow for xylene to evaporate completely)
+3. When the gel has fully dissolved, spin gently in the Dade centrifuge on low x 2 minutes; NOTE: DO NOT USE the Eppendorf or other centrifuge, as these might fracture the flask!!
+4. Carefully pipette off the supernatant (discard in the organic waste in fumehood) without disturbing the pellet
+5. Allow the pellet to dry fully in the fumehood (can be left overnight, WITHOUT the stopper, to allow for xylene to evaporate completely)
 6. Add 500 uL 1M HCl and pipette carefully but aggressively (20 passes) to re-suspend the pellet
 7. Replace the stoppers and place the tube in the thermomixer set at 50°C with gentle rotation overnight
 8. Carefully add additional 1M NaOH up to the exact 1 mL volume indicated on the volumetric tube; allow tubes to stand (with stoppers in place) at RT x 30 minutes
 9. If not proceeding directly to quantification, the supernatant from step 8 can be stored in a labelled Eppendorf tube in the -20C freezer
 10.	Prepare a 1000 µg/dL (10 µg/mL) Iron Standard by mixing 40 µL of the 10 mg/dL kit Iron standard with 360 µL ddH2O in an Eppendorf tube (label the tube “#1”)
 11.	Prepare subsequent dilutions (mix well by pipetting up and down):
-#2: 80 uL from #1 with 20 uL ddH2O (this is 800 µg/dL of iron)
-#3: 60 uL from #1 with 40 uL ddH2O (this is 600 µg/dL of iron)
-#4: 40 uL from #1 with 60 uL ddH2O (this is 400 µg/dL of iron)
-#5: 30 uL from #1 with 70 uL ddH2O (this is 300 µg/dL of iron)
-#6: 20 uL from #1 with 80 uL ddH2O (this is 200 µg/dL of iron)
-#7: 10 uL from #1 with 90 uL ddH2O (this is 100 µg/dL of iron)
-#8: 100 uL ddH2O (this is 0 µg/dL of iron)
+#2: 80 uL from #1 with 20 uL ddH2O (800 µg/dL iron; 8 µg/mL iron)
+#3: 60 uL from #1 with 40 uL ddH2O (600 µg/dL iron; 6 µg/mL iron)
+#4: 40 uL from #1 with 60 uL ddH2O (400 µg/dL iron; 4 µg/mL iron)
+#5: 30 uL from #1 with 70 uL ddH2O (300 µg/dL iron; 3 µg/mL iron)
+#6: 20 uL from #1 with 80 uL ddH2O (200 µg/dL iron; 2 µg/mL iron)
+#7: 10 uL from #1 with 90 uL ddH2O (100 µg/dL iron; 1 µg/mL iron)
+#8: 100 uL ddH2O (0 µg/dL iron; 0 µg/mL iron)
 12.	Pipette 200 uL of WS into the wells of a 96-well optical plate (sufficient for each specimen and standard to be assessed in duplicate)
 13.	Transfer 50 uL of each of the above standards and query specimens into the appropriate wells, with duplicates performed
 14.	Tap the plate gently to mix and allow the plate to stand at RT for 40 minutes
 15.	Read optical density (OD) at 590 nm using a platereader
-16.	Generate a standard curve in excel by plotting ∆OD of the reference specimens ( ∆OD = ODi – OD8 ) with their respective concentrations (as above)
-17.	From this standard curve, use the query specimen ∆OD to calculate specimen iron concentration (report the average of the duplicates as well as the standard deviation for each specimen)
-18.	NOTE: if a query specimen ∆OD exceeds the standard curve (ie is higher than the highest measurement on the standard curve) a dilution of the specimen will need to be re-run to confirm accuracy of the concentration (the dilution factor can be approximated by dividing the ∆OD of reference #1 by the specimen measured ∆OD; dilute with 1M HCl)
+16.	EITHER use the above calculator tool OR generate a standard curve in excel by plotting the OD of the reference specimens with their respective concentrations
+17.	EITHER use the above calculator tool OR, from the standard curve, use the query specimen OD to calculate query specimen iron concentration (report the average of the duplicates as well as the standard deviation for each specimen)
+18.	NOTE: if a query specimen OD exceeds the standard curve upper limit (ie is higher than the highest measurement on the standard curve) a dilution of the specimen will need to be re-run to confirm accuracy of the concentration
+19.	NOTE: if a query specimen OD is less than the standard curve lower limit (ie is lower than the 0 µg/mL measurement on the standard curve), the specimen should be rejected and re-extraction will be required
+20.	EITHER use the above calculator tool OR use the measured specimen iron weights and total weights to calculate the g/g (µg/µg) ratio for each specimen
