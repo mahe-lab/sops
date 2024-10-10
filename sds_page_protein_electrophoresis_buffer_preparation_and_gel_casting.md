@@ -141,4 +141,4 @@ function calculate() {
 ~~~~
 ### procedures
 1. For one electrophoresis run: mix thoroughly 50 mL 10x running buffer in 450 mL ddH2O
-2. 
+2. Prepare the gel cassette sandwich
