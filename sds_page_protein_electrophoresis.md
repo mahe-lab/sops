@@ -57,8 +57,6 @@
 - Specimen buffer (reducing): In a 15mL Falcon tube, combine 3.55 mL ddH2O; 1.25 mL 0.5 M Tris (pH 6.8); 2.5 mL glycerol; 2.0 mL 10% (w/v) SDS; 0.2 mL 0.5% (w/v) bromophenol blue. Store at RT
 - 10x Running Buffer: 30.3 g Tris base; 144 g glycine; 10 g SDS in 1L. NO pH ADJUSTMENT. Store at 4°C
 
-- 
-
 ### calculator
 ~~~~
 <!DOCTYPE html>
