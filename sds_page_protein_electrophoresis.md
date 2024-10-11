@@ -78,7 +78,7 @@
 <body>
 <!---configure reagent prep details here--->
 <table id="table1">
-<tr><td>Scan/enter the specimen accession numbers:</td><td><td><input type="number" id="01" min="1" step="1" value="2"></td></tr>
+<tr><td>Number of gels to be cast:</td><td><input type="number" id="01" min="1" step="1" value="2"></td></tr>
 </table>
 <br>
 <button type="button" class="button" onclick="calculate()">Calculate</button>
@@ -88,28 +88,19 @@
 	<tr><td>Calculations for running buffer:</td><td></td></tr>
 	<tr><td>10x Running buffer stock (mL):</td>
 	<td><input readonly type="text" size="10px" id="calc20"/></td></tr>
-	<tr><td>ddH2O for 1x running buffer (mL):</td>
-	<td><input readonly type="text" size="10px" id="calc21"/></td></tr>
+	<tr><td>ddH2O for 1x running buffer (mL):</td><td><input readonly type="text" size="10px" id="calc21"/></td></tr>
 	<tr><td></td><td></td></tr>
 	<tr><td>Calculations for 10% Resolvibng Gel(s):</td><td></td></tr>
-	<tr><td>30% bis/tris acrylamide stock (mL):</td>
-	<td><input readonly type="text" size="10px" id="calc22"/></td></tr>
-	<tr><td>1.5M Tris (pH 8.8) stock (mL):</td>
-	<td><input readonly type="text" size="10px" id="calc23"/></td></tr>
-	<tr><td>Volume ddH2O (mL):</td
-	<td><input readonly type="text" size="10px" id="calc24"/></td></tr>
-	<tr><td>10% SDS (uL):</td>
-	<td><input readonly type="text" size="10px" id="calc25"/></td></tr>
+	<tr><td>30% bis/tris acrylamide stock (mL):</td><td><input readonly type="text" size="10px" id="calc22"/></td></tr>
+	<tr><td>1.5M Tris (pH 8.8) stock (mL):</td><td><input readonly type="text" size="10px" id="calc23"/></td></tr>
+	<tr><td>Volume ddH2O (mL):</td><td><input readonly type="text" size="10px" id="calc24"/></td></tr>
+	<tr><td>10% SDS (uL):</td><td><input readonly type="text" size="10px" id="calc25"/></td></tr>
 	<tr><td></td><td></td></tr>
 	<tr><td>Calculations for 4% Resolvibng Gel(s):</td><td></td></tr>
-	<tr><td>30% bis/tris acrylamide stock (mL):</td>
-	<td><input readonly type="text" size="10px" id="calc26"/></td></tr>
-	<tr><td>0.5M Tris (pH 8.8) stock (mL):</td>
-	<td><input readonly type="text" size="10px" id="calc27"/></td></tr>
-	<tr><td>Volume ddH2O (mL):</td>
-	<td><input readonly type="text" size="10px" id="calc28"/></td></tr>
-	<tr><td>10% SDS (uL):</td>
-	<td><input readonly type="text" size="10px" id="calc29"/></td></tr>
+	<tr><td>30% bis/tris acrylamide stock (mL):</td><td><input readonly type="text" size="10px" id="calc26"/></td></tr>
+	<tr><td>0.5M Tris (pH 8.8) stock (mL):</td><td><input readonly type="text" size="10px" id="calc27"/></td></tr>
+	<tr><td>Volume ddH2O (mL):</td><td><input readonly type="text" size="10px" id="calc28"/></td></tr>
+	<tr><td>10% SDS (uL):</td><td><input readonly type="text" size="10px" id="calc29"/></td></tr>
 </table>
 <br>
 <script type='text/javascript'>
