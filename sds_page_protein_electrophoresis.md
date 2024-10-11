@@ -132,7 +132,6 @@ function calculate() {
 	document.getElementById('calc211').value = (count * well_volume * 0.05 * (3/4)).toFixed(1);
 	document.getElementById('calc212').value = (well_volume / 4).toFixed(1);
 	document.getElementById('calc213').value = (3 * well_volume / 4).toFixed(1);
-    }
 }
 </script>
 </body>
