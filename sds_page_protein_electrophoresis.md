@@ -151,4 +151,12 @@ function calculate() {
 1. For one electrophoresis run: mix thoroughly 50 mL 10x running buffer in 450 mL ddH2O
 2. Prepare the gel cassette sandwich as directed above
 3. Prepare fresh APS when ready to pour gels: 50 mg in 500 uL ddH2O
-4. 
+4. Prepare the 10% resolving gel solution (see above calculator)
+5. When ready to cast the gel(s), in the fumehood add 50 uL APS and 5 uL TEMED
+6. Quickly return to the gel casting stand and pipette in the activated gel up to the marker line
+7. Quickly but gently overlay the gel with ddH2O and allow to stand for one hour; once the gel has polymerized, use filter paper to carefully remove the overlain ddH2O
+8. Prepare the 4% stacking gel solution (see above calculator)
+9. When ready to cast the gel(s), in the fumehood add 50 uL APS and 5 uL TEMED
+10. Quickly return to the gel casting stand and pipette in the activated gel; place the gel combs; allow to polymerize for one hour
+11. Store flat and wrapped in plastic wrap at 4°C (keep comb in place) until ready for use
+12. Remove the specimens/extracts from the freezer and allow to warm to RT
