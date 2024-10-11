@@ -57,6 +57,15 @@
 - Specimen buffer (reducing): In a 15mL Falcon tube, combine 3.55 mL ddH2O; 1.25 mL 0.5 M Tris (pH 6.8); 2.5 mL glycerol; 2.0 mL 10% (w/v) SDS; 0.2 mL 0.5% (w/v) bromophenol blue. Store at RT
 - 10x Running Buffer: 30.3 g Tris base; 144 g glycine; 10 g SDS in 1L. NO pH ADJUSTMENT. Store at 4°C
 
+- Prepare the gel cassette sandwich(es):
+- For each gel, obtain one each of a short and tall glass plate
+- Identify two 1 mm spacers and line them up correctly (flush) at either side of the gel (use the spacer card to assist with placement of the spaces relative to the glass plates)
+- Slide the sandwich carefully into the clamp assembly with the short plate to the exterior
+- Prior to securing the knobs, stand the apparatus up in the alignment tray of the casting stand to ensure that the glass plates and spacers are flush at the bottom; tighten the knobs to secure
+- Move the clamp assembly to the casting slot and gently push into place; two gels can be cast on one casting stand at a time
+- Check for leaks by dripping a few mLs of 100% ethanol into the sandwich; ensure that this is well dried up with a kimwipe once complete (residual ethanol will impede the gel)
+- Select a comb appropriate to the number of wells for loading (10-12 wells usually). Place the comb in the upper opening of the sandwich and mark 1 cm below the teeth of the comb. This is the height to which the lower resolving gel will be added
+
 ### calculator
 ~~~~
 <!DOCTYPE html>
@@ -140,4 +149,6 @@ function calculate() {
 
 ### procedures
 1. For one electrophoresis run: mix thoroughly 50 mL 10x running buffer in 450 mL ddH2O
-2. Prepare the gel cassette sandwich
+2. Prepare the gel cassette sandwich as directed above
+3. Prepare fresh APS when ready to pour gels: 50 mg in 500 uL ddH2O
+4. 
