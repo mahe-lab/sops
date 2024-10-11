@@ -76,70 +76,56 @@
 		<title>MAHELAB SOP Calculator</title>
 	</head>
 <body>
-<!---configure reagent prep details here, with calculations based on the table inputs below--->
-<table id="table0">
-	<tr><td>Scan/enter the specimen accession numbers:</td><td></tr>
-</table>
+<!---configure reagent prep details here--->
 <table id="table1">
-	<tr><td><input type="text" size="10px" id="00"/></td><td><input type="text" size="10px" id="01"/></td><td><input type="text" size="10px" id="02"/></td><td><input type="text" size="10px" id="03"/></td></tr>
-	<tr><td><input type="text" size="10px" id="10"/></td><td><input type="text" size="10px" id="11"/></td><td><input type="text" size="10px" id="12"/></td><td><input type="text" size="10px" id="13"/></td></tr>
-</table>
-<br>
-<button type="button" class="button" onclick="addRows()">Add Rows</button>
-<br>
-<!--- insert the necessary calculations here.--->
-<table id="table2">
-	<tr><td></td><td></td></tr>
-	<tr><td>Reagent/Input Calculations:</td><td></td></tr>
-	<tr><td>Total volume of required Working Solution (mL):</td>
-<!--- calculation: --->
-	<td><input readonly type="text" size="10px" id="calc1"/></td></tr>
-	<tr><td>Volume of *** reagent (uL) to make Working Solution:</td>
-<!--- calculation: --->
-	<td><input readonly type="text" size="10px" id="calc2"/></td></tr>
-	<tr><td>Volume of *** reagent (uL) to make Working Solution:</td>
-<!--- calculation: --->
-	<td><input readonly type="text" size="10px" id="calc3"/></td></tr>
+<tr><td>Scan/enter the specimen accession numbers:</td><td><td><input type="number" id="01" min="1" step="1" value="2"></td></tr>
 </table>
 <br>
 <button type="button" class="button" onclick="calculate()">Calculate</button>
+<br>
+<table id="table2">
+	<tr><td></td><td></td></tr>
+	<tr><td>Calculations for running buffer:</td><td></td></tr>
+	<tr><td>10x Running buffer stock (mL):</td>
+	<td><input readonly type="text" size="10px" id="calc20"/></td></tr>
+	<tr><td>ddH2O for 1x running buffer (mL):</td>
+	<td><input readonly type="text" size="10px" id="calc21"/></td></tr>
+	<tr><td></td><td></td></tr>
+	<tr><td>Calculations for 10% Resolvibng Gel(s):</td><td></td></tr>
+	<tr><td>30% bis/tris acrylamide stock (mL):</td>
+	<td><input readonly type="text" size="10px" id="calc22"/></td></tr>
+	<tr><td>1.5M Tris (pH 8.8) stock (mL):</td>
+	<td><input readonly type="text" size="10px" id="calc23"/></td></tr>
+	<tr><td>Volume ddH2O (mL):</td
+	<td><input readonly type="text" size="10px" id="calc24"/></td></tr>
+	<tr><td>10% SDS (uL):</td>
+	<td><input readonly type="text" size="10px" id="calc25"/></td></tr>
+	<tr><td></td><td></td></tr>
+	<tr><td>Calculations for 4% Resolvibng Gel(s):</td><td></td></tr>
+	<tr><td>30% bis/tris acrylamide stock (mL):</td>
+	<td><input readonly type="text" size="10px" id="calc26"/></td></tr>
+	<tr><td>0.5M Tris (pH 8.8) stock (mL):</td>
+	<td><input readonly type="text" size="10px" id="calc27"/></td></tr>
+	<tr><td>Volume ddH2O (mL):</td>
+	<td><input readonly type="text" size="10px" id="calc28"/></td></tr>
+	<tr><td>10% SDS (uL):</td>
+	<td><input readonly type="text" size="10px" id="calc29"/></td></tr>
+</table>
+<br>
 <script type='text/javascript'>
-function addRows() {
-    var table = document.getElementById('table1');
-    var trows = table.rows.length;
-    var tcols = table.rows[0].cells.length;
-    var row = table.insertRow(trows);
-    for (var i=0;i<tcols;i++) {
-	var txt = document.createElement('input')
-	txt.setAttribute('type','text');
-	txt.setAttribute('size','10px');
-	txt.setAttribute('id',`${trows}${i}`);
-	var col = row.insertCell(i);
-	col.appendChild(txt);
-    }
-}	
 function calculate() {
-    var count = 0;
-    var table = document.getElementById('table1');
-    var trows = table.rows.length;
-    var tcols = table.rows[0].cells.length;
-    for (var i=0;i<trows;i++) {
-        for (var j=0;j<tcols;j++) {
-            var txtcontent = document.getElementById(`${i}${j}`).value;
-            if(txtcontent != '') {
-                count++;
-            }
-        }
-    }
-    //console.log(count)
+    var count = parseInt(document.getElementById('01').value);
     if(count>0) {
-        // uncomment and adjust here with correct calculations for the correct text boxes above:
-        //
-        // document.getElementById('calc1').value = (0.22 * ( 2 + count )).toFixed(1);
-        
-        // document.getElementById('calc2').value = (1.1 * ( 2 + count )).toFixed(1);
-
-        // document.getElementById('calc3').value = (218.9 * ( 2 + count )).toFixed(1);
+        document.getElementById('calc20').value = (2 * Math.round(count / 2)) * 25;
+        document.getElementById('calc21').value = (2 * Math.round(count / 2)) * 225;
+        document.getElementById('calc22').value = count * 1.75;
+        document.getElementById('calc23').value = count * 1.25;
+	document.getElementById('calc24').value = count * 1.75;
+        document.getElementById('calc25').value = count * 50;
+	document.getElementById('calc26').value = count * 0.65;
+        document.getElementById('calc27').value = count * 1.25;
+	document.getElementById('calc28').value = count * 3.05;
+        document.getElementById('calc29').value = count * 50;
     }
 }
 </script>
@@ -148,14 +134,14 @@ function calculate() {
 ~~~~
 
 ### procedures
-1. For one electrophoresis run: mix thoroughly 50 mL 10x running buffer in 450 mL ddH2O
+1. Prepare the running buffer (use above calculator)
 2. Prepare the gel cassette sandwich as directed above
 3. Prepare fresh APS when ready to pour gels: 50 mg in 500 uL ddH2O
-4. Prepare the 10% resolving gel solution (see above calculator)
+4. Prepare the 10% resolving gel solution (use above calculator); mix gently and DEGAS for 15 minutes
 5. When ready to cast the gel(s), in the fumehood add 50 uL APS and 5 uL TEMED
 6. Quickly return to the gel casting stand and pipette in the activated gel up to the marker line
 7. Quickly but gently overlay the gel with ddH2O and allow to stand for one hour; once the gel has polymerized, use filter paper to carefully remove the overlain ddH2O
-8. Prepare the 4% stacking gel solution (see above calculator)
+8. Prepare the 4% stacking gel solution (use above calculator); mix gently and DEGAS for 15 minutes
 9. When ready to cast the gel(s), in the fumehood add 50 uL APS and 5 uL TEMED
 10. Quickly return to the gel casting stand and pipette in the activated gel; place the gel combs; allow to polymerize for one hour
 11. Store flat and wrapped in plastic wrap at 4°C (keep comb in place) until ready for use
