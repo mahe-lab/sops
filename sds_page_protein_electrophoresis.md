@@ -56,7 +56,6 @@
 - 10% w/v SDS: dissolve 10g SDS in 60-90 mL ddH2O (heat/stir slowly); top up to 100mL with ddH2O; store in a labelled 100 mL bottle at RT
 - Specimen buffer (reducing): In a 15mL Falcon tube, combine 3.55 mL ddH2O; 1.25 mL 0.5 M Tris (pH 6.8); 2.5 mL glycerol; 2.0 mL 10% (w/v) SDS; 0.2 mL 0.5% (w/v) bromophenol blue. Store at RT
 - 10x Running Buffer: 30.3 g Tris base; 144 g glycine; 10 g SDS in 1L. NO pH ADJUSTMENT. Store at 4°C
-
 - Prepare the gel cassette sandwich(es):
 - For each gel, obtain one each of a short and tall glass plate
 - Identify two 1 mm spacers and line them up correctly (flush) at either side of the gel (use the spacer card to assist with placement of the spaces relative to the glass plates)
