@@ -28,6 +28,9 @@
 [Agarose Band Excision](agarose_gel_band_excision.md)<br>
 [SDS-Page Protein Electrophoresis](sds_page_protein_electrophoresis.md)<br>
 
+## Staining:
+
+
 ## Blotting:
 
 
