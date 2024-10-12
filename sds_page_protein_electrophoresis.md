@@ -128,8 +128,8 @@ function calculate() {
         document.getElementById('calc27').value = (count * 1.25).toFixed(1);
 	document.getElementById('calc28').value = (count * 3.05).toFixed(1);
         document.getElementById('calc29').value = (count * 50).toFixed(1);
-	document.getElementById('calc210').value = (count * well_volume * (3/4)).toFixed(1);
-	document.getElementById('calc211').value = (count * well_volume * 0.05 * (3/4)).toFixed(1);
+	document.getElementById('calc210').value = (count * well_volume * wells * (3/4)).toFixed(1);
+	document.getElementById('calc211').value = (count * well_volume * wells * 0.05 * (3/4)).toFixed(1);
 	document.getElementById('calc212').value = (well_volume / 4).toFixed(1);
 	document.getElementById('calc213').value = (3 * well_volume / 4).toFixed(1);
 }
