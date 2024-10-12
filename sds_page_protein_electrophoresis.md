@@ -26,7 +26,7 @@
 
 ### where
 - Fumehood
-- Pre-PCR Bench (casting and electrophoreis only)
+- Post-PCR Bench (casting and electrophoreis only)
 
 ### references
 - BioRad MiniProtean II: https://github.com/mahe-lab/sops/blob/main/MAHELAB_SOP_Assets/BioRad_MiniProteanII_Manual.pdf
@@ -63,8 +63,8 @@
 - Slide the sandwich carefully into the clamp assembly with the short plate to the exterior
 - Prior to securing the knobs, stand the apparatus up in the alignment tray of the casting stand to ensure that the glass plates and spacers are flush at the bottom; tighten the knobs to secure
 - Move the clamp assembly to the casting slot and gently push into place; two gels can be cast on one casting stand at a time
-- Check for leaks by dripping a few mLs of 100% ethanol into the sandwich; ensure that this is well dried up with a kimwipe once complete (residual ethanol will impede the gel)
-- Select the correct comb for the indicated number of wells and place in the upper opening of the sandwich; mark 1 cm below the teeth of the comb. This is the height to which the lower resolving gel will be added
+- Check for leaks by dripping a few mLs of 100% ethanol into the sandwich; ensure that this is well dried up with a kimwipe once complete (residual ethanol will impede gel casting)
+- Select the correct comb for the indicated number of wells and place in the upper opening of the sandwich; mark 1 cm below the teeth of the comb. This is the height to which the lower resolving gel should be cast
 
 ### calculator
 ~~~~
@@ -164,4 +164,4 @@ function calculate() {
 23. Gently peel off the shorter glass plate and remove the spacers
 24. Peel off the upper stacking gel and discard in the contaminated gel waste bucket
 25. Make a notch at the top left of the resolving gel to indicate the position of the first well/top of the gel
-26. Proceed immediately to STAINING or BLOTTING (indicate in notes...)
+26. Proceed immediately to STAINING or BLOTTING
