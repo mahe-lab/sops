@@ -3,7 +3,7 @@
 - Protocol: Iron Extraction & Quantification (Bone Marrow or Tissue)
 - Faculty: Cumming School of Medicine
 - Institute: Charbonneau Cancer Institute
-- Site: Arthur J.E. Child Comprehensive Cancer Center, YC
+- Site: Arthur J.E. Child Comprehensive Cancer Center, YC083402
 - Version: 3
 - Version Date: JUNE2024
 - Approver: ermahe@ucalgary.ca
@@ -46,7 +46,7 @@
 - Refer to plate reader literature for required maintenance steps
 
 ### before_starting
-- Complete the tissue transfer SOP (https://mahe-lab.github.io/sops/sop_template.html?tissue_transfer_extraction.md)
+- Complete the tissue transfer protocol: https://mahe-lab.github.io/sops/sop_template.html?tissue_transfer_extraction.md
 - Ensure that the mount quick curls from a given case (might be multiple slides) are placed in a volumetric tube
 - Ensure that there is sufficient 1M HCl & 1M NaOH on hand (use the calculator below)
 - New stock 1M HCl can be made in a 100 mL graduated cylinder: add 8.3 mL 12M (37%) HCl; add ddH2O up to 100 mL and store in a 100 mL bottle; 100 mL 1M NaOH can be made using 4 g NaOH and carefully adding ddH2O up to 100 mL
