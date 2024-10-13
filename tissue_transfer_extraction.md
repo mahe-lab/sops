@@ -42,7 +42,8 @@
 - Sharps disposal: U of C approved biohazard bucket (benchtop)
 
 ### maintenance
-- add
+- Wipe down work surfaces with 70% isopropanol
+- Glassware: remove any visible debris with a bottle brush and universal cleaner; rinse with ddH<sub>2</sub>O; rinse with 100% ethanol and set to airdry
 
 ### before_starting
 - Setup a 60°C oven/incubator
