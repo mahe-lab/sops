@@ -70,11 +70,18 @@
 ~~~~
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="mahe-lab_style.css">
-		<title>MAHELAB SOP Calculator</title>
-	</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mahe-lab_style.css">
+        <title>MAHELAB SOP Calculator</title>
+        <style>
+            .vertical-line {
+                border-left: 5px solid --tred;
+                height: 250px;
+                position: absolute;
+            }
+        </style>
+    </head>
 <body>
 <!---configure reagent prep details here--->
 <table id="table1">
@@ -85,53 +92,207 @@
 <button type="button" class="button" onclick="calculate()">Calculate</button>
 <br>
 <table id="table2">
-	<tr><td></td><td></td></tr>
-	<tr><td>Calculations for running buffer:</td><td></td></tr>
-	<tr><td>10x Running buffer stock (mL):</td>
-	<td><input readonly type="text" size="10px" id="calc20"/></td></tr>
-	<tr><td>ddH<sub>2</sub>O for 1x running buffer (mL):</td><td><input readonly type="text" size="10px" id="calc21"/></td></tr>
-	<tr><td></td><td></td></tr>
-	<tr><td>Calculations for 10% Resolvibng Gel(s):</td><td></td></tr>
-	<tr><td>30% bis/tris acrylamide stock (mL):</td><td><input readonly type="text" size="10px" id="calc22"/></td></tr>
-	<tr><td>1.5M Tris (pH 8.8) stock (mL):</td><td><input readonly type="text" size="10px" id="calc23"/></td></tr>
-	<tr><td>Volume ddH<sub>2</sub>O (mL):</td><td><input readonly type="text" size="10px" id="calc24"/></td></tr>
-	<tr><td>10% SDS (uL):</td><td><input readonly type="text" size="10px" id="calc25"/></td></tr>
-	<tr><td></td><td></td></tr>
-	<tr><td>Calculations for 4% Resolvibng Gel(s):</td><td></td></tr>
-	<tr><td>30% bis/tris acrylamide stock (mL):</td><td><input readonly type="text" size="10px" id="calc26"/></td></tr>
-	<tr><td>0.5M Tris (pH 8.8) stock (mL):</td><td><input readonly type="text" size="10px" id="calc27"/></td></tr>
-	<tr><td>Volume ddH<sub>2</sub>O (mL):</td><td><input readonly type="text" size="10px" id="calc28"/></td></tr>
-	<tr><td>10% SDS (uL):</td><td><input readonly type="text" size="10px" id="calc29"/></td></tr>
-	<tr><td></td><td></td></tr>
-	<tr><td>Calculations for specimen loading buffer:</td><td></td></tr>
-	<tr><td>Specimen buffer stock (uL):</td><td><input readonly type="text" size="10px" id="calc210"/></td></tr>
-	<tr><td>β-Mercaptoethanol (uL) :</td><td><input readonly type="text" size="10px" id="calc211"/></td></tr>
-	<tr><td></td><td></td></tr>
-	<tr><td>Specimen volume (uL) per well:</td><td><input readonly type="text" size="10px" id="calc212"/></td></tr>
-	<tr><td>Specimen loading buffer volume (uL) per well:</td><td><input readonly type="text" size="10px" id="calc213"/></td></tr>
+    <tr><td></td><td></td></tr>
+    <tr><td>Calculations for running buffer:</td><td></td></tr>
+    <tr><td>10x Running buffer stock (mL):</td>
+    <td><input readonly type="text" size="10px" id="calc20"/></td></tr>
+    <tr><td>ddH<sub>2</sub>O for 1x running buffer (mL):</td><td><input readonly type="text" size="10px" id="calc21"/></td></tr>
+    <tr><td></td><td></td></tr>
+    <tr><td>Calculations for 10% Resolvibng Gel(s):</td><td></td></tr>
+    <tr><td>30% bis/tris acrylamide stock (mL):</td><td><input readonly type="text" size="10px" id="calc22"/></td></tr>
+    <tr><td>1.5M Tris (pH 8.8) stock (mL):</td><td><input readonly type="text" size="10px" id="calc23"/></td></tr>
+    <tr><td>Volume ddH<sub>2</sub>O (mL):</td><td><input readonly type="text" size="10px" id="calc24"/></td></tr>
+    <tr><td>10% SDS (uL):</td><td><input readonly type="text" size="10px" id="calc25"/></td></tr>
+    <tr><td></td><td></td></tr>
+    <tr><td>Calculations for 4% Resolvibng Gel(s):</td><td></td></tr>
+    <tr><td>30% bis/tris acrylamide stock (mL):</td><td><input readonly type="text" size="10px" id="calc26"/></td></tr>
+    <tr><td>0.5M Tris (pH 8.8) stock (mL):</td><td><input readonly type="text" size="10px" id="calc27"/></td></tr>
+    <tr><td>Volume ddH<sub>2</sub>O (mL):</td><td><input readonly type="text" size="10px" id="calc28"/></td></tr>
+    <tr><td>10% SDS (uL):</td><td><input readonly type="text" size="10px" id="calc29"/></td></tr>
+    <tr><td></td><td></td></tr>
+    <tr><td>Calculations for specimen loading buffer:</td><td></td></tr>
+    <tr><td>Specimen buffer stock (uL):</td><td><input readonly type="text" size="10px" id="calc210"/></td></tr>
+    <tr><td>β-Mercaptoethanol (uL) :</td><td><input readonly type="text" size="10px" id="calc211"/></td></tr>
+    <tr><td></td><td></td></tr>
+    <tr><td>Specimen volume (uL) per well:</td><td><input readonly type="text" size="10px" id="calc212"/></td></tr>
+    <tr><td>Specimen loading buffer volume (uL) per well:</td><td><input readonly type="text" size="10px" id="calc213"/></td></tr>
 </table>
-<br>
+<br><br>
+<button type="button" class="button" onclick="addGels()">Add Gel Configuration Table</button>
+<br><br>
+<table style="visibility:hidden" id="table3"></table>
 <script type='text/javascript'>
 function calculate() {
-	var count = parseInt(document.getElementById('01').value);
-	var wells = parseInt(document.getElementById('02').value);
-	var well_volume = 44;
-	if(wells == "5") { well_volume = 105; }
-	if(wells == "15") { well_volume = 26; }
-	document.getElementById('calc20').value = ((2 * Math.round(count / 2)) * 25).toFixed(1);
+    var count = parseInt(document.getElementById('01').value);
+    var wells = parseInt(document.getElementById('02').value);
+    var well_volume = 44;
+    if(wells == "5") { well_volume = 105; }
+    if(wells == "15") { well_volume = 26; }
+    document.getElementById('calc20').value = ((2 * Math.round(count / 2)) * 25).toFixed(1);
         document.getElementById('calc21').value = ((2 * Math.round(count / 2)) * 225).toFixed(1);
         document.getElementById('calc22').value = (count * 1.75).toFixed(1);
         document.getElementById('calc23').value = (count * 1.25).toFixed(1);
-	document.getElementById('calc24').value = (count * 1.75).toFixed(1);
+    document.getElementById('calc24').value = (count * 1.75).toFixed(1);
         document.getElementById('calc25').value = (count * 50).toFixed(1);
-	document.getElementById('calc26').value = (count * 0.65).toFixed(1);
+    document.getElementById('calc26').value = (count * 0.65).toFixed(1);
         document.getElementById('calc27').value = (count * 1.25).toFixed(1);
-	document.getElementById('calc28').value = (count * 3.05).toFixed(1);
+    document.getElementById('calc28').value = (count * 3.05).toFixed(1);
         document.getElementById('calc29').value = (count * 50).toFixed(1);
-	document.getElementById('calc210').value = (count * well_volume * wells * (3/4)).toFixed(1);
-	document.getElementById('calc211').value = (count * well_volume * wells * 0.05 * (3/4)).toFixed(1);
-	document.getElementById('calc212').value = (well_volume / 4).toFixed(1);
-	document.getElementById('calc213').value = (3 * well_volume / 4).toFixed(1);
+    document.getElementById('calc210').value = (count * well_volume * wells * (3/4)).toFixed(1);
+    document.getElementById('calc211').value = (count * well_volume * wells * 0.05 * (3/4)).toFixed(1);
+    document.getElementById('calc212').value = (well_volume / 4).toFixed(1);
+    document.getElementById('calc213').value = (3 * well_volume / 4).toFixed(1);
+}
+function addGels() {
+    const band_width = 40;
+    //empty the table if already filled
+    var table3 = document.getElementById('table3');
+    var t3rws = table3.rows.length;
+    if(t3rws>0) {
+        for(var ii=0;ii<t3rws;ii++) {
+            table3.deleteRow(-1);
+        }
+    }
+    //turn on the table & add the appropriate number of columns = # of wells + 1
+    table3.style="visibility:none";
+    var count = parseInt(document.getElementById('01').value);
+    var wells = parseInt(document.getElementById('02').value);
+    table3.style.width = `${(wells+1)*band_width}px`;
+    for(var g=0;g<count;g++) {
+        //first row of gel = lane names
+        var t3rws = table3.rows.length;
+        var row = table3.insertRow(t3rws);
+        row.style.height = '100px';
+        for(var c=0;c<wells+1;c++) {
+            var cell = row.insertCell(c);
+            //cell.style.width = '5px';
+            if(c>0) {
+                var laneName = document.createElement('input'); 
+                laneName.setAttribute('type','text'); 
+                laneName.setAttribute('size','10px');
+                laneName.setAttribute('id',`3${t3rws}${c}`);
+                cell.appendChild(laneName);
+                cell.style.transform = 'rotate(-90deg)';
+                cell.style.transformOrigin = '100% 50%';
+            }
+        }
+        //second row of gel = gel image in iframe
+        var t3rws = table3.rows.length;
+        var row = table3.insertRow(t3rws);
+        row.style.height = '250px';
+        //sliders
+        var col0 = row.insertCell(0);
+        var sld1 = document.createElement('input');
+        sld1.type = "range";
+        sld1.setAttribute('class','slider');
+        sld1.setAttribute('min','1');
+        sld1.setAttribute('max','100');
+        sld1.setAttribute('value','100');
+        sld1.setAttribute('id',`3_v_${g}`);
+        sld1.addEventListener("change",function(event){changeVerticalSize(event.target.id);});
+        col0.appendChild(sld1);
+        var sld2 = document.createElement('input');
+        sld2.type = 'range';
+        sld2.setAttribute('class','slider');
+        sld2.setAttribute('min','1');
+        sld2.setAttribute('max','100');
+        sld2.setAttribute('value','100');
+        sld2.setAttribute('id',`3_h_${g}`);
+        sld2.addEventListener("change",function(event){changeHorizontalSize(event.target.id);});
+        col0.appendChild(sld2);
+        col0.style.transform = 'rotate(-90deg)';
+        //iframe in div wrapper in table cell
+        var col1 = row.insertCell(1);
+        col1.colSpan = wells;
+        
+        var ifrm = document.createElement('iframe');
+        ifrm.setAttribute('id',`3_ifrm_${g}`);
+        ifrm.setAttribute('height',row.style.height);
+        ifrm.setAttribute('width',(wells+1)*band_width);
+        ifrm.style.cssText = 'position: relative; border: 0';
+        ifrm.src = 'about:blank';
+        col1.appendChild(ifrm);
+        /**
+        var svg_lines = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg_lines.setAttribute('height',"250");
+        svg_lines.setAttribute('width',"500");
+        for(var l=1;l<wells;l++) {
+            var newLine = document.createElementNS('http://www.w3.org/2000/svg','line');
+            newLine.setAttribute('x1',l*band_width);
+            newLine.setAttribute('x2',l*band_width);
+            newLine.setAttribute('y1',"0");
+            newLine.setAttribute('y2',"250");
+            newLine.style.cssText = 'position: absolute; top:0; left:0; bottom: 0; right: 0; width: 100%; height: 100%; pointer-events: none; stroke: #494949; stroke-width: 2px';
+            svg_lines.append(newLine);
+        }
+        col1.appendChild(svg_lines);
+        **/
+        var w = document.createElement('input');
+        w.type = 'hidden';
+        w.setAttribute('id',`3_ifrm_${g}_width`);
+        col1.appendChild(w);
+        var h = document.createElement('input');
+        h.type = 'hidden';
+        h.setAttribute('id',`3_ifrm_${g}_height`);
+        col1.appendChild(h);
+        //third row of gel = file selector and load button
+        var t3rws = table3.rows.length;
+        var row = table3.insertRow(t3rws);
+        row.style.height = '20px';
+        var col0 = row.insertCell(0);
+        col0.colSpan = 1+wells;
+        var addimg = document.createElement('input');
+        addimg.type='file';
+        addimg.setAttribute('accept', 'image/*');
+        addimg.setAttribute('id',`3_fb_${g}`);
+        col0.appendChild(addimg);
+        var upimg = document.createElement('button');
+        upimg.setAttribute('id',`3_ub_${g}`);
+        upimg.innerHTML = 'Upload';
+        upimg.style.height = '22px';
+        upimg.style.width = '60px';
+        upimg.addEventListener("click",function(event){loadImgFile(event.target.id);});
+        col0.appendChild(upimg);
+    }
+}
+function loadImgFile(btn_id) {
+    var wells = parseInt(document.getElementById('02').value);
+    //figure out which file and iframe to reference based on the id
+    var id_num = btn_id.split('_')[2];
+    var iframe_id = document.getElementById(`3_ifrm_${id_num}`);
+    var file_select_id = document.getElementById(`3_fb_${id_num}`);
+    // remove any child nodes
+    while (iframe_id.contentWindow.document.getElementsByTagName("body")[0].firstChild) {
+        iframe_id.contentWindow.document.getElementsByTagName("body")[0].removeChild(iframe_id.contentWindow.document.getElementsByTagName("body")[0].lastChild);
+    }
+    // check if file name set
+    if (file_select_id.files.length == 1) {
+        var reader = new FileReader();
+        reader.onload = function(event) {
+            var newImage = document.createElement("img");
+            newImage.setAttribute('id',`3_img_${id_num}`);
+            newImage.src = event.target.result;
+            iframe_id.contentWindow.document.getElementsByTagName("body")[0].appendChild(newImage);
+            document.getElementById(`3_ifrm_${id_num}_width`).value = newImage.width;
+            document.getElementById(`3_ifrm_${id_num}_height`).value = newImage.height;
+            iframe_id.contentWindow.document.getElementsByTagName("body")[0].style.cssText = 'overflow: hidden';
+        };
+        reader.readAsDataURL(file_select_id.files[0]);
+        
+     
+    }
+    iframe_id.contentWindow.document.getElementsByTagName("body")[0].style.scrollbarWidth = 'none';
+    
+}
+function changeHorizontalSize(btn_id) {
+    var id_num = btn_id.split('_')[2];
+    var range = document.getElementById(`3_h_${id_num}`).value;
+    document.getElementById(`3_ifrm_${id_num}`).contentWindow.document.getElementsByTagName("body")[0].childNodes[0].width = (range/100) * document.getElementById(`3_ifrm_${id_num}_width`).value;
+}
+function changeVerticalSize(btn_id) {
+    var id_num = btn_id.split('_')[2];
+    var range = document.getElementById(`3_v_${id_num}`).value;
+    document.getElementById(`3_ifrm_${id_num}`).contentWindow.document.getElementsByTagName("body")[0].childNodes[0].height = (range/100) * document.getElementById(`3_ifrm_${id_num}_height`).value;
 }
 </script>
 </body>
