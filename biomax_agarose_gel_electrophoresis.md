@@ -92,7 +92,7 @@ function calculate() {
 	var size = 50;
 	var perc = parseInt(document.getElementById('04').value);
 	if (document.getElementById('03').value === "Large") {size = 100;}
-	document.getElementById('calc20').value = Math.round(count * size * 6 * (1/50));
+	document.getElementById('calc20').value = (count * size * 6 * (1/50));
 	document.getElementById('calc21').value = "" + Math.round(count * size * 6) + " mL \(" + Math.round(count * size * 6 * (49/50)) + " mL ddH2O\)";
 	document.getElementById('calc22').value = Math.round(count * size * perc * (1/100));
 	document.getElementById('calc23').value = Math.round(count * size * perc);
