@@ -13,7 +13,7 @@
 - Requires Pre-Authorization by PI
 
 ### hazards
-- Ethidium bromide is mutagenic & carcinogenic. See SDS
+- Ethidium bromide is mutagenic & carcinogenic. DO NOT MICROWAVE ETHIDIUM BROMIDE!
 - Care must be taken to avoid electric shock when performing electrophoresis
 
 ### ppe
@@ -47,7 +47,6 @@
 - If required, make 50xTAE stock:
 - Prepare 0.5 M EDTA: 93.05 g of EDTA disodium salt (MW=372.24 g/mol); dissolve in 400 mL ddH2O and adjust the pH to 8; top up to 500 mL with ddH2O
 - Weigh out 242 g of Tris-base (MW = 121.14 g/mol) and dissolve in ~700 mL of ddH2O; carefully add 57.1 mL of 100 % glacial acetic acid (in fumehood!) and 100 mL of 0.5 M EDTA (pH 8.0); adjust to a final volume of 1 L with ddH2O
-- Prepare 1xTAE buffer: Small size gel: 400 mL required: 8 mL 50x stock in 392 mL ddH2O; Large size gel: 600 are required: 12 mL 50x stock in 588 mL ddH2O
 
 ### calculator
 ~~~~
@@ -79,6 +78,7 @@
     <tr><td>Calculations for Agarose Gels:</td><td></td></tr>
     <tr><td>Weight of Agarose (g):</td><td><input readonly type="text" size="10px" id="calc22"/></td></tr>
     <tr><td>Volume of buffer (mL):</td><td><input readonly type="text" size="10px" id="calc23"/></td></tr>
+    <tr><td>Volume of Ethidium Bromide Required (uL):</td><td><input readonly type="text" size="10px" id="calc24"/></td></tr>
     <tr><td></td><td></td></tr>
 </table>
 <br><br>
@@ -96,6 +96,7 @@ function calculate() {
 	document.getElementById('calc21').value = "" + Math.round(count * size * 6) + " mL \(" + Math.round(count * size * 6 * (49/50)) + " mL ddH2O\)";
 	document.getElementById('calc22').value = Math.round(count * size * perc * (1/100));
 	document.getElementById('calc23').value = Math.round(count * size * perc);
+	document.getElementById('calc24').value = Math.round(count * (size/50) * 25);
 }
 function addGels() {
     const band_width = 40;
@@ -195,7 +196,7 @@ function addGels() {
 	//add empty row
 	var t3rws = table3.rows.length;
         var row = table3.insertRow(t3rws);
-        row.style.height = '10px';
+        row.style.height = '40px';
     }
 }
 function loadImgFile(btn_id) {
@@ -242,21 +243,22 @@ function changeVerticalSize(btn_id) {
 </html>
 ~~~~
 ### procedures
-1. Weigh out (in an Erlenmeyer flask) the appropriate amount of agarose; add the appropriate volume of 1x TAE
-2. Microwave the agarose slurry on high in 30 s increments until boiling
-3. Allow agarose solution to cool to ~60C
-4. Add Ethidium bromide: 25 uL for small gel; 50 uL for large gel
-5. Assemble gel cast apparatus and insert combs (one for small gel and 1-2 for large gel)
-6. Pour in agarose; remove bubbles with a pipette tip; allow to cool for at least 30 minutes
-7. Remove comb(s) and remove the cast gel base from the casting stand.
-8. Place cast gel into the electrophoresis tray with wells closest to the black lead
-9. Pour in sufficient 1xTAE to fully immerse the gel
-10. On a 10 cm length of parafilm, mark out the gel specimens (including ladders) by number:
-11. Pipette ~1 uL Gel-Red/Gel-Green/Loading-Buffer Dye onto each parafilm spot (use the same pipette tip)
-12. Pipette ~6 uL of one of the molecular weight ladders (“Millipore Direct Load” or “Thermo TrackIt”) onto the corresponding spot
-13. Dial up the pipette to 6-7 uL and draw up the mix; gently pipette into the first gel well
-14. Pipette ~5 uL of each subsequent specimen onto the corresponding spot
-15. Dial up the pipette to 6-7 uL and draw up the mix; gently pipette into the corresponding well
-16. Once the gel is fully loaded, apply the electrophoresis cover, and run the gel at 100V for 60 minutes. Be sure to set the powerpack time to ensure auto-halt.
-17. Proceed to imaging using the GelDoc EtBr protocol: Refer to GelDoc SOP
-18. Disassemble and clean the apparatus appropriately
+1. Weigh out (in an Erlenmeyer flask) the agarose (see calculator above)
+2. Add 1x TAE (see calculator above)
+3. Microwave the agarose slurry on high in 30 s increments until boiling
+4. Allow agarose solution to cool to ~60C
+5. Add Ethidium bromide
+6. Assemble gel cast apparatus and insert combs
+7. Pour in agarose; remove bubbles with a pipette tip; allow to cool for at least 30 minutes
+8. Carefully Remove comb(s) and remove the cast gel base from the casting stand.
+9. Place cast gel into the electrophoresis tray with wells closest to the black lead
+10. Pour in sufficient 1xTAE to fully immerse the gel
+11. On a 10 cm length of parafilm, mark out the gel specimens (including ladders) with a sharpie pen
+12. Pipette ~1 uL Gel-Red/Gel-Green/Loading-Buffer Dye onto each parafilm spot
+13. Pipette ~6 uL of one of the molecular weight ladders (“Millipore Direct Load” or “Thermo TrackIt”) onto the corresponding spot
+14. Dial up the pipette to 6-7 uL and draw up the mix; gently pipette into the first gel well
+15. Pipette ~5 uL of each subsequent specimen onto the corresponding spot
+16. Dial up the pipette to 6-7 uL and draw up the mix; gently pipette into the corresponding well
+17. Once the gel is fully loaded, apply the electrophoresis cover, and run the gel at 100V for 60 minutes. Be sure to set the powerpack time to ensure auto-halt.
+18. Proceed to imaging using the GelDoc EtBr protocol: Refer to GelDoc SOP
+19. Disassemble the apparatus and rinse with distilled water
