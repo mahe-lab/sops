@@ -74,11 +74,11 @@
     <tr><td>Calculations for 1x TAE buffer:</td><td></td></tr>
     <tr><td>50x TAE buffer stock (mL):</td>
     <td><input readonly type="text" size="10px" id="calc20"/></td></tr>
-    <tr><td>Up to a total volume (with ddH<sub>2</sub>O) of:</td><td><input readonly type="text" size="10px" id="calc21"/></td></tr>
+    <tr><td>Up to a total volume (with ddH<sub>2</sub>O) of:</td><td><input readonly type="text" size="20px" id="calc21"/></td></tr>
     <tr><td></td><td></td></tr>
     <tr><td>Calculations for Agarose Gels:</td><td></td></tr>
     <tr><td>Weight of Agarose (g):</td><td><input readonly type="text" size="10px" id="calc22"/></td></tr>
-    <tr><td>Volume of buffer (mL):</td><td><input readonly type="text" size="20px" id="calc23"/></td></tr>
+    <tr><td>Volume of buffer (mL):</td><td><input readonly type="text" size="10px" id="calc23"/></td></tr>
     <tr><td></td><td></td></tr>
 </table>
 <br><br>
