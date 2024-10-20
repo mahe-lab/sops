@@ -78,7 +78,7 @@
     <tr><td></td><td></td></tr>
     <tr><td>Calculations for Agarose Gels:</td><td></td></tr>
     <tr><td>Weight of Agarose (g):</td><td><input readonly type="text" size="10px" id="calc22"/></td></tr>
-    <tr><td>Volume of buffer (mL):</td><td><input readonly type="text" size="10px" id="calc23"/></td></tr>
+    <tr><td>Volume of buffer (mL):</td><td><input readonly type="text" size="20px" id="calc23"/></td></tr>
     <tr><td></td><td></td></tr>
 </table>
 <br><br>
@@ -91,10 +91,10 @@ function calculate() {
 	var wells = parseInt(document.getElementById('02').value);
 	var size = 50;
 	var perc = parseInt(document.getElementById('04').value);
-	if (document.getElementById('03').value === "Large") {size = 2 * size;}
+	if (document.getElementById('03').value === "Large") {size = 100;}
 	document.getElementById('calc20').value = Math.round(count * size * 6 * (1/50));
-	document.getElementById('calc21').value = "" + Math.round(count * size * 6) + "mL \(" + Math.round(count * size * 6 * (49/50)) + " mL ddH2O\)" ;
-	document.getElementById('calc22').value = Math.round(count * size * perc);
+	document.getElementById('calc21').value = "" + Math.round(count * size * 6) + " mL \(" + Math.round(count * size * 6 * (49/50)) + " mL ddH2O\)" ;
+	document.getElementById('calc22').value = Math.round(count * size * perc * (1/100);
 	document.getElementById('calc23').value = Math.round(count * size * perc);
 }
 function addGels() {
@@ -166,21 +166,6 @@ function addGels() {
         ifrm.style.cssText = 'position: relative; border: 0';
         ifrm.src = 'about:blank';
         col1.appendChild(ifrm);
-        /**
-        var svg_lines = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        svg_lines.setAttribute('height',"250");
-        svg_lines.setAttribute('width',"500");
-        for(var l=1;l<wells;l++) {
-            var newLine = document.createElementNS('http://www.w3.org/2000/svg','line');
-            newLine.setAttribute('x1',l*band_width);
-            newLine.setAttribute('x2',l*band_width);
-            newLine.setAttribute('y1',"0");
-            newLine.setAttribute('y2',"250");
-            newLine.style.cssText = 'position: absolute; top:0; left:0; bottom: 0; right: 0; width: 100%; height: 100%; pointer-events: none; stroke: #494949; stroke-width: 2px';
-            svg_lines.append(newLine);
-        }
-        col1.appendChild(svg_lines);
-        **/
         var w = document.createElement('input');
         w.type = 'hidden';
         w.setAttribute('id',`3_ifrm_${g}_width`);
@@ -207,6 +192,10 @@ function addGels() {
         upimg.style.width = '60px';
         upimg.addEventListener("click",function(event){loadImgFile(event.target.id);});
         col0.appendChild(upimg);
+	//add empty row
+	var t3rws = table3.rows.length;
+        var row = table3.insertRow(t3rws);
+        row.style.height = '10px';
     }
 }
 function loadImgFile(btn_id) {
