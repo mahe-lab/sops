@@ -53,85 +53,208 @@
 ~~~~
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="mahe-lab_style.css">
-		<title>MAHELAB SOP Calculator</title>
-	</head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mahe-lab_style.css">
+        <title>MAHELAB SOP Calculator</title>
+    </head>
 <body>
-<!---configure reagent prep details here, with calculations based on the table inputs below--->
-<table id="table0">
-	<tr><td>Scan/enter the specimen accession numbers:</td><td></tr>
-</table>
+<!---configure reagent prep details here--->
 <table id="table1">
-	<tr><td><input type="text" size="10px" id="00"/></td><td><input type="text" size="10px" id="01"/></td><td><input type="text" size="10px" id="02"/></td><td><input type="text" size="10px" id="03"/></td></tr>
-	<tr><td><input type="text" size="10px" id="10"/></td><td><input type="text" size="10px" id="11"/></td><td><input type="text" size="10px" id="12"/></td><td><input type="text" size="10px" id="13"/></td></tr>
-</table>
-<br>
-<button type="button" class="button" onclick="addRows()">Add Rows</button>
-<br>
-<!--- insert the necessary calculations here.--->
-<table id="table2">
-	<tr><td></td><td></td></tr>
-	<tr><td>Reagent/Input Calculations:</td><td></td></tr>
-	<tr><td>Total volume of required Working Solution (mL):</td>
-<!--- calculation: --->
-	<td><input readonly type="text" size="10px" id="calc1"/></td></tr>
-	<tr><td>Volume of *** reagent (uL) to make Working Solution:</td>
-<!--- calculation: --->
-	<td><input readonly type="text" size="10px" id="calc2"/></td></tr>
-	<tr><td>Volume of *** reagent (uL) to make Working Solution:</td>
-<!--- calculation: --->
-	<td><input readonly type="text" size="10px" id="calc3"/></td></tr>
+<tr><td>Number of gels to be cast:</td><td><input type="number" id="01" min="1" step="1" value="2"></td></tr>
+<tr><td>Number of lanes/wells per gel (if using a size standard, ensure that an additional well is present to account for this):</td><td><select id="02"><option value="8">8 wells </option><option value="10">10 wells </option><option selected value="12">12 wells </option><option value="15">15 wells </option></select></td></tr>
+<tr><td>Gel Size:</td><td><select id="03"><option value="Small">Small size gel </option><option value="Large">Large size gel </option></select></td></tr>
+<tr><td>% Agarose:</td><td><input type="number" id="04" min="0.1" step="0.1" value="1"></td></tr>
 </table>
 <br>
 <button type="button" class="button" onclick="calculate()">Calculate</button>
+<br>
+<table id="table2">
+    <tr><td></td><td></td></tr>
+    <tr><td>Calculations for 1x TAE buffer:</td><td></td></tr>
+    <tr><td>50x TAE buffer stock (mL):</td>
+    <td><input readonly type="text" size="10px" id="calc20"/></td></tr>
+    <tr><td>Up to a total volume (with ddH<sub>2</sub>O) of:</td><td><input readonly type="text" size="10px" id="calc21"/></td></tr>
+    <tr><td></td><td></td></tr>
+    <tr><td>Calculations for Agarose Gels:</td><td></td></tr>
+    <tr><td>Weight of Agarose (g):</td><td><input readonly type="text" size="10px" id="calc22"/></td></tr>
+    <tr><td>Volume of buffer (mL):</td><td><input readonly type="text" size="10px" id="calc23"/></td></tr>
+    <tr><td></td><td></td></tr>
+</table>
+<br><br>
+<button type="button" class="button" onclick="addGels()">Add Gel Configuration Table</button>
+<br><br>
+<table style="visibility:hidden" id="table3"></table>
 <script type='text/javascript'>
-function addRows() {
-    var table = document.getElementById('table1');
-    var trows = table.rows.length;
-    var tcols = table.rows[0].cells.length;
-    var row = table.insertRow(trows);
-    for (var i=0;i<tcols;i++) {
-	var txt = document.createElement('input')
-	txt.setAttribute('type','text');
-	txt.setAttribute('size','10px');
-	txt.setAttribute('id',`${trows}${i}`);
-	var col = row.insertCell(i);
-	col.appendChild(txt);
-    }
-}	
 function calculate() {
-    var count = 0;
-    var table = document.getElementById('table1');
-    var trows = table.rows.length;
-    var tcols = table.rows[0].cells.length;
-    for (var i=0;i<trows;i++) {
-        for (var j=0;j<tcols;j++) {
-            var txtcontent = document.getElementById(`${i}${j}`).value;
-            if(txtcontent != '') {
-                count++;
-            }
+    	var count = parseInt(document.getElementById('01').value);
+	var wells = parseInt(document.getElementById('02').value);
+	var size = 50;
+	var perc = parseInt(document.getElementById('04').value);
+	if (document.getElementById('03').value === "Large") {size = 2 * size;}
+	document.getElementById('calc20').value = Math.round(count * size * 6 * (1/50));
+	document.getElementById('calc21').value = "" + Math.round(count * size * 6) + "mL \(" + Math.round(count * size * 6 * (49/50)) + " mL ddH2O\)" ;
+	document.getElementById('calc22').value = Math.round(count * size * perc);
+	document.getElementById('calc23').value = Math.round(count * size * perc);
+}
+function addGels() {
+    const band_width = 40;
+    //empty the table if already filled
+    var table3 = document.getElementById('table3');
+    var t3rws = table3.rows.length;
+    if(t3rws>0) {
+        for(var ii=0;ii<t3rws;ii++) {
+            table3.deleteRow(-1);
         }
     }
-    //console.log(count)
-    if(count>0) {
-        // uncomment and adjust here with correct calculations for the correct text boxes above:
-        //
-        // document.getElementById('calc1').value = (0.22 * ( 2 + count )).toFixed(1);
+    //turn on the table & add the appropriate number of columns = # of wells + 1
+    table3.style="visibility:none";
+    var count = parseInt(document.getElementById('01').value);
+    var wells = parseInt(document.getElementById('02').value);
+    table3.style.width = `${(wells+1)*band_width}px`;
+    for(var g=0;g<count;g++) {
+        //first row of gel = lane names
+        var t3rws = table3.rows.length;
+        var row = table3.insertRow(t3rws);
+        row.style.height = '100px';
+        for(var c=0;c<wells+1;c++) {
+            var cell = row.insertCell(c);
+            //cell.style.width = '5px';
+            if(c>0) {
+                var laneName = document.createElement('input'); 
+                laneName.setAttribute('type','text'); 
+                laneName.setAttribute('size','10px');
+                laneName.setAttribute('id',`3${t3rws}${c}`);
+                cell.appendChild(laneName);
+                cell.style.transform = 'rotate(-90deg)';
+                cell.style.transformOrigin = '100% 50%';
+            }
+        }
+        //second row of gel = gel image in iframe
+        var t3rws = table3.rows.length;
+        var row = table3.insertRow(t3rws);
+        row.style.height = '250px';
+        //sliders
+        var col0 = row.insertCell(0);
+        var sld1 = document.createElement('input');
+        sld1.type = "range";
+        sld1.setAttribute('class','slider');
+        sld1.setAttribute('min','1');
+        sld1.setAttribute('max','100');
+        sld1.setAttribute('value','100');
+        sld1.setAttribute('id',`3_v_${g}`);
+        sld1.addEventListener("change",function(event){changeVerticalSize(event.target.id);});
+        col0.appendChild(sld1);
+        var sld2 = document.createElement('input');
+        sld2.type = 'range';
+        sld2.setAttribute('class','slider');
+        sld2.setAttribute('min','1');
+        sld2.setAttribute('max','100');
+        sld2.setAttribute('value','100');
+        sld2.setAttribute('id',`3_h_${g}`);
+        sld2.addEventListener("change",function(event){changeHorizontalSize(event.target.id);});
+        col0.appendChild(sld2);
+        col0.style.transform = 'rotate(-90deg)';
+        //iframe in div wrapper in table cell
+        var col1 = row.insertCell(1);
+        col1.colSpan = wells;
         
-        // document.getElementById('calc2').value = (1.1 * ( 2 + count )).toFixed(1);
-
-        // document.getElementById('calc3').value = (218.9 * ( 2 + count )).toFixed(1);
+        var ifrm = document.createElement('iframe');
+        ifrm.setAttribute('id',`3_ifrm_${g}`);
+        ifrm.setAttribute('height',row.style.height);
+        ifrm.setAttribute('width',(wells+1)*band_width);
+        ifrm.style.cssText = 'position: relative; border: 0';
+        ifrm.src = 'about:blank';
+        col1.appendChild(ifrm);
+        /**
+        var svg_lines = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg_lines.setAttribute('height',"250");
+        svg_lines.setAttribute('width',"500");
+        for(var l=1;l<wells;l++) {
+            var newLine = document.createElementNS('http://www.w3.org/2000/svg','line');
+            newLine.setAttribute('x1',l*band_width);
+            newLine.setAttribute('x2',l*band_width);
+            newLine.setAttribute('y1',"0");
+            newLine.setAttribute('y2',"250");
+            newLine.style.cssText = 'position: absolute; top:0; left:0; bottom: 0; right: 0; width: 100%; height: 100%; pointer-events: none; stroke: #494949; stroke-width: 2px';
+            svg_lines.append(newLine);
+        }
+        col1.appendChild(svg_lines);
+        **/
+        var w = document.createElement('input');
+        w.type = 'hidden';
+        w.setAttribute('id',`3_ifrm_${g}_width`);
+        col1.appendChild(w);
+        var h = document.createElement('input');
+        h.type = 'hidden';
+        h.setAttribute('id',`3_ifrm_${g}_height`);
+        col1.appendChild(h);
+        //third row of gel = file selector and load button
+        var t3rws = table3.rows.length;
+        var row = table3.insertRow(t3rws);
+        row.style.height = '20px';
+        var col0 = row.insertCell(0);
+        col0.colSpan = 1+wells;
+        var addimg = document.createElement('input');
+        addimg.type='file';
+        addimg.setAttribute('accept', 'image/*');
+        addimg.setAttribute('id',`3_fb_${g}`);
+        col0.appendChild(addimg);
+        var upimg = document.createElement('button');
+        upimg.setAttribute('id',`3_ub_${g}`);
+        upimg.innerHTML = 'Upload';
+        upimg.style.height = '22px';
+        upimg.style.width = '60px';
+        upimg.addEventListener("click",function(event){loadImgFile(event.target.id);});
+        col0.appendChild(upimg);
     }
+}
+function loadImgFile(btn_id) {
+    var wells = parseInt(document.getElementById('02').value);
+    //figure out which file and iframe to reference based on the id
+    var id_num = btn_id.split('_')[2];
+    var iframe_id = document.getElementById(`3_ifrm_${id_num}`);
+    var file_select_id = document.getElementById(`3_fb_${id_num}`);
+    // remove any child nodes
+    while (iframe_id.contentWindow.document.getElementsByTagName("body")[0].firstChild) {
+        iframe_id.contentWindow.document.getElementsByTagName("body")[0].removeChild(iframe_id.contentWindow.document.getElementsByTagName("body")[0].lastChild);
+    }
+    // check if file name set
+    if (file_select_id.files.length == 1) {
+        var reader = new FileReader();
+        reader.onload = function(event) {
+            var newImage = document.createElement("img");
+            newImage.setAttribute('id',`3_img_${id_num}`);
+            newImage.src = event.target.result;
+            iframe_id.contentWindow.document.getElementsByTagName("body")[0].appendChild(newImage);
+            document.getElementById(`3_ifrm_${id_num}_width`).value = newImage.width;
+            document.getElementById(`3_ifrm_${id_num}_height`).value = newImage.height;
+            iframe_id.contentWindow.document.getElementsByTagName("body")[0].style.cssText = 'overflow: hidden';
+        };
+        reader.readAsDataURL(file_select_id.files[0]);
+        
+     
+    }
+    iframe_id.contentWindow.document.getElementsByTagName("body")[0].style.scrollbarWidth = 'none';
+    
+}
+function changeHorizontalSize(btn_id) {
+    var id_num = btn_id.split('_')[2];
+    var range = document.getElementById(`3_h_${id_num}`).value;
+    document.getElementById(`3_ifrm_${id_num}`).contentWindow.document.getElementsByTagName("body")[0].childNodes[0].width = (range/100) * document.getElementById(`3_ifrm_${id_num}_width`).value;
+}
+function changeVerticalSize(btn_id) {
+    var id_num = btn_id.split('_')[2];
+    var range = document.getElementById(`3_v_${id_num}`).value;
+    document.getElementById(`3_ifrm_${id_num}`).contentWindow.document.getElementsByTagName("body")[0].childNodes[0].height = (range/100) * document.getElementById(`3_ifrm_${id_num}_height`).value;
 }
 </script>
 </body>
 </html>
 ~~~~
 ### procedures
-1. Weigh out (in an Erlenmeyer flask) the appropriate amount of agarose: For 1% Agarose in a small size gel mix 0.5 g Agarose in 50 mL 1xTAE; for 1% Agarose in a large size gel mix 1.0 g Agarose in 100 mL 1xTAE
-2. Microwave agarose slurry on high in 30 s increments until boiling
+1. Weigh out (in an Erlenmeyer flask) the appropriate amount of agarose; add the appropriate volume of 1x TAE
+2. Microwave the agarose slurry on high in 30 s increments until boiling
 3. Allow agarose solution to cool to ~60C
 4. Add Ethidium bromide: 25 uL for small gel; 50 uL for large gel
 5. Assemble gel cast apparatus and insert combs (one for small gel and 1-2 for large gel)
