@@ -35,5 +35,6 @@
 ## Staining:
 
 [Western Blot SYPRO Total Protein Stain](western_blot_SYPRO_total_protein_stain.md)<br>
+[Western Blot Fluorescence Immunostain](western_blot_fluorescence_immunostain.md)<br>
 
 ## Imaging:
