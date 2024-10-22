@@ -14,6 +14,8 @@
 
 ### hazards
 - ...insert details here...
+
+### personal
 - Lab Coat
 - Eye Protection
 - Nitrile Gloves
