@@ -212,21 +212,11 @@ function addGels() {
         ifrm.style.cssText = 'position: relative; border: 0';
         ifrm.src = 'about:blank';
         col1.appendChild(ifrm);
-        /**
-        var svg_lines = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
-        svg_lines.setAttribute('height',"250");
-        svg_lines.setAttribute('width',"500");
-        for(var l=1;l<wells;l++) {
-            var newLine = document.createElementNS('http://www.w3.org/2000/svg','line');
-            newLine.setAttribute('x1',l*band_width);
-            newLine.setAttribute('x2',l*band_width);
-            newLine.setAttribute('y1',"0");
-            newLine.setAttribute('y2',"250");
-            newLine.style.cssText = 'position: absolute; top:0; left:0; bottom: 0; right: 0; width: 100%; height: 100%; pointer-events: none; stroke: #494949; stroke-width: 2px';
-            svg_lines.append(newLine);
-        }
-        col1.appendChild(svg_lines);
-        **/
+        //add empty row
+	    var t3rws = table3.rows.length;
+        var row = table3.insertRow(t3rws);
+        row.style.height = '40px';
+
         var w = document.createElement('input');
         w.type = 'hidden';
         w.setAttribute('id',`3_ifrm_${g}_width`);
