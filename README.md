@@ -27,6 +27,7 @@
 [BioMax Agarose Gel Electrophoresis](biomax_agarose_gel_electrophoresis.md)<br>
 [Agarose Band Excision](agarose_gel_band_excision.md)<br>
 [SDS-Page Protein Electrophoresis](sds_page_protein_electrophoresis.md)<br>
+[Western Blot](western_blot.md)<br>
 
 ## Staining:
 
