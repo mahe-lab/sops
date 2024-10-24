@@ -1,11 +1,11 @@
 
 ### protocol
-- Protocol: ...insert details here...
+- Protocol: RNA Extraction from Cell Pellet Materials (including RBC-Lysed Blood/Marrow)
 - Faculty: Cumming School of Medicine
 - Institute: Charbonneau Cancer Institute
 - Site: Arthur J.E. Child Comprehensive Cancer Center, YC083402
-- Version: ...insert details here...
-- Version Date: ...insert details here...
+- Version: 1
+- Version Date: 20MAY2024
 - Approver: ermahe@ucalgary.ca
 
 ### authorization
@@ -13,7 +13,7 @@
 - Requires Pre-Authorization by PI
 
 ### hazards
-- ...insert details here...
+- Ethanol, and buffers RLT, RW1 and RPE are toxic, volatile, flammable, and/or poisonous.
 
 ### ppe
 - Lab Coat
@@ -21,27 +21,34 @@
 - Nitrile Gloves
 
 ### where
-- ...insert details here...
+- Fumehood
+- Pre-PCR bench
 
 ### references
 - ...insert details here...
 
 ### emergency
-- ...insert details here...
+- Use spill kit to clean up small spills; Contact maintenance and log incident for large spills
+- If skin/eye contact with chemicals, flush aggressively and continuously with water using an eyewash, sink or shower
+- Contact emergency services and log any injuries
 
 ### cleanup
 - Wipe down work surfaces with 70% isopropanol
-- ...insert details here...
 
 ### waste
 - Tips/Tubes should be disposed of in yellow biohazard bag/tub
 - ...insert details here...
 
 ### maintenance
-- ...insert details here...
+- Wipe down work surfaces with 70% isopropanol
 
 ### before_starting
-- ...insert details here...
+- This protocol requires 70% Ethanol, Qiagen DNase booster buffer, DNase 1 stock solution, Qiagen buffer RW1 Qiagen buffer RPE and RNase-free water
+- DNase 1 stock solution (from QIAGEN DNase 1 kit): Dissolve lyophilized DNase 1 (1500 Kunitz units) in 550 μl RNase-free water
+- DNase 1 stock solution can be kept for 9+ months at -20C
+-
+- RNeasy columns, collection and specimen (elution) tubes are required
+- Use the calculator below to 
 
 ### calculator
 ~~~~
