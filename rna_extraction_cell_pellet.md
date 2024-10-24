@@ -48,7 +48,7 @@
 - DNase 1 stock solution can be kept for 9+ months at -20C
 - 
 - RNeasy columns, collection and specimen (elution) tubes are required
-- Enter specimen accession numbers below and use the calculator to calculate the 
+- Enter specimen accession numbers below and use the calculator to calculate the required reagent volumes
 
 ### calculator
 ~~~~
