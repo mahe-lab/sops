@@ -49,12 +49,14 @@
 
 ### before_starting
 - Ensure that sufficient Xylene, 100% Ethanol, buffer PKD, Proteinase K, DNase I, DNase booster, buffer RBC, buffer RPE and RNase-free (DEPC) water available
--
+- 
 - DNase I stock solution (from QIAGEN DNase I kit): Dissolve lyophilized DNase I (1500 Kunitz units) in 550 μl RNase-free water
 - DNase 1 stock solution can be kept for 9+ months at -20C 
--
+- 
 - Obtain fresh scrape blades (one per specimen)
 - Extra 2 mL microfuge tubes, RNeasy columns and elution (specimen collection) tubes are required
+
+
 
 ### procedures
 1. Ensure that specimens are accessioned and that a sufficient number of labels are printed (usually 3 per specimen)
