@@ -1,10 +1,10 @@
 
 ### protocol
-- Protocol: ...insert details here...
+- Protocol: DNA Extraction from Cell Pellet Materials
 - Faculty: Cumming School of Medicine
 - Institute: Charbonneau Cancer Institute
 - Site: Arthur J.E. Child Comprehensive Cancer Center, YC083402
-- Version: ...insert details here...
+- Version: 1
 - Version Date: ...insert details here...
 - Approver: ermahe@ucalgary.ca
 
