@@ -25,7 +25,7 @@
 - Pre-PCR bench
 
 ### references
-- ...insert details here...
+- QIAGEN RNeasy Mini Handbook:
 
 ### emergency
 - Use spill kit to clean up small spills; Contact maintenance and log incident for large spills
@@ -36,8 +36,8 @@
 - Wipe down work surfaces with 70% isopropanol
 
 ### waste
-- Tips/Tubes should be disposed of in yellow biohazard bag/tub
-- ...insert details here...
+- Tips/Tubes should be disposed of in yellow biohazard bag
+- Reagent/flow through disposal in aqueous chemical waste container
 
 ### maintenance
 - Wipe down work surfaces with 70% isopropanol
@@ -46,7 +46,7 @@
 - This protocol requires 70% Ethanol, DNase booster buffer, DNase I stock solution, buffer RW1, buffer RPE and RNase-free (DEPC) water
 - DNase 1 stock solution (from QIAGEN DNase 1 kit): Dissolve lyophilized DNase 1 (1500 Kunitz units) in 550 μl RNase-free water
 - DNase 1 stock solution can be kept for 9+ months at -20C
--
+- 
 - RNeasy columns, collection and specimen (elution) tubes are required
 - Enter specimen accession numbers below and use the calculator to calculate the 
 
@@ -74,23 +74,19 @@
 <!--- insert the necessary calculations here.--->
 <table id="table2">
 	<tr><td>DNase Working Solution:</td><td></td></tr>
-<!--- calculation: --->
 	<tr><td>Volume of DNase booster buffer required (uL):</td>
 	<td><input readonly type="text" size="10px" id="calc1"/></td></tr>
-<!--- calculation: --->
 	<tr><td>Volume of DNase I stock solution required (uL):</td>
 	<td><input readonly type="text" size="10px" id="calc2"/></td></tr>
-<tr><td></td><td></td></tr>
-<tr><td>Volume of 70% Ethanol required (uL):</td>
+	<tr><td></td><td></td></tr>
+	<tr><td>Volume of 70% Ethanol required (uL):</td>
 	<td><input readonly type="text" size="10px" id="calc3"/></td></tr>
-<!--- calculation: --->
 	<tr><td>Volume of buffer RW1 required (uL):</td>
 	<td><input readonly type="text" size="10px" id="calc4"/></td></tr>
-  <tr><td>Volume of buffer RPE required (uL):</td>
+  	<tr><td>Volume of buffer RPE required (uL):</td>
 	<td><input readonly type="text" size="10px" id="calc5"/></td></tr>
-   <tr><td>Volume of RNase-free water equired (uL):</td>
+   	<tr><td>Volume of RNase-free water equired (uL):</td>
 	<td><input readonly type="text" size="10px" id="calc6"/></td></tr>
-
 </table>
 <br>
 <button type="button" class="button" onclick="calculate()">Calculate</button>
@@ -128,7 +124,7 @@ function calculate() {
         document.getElementById('calc2').value = (77 * (count)).toFixed(1);
         document.getElementById('calc3').value = (660 * (count)).toFixed(1);
         document.getElementById('calc4').value = (770 * (count)).toFixed(1);
-        document.getElementById('calc5').value = (550 * (count)).toFixed(1);
+        document.getElementById('calc5').value = (1100 * (count)).toFixed(1);
         document.getElementById('calc6').value = (33 * (count)).toFixed(1);
     }
 }
@@ -144,18 +140,18 @@ function calculate() {
 4. Transfer ~600 uL of the specimen from step 1 to the column
 5. Centrifuge 15 sec at 10,000 rpm
 6. Discard flow-through in liquid waste
-7. Repeat steps 4-6 until all the materials from step 1 are passed through the column
+7. Repeat steps 4-6 until all the materials from step 2 are passed through the column
 8. Add 350 μl Buffer RW1 to the RNeasy spin column. Close the lid gently, and centrifuge for 15 s at 10,000 rpm
-9. Discard the flow-through.
-10.	Add 80 uL of DNase working solution to the column (aim directly for the membrane); let stand on the bench for 15 min.
-11.	Add 350 μl Buffer RW1 to the RNeasy spin column. Close the lid gently, and centrifuge for 15 s at 10,000 rpm
-12.	Discard flow-through
-13.	Add 500 μl Buffer RPE to the RNeasy spin column
-14.	Centrifuge for 15 s at 10,000 rpm
-15.	Discard flow-through
-16.	Repeat steps 12-14
-17.	Centrifuge for 2 min at 10,000 rpm to dry the membrane
-18.	Carefully transfer the column to a new labelled specimen tube (be sure not to get the column wet with the flow-through)
-19.	Carefully add 30 uL RNase-free water to the CENTER of the column. Avoid touching the walls/sides of the column with pipette tip
-20.	Centrifuge for 1 min at full speed to elute the RNA
-21.	Proceed to RNA quantification & store specimen in -20C freezer
+9. Discard the flow-through
+10. Add 80 uL of DNase working solution to the column (aim directly for the membrane); let stand on the bench for 15 min
+11. Add 350 μl Buffer RW1 to the RNeasy spin column. Re-cap gently, and centrifuge for 15 s at 10,000 rpm
+12. Discard flow-through
+13. Add 500 μl Buffer RPE to the RNeasy spin column
+14. Centrifuge for 15 s at 10,000 rpm
+15. Discard flow-through
+16. Repeat steps 13-15
+17. Centrifuge for 2 min at 10,000 rpm to dry the membrane
+18. Carefully transfer the column to a new labelled specimen tube (be sure not to get the column wet with the flow-through)
+19. Carefully add 30 uL RNase-free water to the CENTER of the column. Avoid touching the walls/sides of the column with pipette tip
+20. Centrifuge for 1 min at full speed to elute the RNA
+21. Proceed to RNA quantification & store specimen in -20C freezer
