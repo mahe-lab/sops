@@ -10,6 +10,8 @@
 
 ## Extraction:
 
+[RNA Extraction from FFPE or Tissue Transfer Materials](rna_extraction_ffpe_tissue_transfer.md)<br>
+[DNA Extraction from FFPE or Tissue Transfer Materials](dna_extraction_ffpe_tissue_transfer.md)<br>
 [Acetone Protein Precipitation](acetone_protein_precipitation.md)<br>
 [SDS-DTT Protein Extraction From FFPE Material](sds_dtt_protein_extraction_from_ffpe_material.md)<br>
 
