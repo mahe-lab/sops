@@ -27,7 +27,7 @@
 - Pre-PCR bench
 
 ### references
-- QIAGEN RNEasy FFPE Handbook: 
+- QIAGEN RNEasy FFPE Handbook: https://github.com/mahe-lab/sops/blob/main/MAHELAB_SOP_Assets/RNeasy%20RNA%20FFPE.pdf
 
 ### emergency
 - Use spill kit to clean up small spills; Contact maintenance and log incident for large spills
