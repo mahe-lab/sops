@@ -155,7 +155,7 @@ function calculate() {
 1. Ensure that specimens are accessioned and that a sufficient number of labels are printed (usually 3 per specimen)
 2. IF STARTING WITH CURLS/SCROLLS OR TISSUE TRANSFER MATERIAL: Ensure the tube(s) are correctly labelled; move to step 4
 3. IF STARTING WITH SLIDES: If coverslipped, soak with xylene in a Coplin jar in fume hood for ~4 hours; use gentle traction (applied using forceps or another slide) to remove the coverslip; Use a fresh scrape blade to scrape off the materials into a labelled 2.0 mL microfuge tube
-4. In the fumehood, add 1 ml xylene per tube
+4. In the fumehood, add 1000 uL xylene per tube
 5. Cap, vortex well and incubate 5 min at RT
 6. Centrifuge 2 min at 16,000 × g at RT and carefully pipette off the supernatant
 7. Add 1000 uL 100% Ethanol
@@ -168,7 +168,7 @@ function calculate() {
 14. Incubate on ice for 3 min
 15. Centrifuge for 15 min at 16,000 × g
 16. Transfer supernatant to a new labelled microfuge tube
-17. Add 35 uL DNase working solution booster buffer & 10 uL DNase 1 stock solution
+17. Add 35 uL DNase working solution
 18. Mix gently by inversion & incubate at RT for 15 minutes
 19. Add 500 uL buffer RBC and vortex
 20. Add 1000 uL 100% Ethanol & mix well by pipetting up and down. CAREFUL, TUBE WILL BE QUITE FULL!!
