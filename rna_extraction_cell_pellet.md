@@ -25,7 +25,7 @@
 - Pre-PCR bench
 
 ### references
-- QIAGEN RNeasy Mini Handbook:
+- QIAGEN RNeasy Mini Handbook: https://github.com/mahe-lab/sops/blob/main/MAHELAB_SOP_Assets/RNeasy%20RNA%20FreshTissue.pdf
 
 ### emergency
 - Use spill kit to clean up small spills; Contact maintenance and log incident for large spills
