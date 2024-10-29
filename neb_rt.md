@@ -49,7 +49,84 @@
 
 ### calculator
 ~~~~
-...insert html code here...
+<table id="table1">
+    <tr><td>Accession number:</td><td>RNA Concentration (ug/uL):</td></tr>
+    <tr><td><input type="text" size="10px" id="110" placeholder=""/></td><td><input type="text" size="10px" id="111" placeholder=""/></tr>
+    <tr><td><input type="text" size="10px" id="120" placeholder=""/></td><td><input type="text" size="10px" id="121" placeholder=""/></tr>
+    <tr><td><input type="text" size="10px" id="130" placeholder=""/></td><td><input type="text" size="10px" id="131" placeholder=""/></tr>
+    <tr><td><input type="text" size="10px" id="140" placeholder=""/></td><td><input type="text" size="10px" id="141" placeholder=""/></tr>
+</table>
+<br>
+<button type="button" class="button" onclick="addRow()">Add Row</button><button type="button" class="button" onclick="deleteRow()">Remove Row</button>
+<br><br>
+<!--- insert the necessary calculations here.--->
+<table id="table2">
+    <tr><td>RTWS Calculations:</td><td></td></tr>
+    <tr><td>Volume of NEB 10X Isothermal Amplification Buffer (uL):</td>
+<!--- calculation: --->
+    <td><input readonly type="text" size="10px" id="calc1"/></td></tr>
+    <tr><td>Volume of NEB dNTP Mix (uL):</td>
+<!--- calculation: --->
+    <td><input readonly type="text" size="10px" id="calc2"/></td></tr>
+    <tr><td>Volume of NEB Random Primer Mix (uL):</td>
+<!--- calculation: --->
+    <td><input readonly type="text" size="10px" id="calc3"/></td></tr>
+<tr><td>Volume of NEB Murine RNase Inhibitor (uL):</td>
+<!--- calculation: --->
+    <td><input readonly type="text" size="10px" id="calc4"/></td></tr>
+<tr><td>Volume of NEB WarmStart RTx Reverse Transcriptase (uL):</td>
+<!--- calculation: --->
+    <td><input readonly type="text" size="10px" id="calc5"/></td></tr>
+</table>
+<br>
+<button type="button" class="button" onclick="calculate()">Calculate Reagent Volumes</button>
+<br><br>
+<button type="button" class="button" onclick="addCalcTable()">Add/Reload Calculation Table</button>
+<br><br>
+<script type='text/javascript'>
+function addRow() {
+    document.getElementById('table3').style="visibility:hidden";
+    document.getElementById('calc1').value = "";
+    document.getElementById('calc2').value = "";
+    document.getElementById('calc3').value = "";
+    document.getElementById('calc4').value = "";
+    var table1 = document.getElementById('table1');
+    var trows = table1.rows.length;
+    var row = table1.insertRow(trows);
+    var txtAcc = document.createElement('input'); txtAcc.setAttribute('type','text'); txtAcc.setAttribute('size','10px'); txtAcc.setAttribute('id',`1${trows}0`); var col = row.insertCell(0); col.appendChild(txtAcc);
+    var txtWt = document.createElement('input'); txtWt.setAttribute('type','text'); txtWt.setAttribute('size','10px'); txtWt.setAttribute('id',`1${trows}1`); var col = row.insertCell(1); col.appendChild(txtWt);
+}
+function deleteRow() {
+    document.getElementById('table3').style="visibility:hidden";
+    document.getElementById('calc1').value = "";
+    document.getElementById('calc2').value = "";
+    document.getElementById('calc3').value = "";
+    document.getElementById('calc4').value = "";
+    var table1 = document.getElementById('table1');
+    var trows = table1.rows.length;
+    if(trows>1) { table1.deleteRow(-1); }
+}
+function calculate() {
+    document.getElementById('table3').style="visibility:hidden";
+    var count = 0;
+    var table1 = document.getElementById('table1');
+    var trows = table1.rows.length;
+    var tcols = table1.rows[1].cells.length;
+    for(var i=1;i<trows;i++) {
+        var accText = document.getElementById('1'+`${i}`+'0').value;
+        var wtText = parseFloat(document.getElementById('1'+`${i}`+'1').value);
+        if( accText != '' && !isNaN(wtText) ) {
+            count++;
+        }
+    }
+    if(count == (trows-1)) {
+        document.getElementById('calc1').value = (2.5 * count ).toFixed(1);
+        document.getElementById('calc2').value = (200 * ( 16 + count )).toFixed(1);
+        document.getElementById('calc3').value = (10 * ( 16 + count )).toFixed(1);
+        document.getElementById('calc4').value = (10 * ( 16 + count )).toFixed(1);
+        document.getElementById('calc5').value = (10 * ( 16 + count )).toFixed(1);
+    }
+}
 ~~~~
 
 ### procedures
