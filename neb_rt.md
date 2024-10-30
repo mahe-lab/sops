@@ -39,7 +39,8 @@
 - Tips/Tubes should be disposed of in biohazard bags
 
 ### maintenance
-- ...insert details here...
+- Wipe down work surfaces with 70% isopropanol
+- 5 minute Dead-air UV exposure
 
 ### before_starting
 - Obtain some ice and place in the dead-air box ice box; the aluminum tube tray can be chilled in the dead-air box ice box
@@ -49,15 +50,26 @@
 
 ### calculator
 ~~~~
+ <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mahe-lab_style.css">
+        <title>MAHELAB SOP Calculator</title>
+    </head>
+<body>
 <table id="table1">
-    <tr><td>Accession number:</td><td>RNA Concentration (ug/uL):</td></tr>
-    <tr><td><input type="text" size="10px" id="110" placeholder=""/></td><td><input type="text" size="10px" id="111" placeholder=""/></tr>
-    <tr><td><input type="text" size="10px" id="120" placeholder=""/></td><td><input type="text" size="10px" id="121" placeholder=""/></tr>
-    <tr><td><input type="text" size="10px" id="130" placeholder=""/></td><td><input type="text" size="10px" id="131" placeholder=""/></tr>
-    <tr><td><input type="text" size="10px" id="140" placeholder=""/></td><td><input type="text" size="10px" id="141" placeholder=""/></tr>
+    <tr><td>Accession number:</td><td>RNA Concentration (ug/uL):</td><td>Volume of Specimen Required (uL):</td><td>Volume of ddH<sub>2</sub>O Required (uL):</td></tr>
+    <tr><td><input type="text" size="10px" id="110" placeholder=""/></td><td><input type="text" size="10px" id="111" placeholder=""/></td><td><input readonly type="text" size="20px" id="112" placeholder=""/></td><td><input readonly type="text" size="10px" id="113" placeholder=""/></td></tr>
+    <tr><td><input type="text" size="10px" id="120" placeholder=""/></td><td><input type="text" size="10px" id="121" placeholder=""/></td><td><input readonly type="text" size="20px" id="122" placeholder=""/></td><td><input readonly type="text" size="10px" id="123" placeholder=""/></td></tr>
+    <tr><td><input type="text" size="10px" id="130" placeholder=""/></td><td><input type="text" size="10px" id="131" placeholder=""/></td><td><input readonlytype="text" size="20px" id="132" placeholder=""/></td><td><input readonly type="text" size="10px" id="133" placeholder=""/></td></tr>
+    <tr><td><input type="text" size="10px" id="140" placeholder=""/></td><td><input type="text" size="10px" id="141" placeholder=""/></td><td><input readonly type="text" size="20px" id="142" placeholder=""/></td><td><input readonly type="text" size="10px" id="143" placeholder=""/></td></tr>
+
 </table>
 <br>
 <button type="button" class="button" onclick="addRow()">Add Row</button><button type="button" class="button" onclick="deleteRow()">Remove Row</button>
+<br><br>
+<button type="button" class="button" onclick="calculate()">Calculate Volumes</button><br><br> Input RNA (ug): <input type="text" size="10px" id="calc6" placeholder=""/> <button type="button" class="button" onclick="recalcWt()">Re-Calculate with New Input RNA Amount</button>
 <br><br>
 <!--- insert the necessary calculations here.--->
 <table id="table2">
@@ -78,55 +90,86 @@
 <!--- calculation: --->
     <td><input readonly type="text" size="10px" id="calc5"/></td></tr>
 </table>
-<br>
-<button type="button" class="button" onclick="calculate()">Calculate Reagent Volumes</button>
-<br><br>
-<button type="button" class="button" onclick="addCalcTable()">Add/Reload Calculation Table</button>
+
 <br><br>
 <script type='text/javascript'>
 function addRow() {
-    document.getElementById('table3').style="visibility:hidden";
     document.getElementById('calc1').value = "";
     document.getElementById('calc2').value = "";
     document.getElementById('calc3').value = "";
     document.getElementById('calc4').value = "";
+    document.getElementById('calc5').value = "";
+    document.getElementById('calc6').value = "";
     var table1 = document.getElementById('table1');
     var trows = table1.rows.length;
     var row = table1.insertRow(trows);
     var txtAcc = document.createElement('input'); txtAcc.setAttribute('type','text'); txtAcc.setAttribute('size','10px'); txtAcc.setAttribute('id',`1${trows}0`); var col = row.insertCell(0); col.appendChild(txtAcc);
-    var txtWt = document.createElement('input'); txtWt.setAttribute('type','text'); txtWt.setAttribute('size','10px'); txtWt.setAttribute('id',`1${trows}1`); var col = row.insertCell(1); col.appendChild(txtWt);
+    var txtConc = document.createElement('input'); txtConc.setAttribute('type','text'); txtConc.setAttribute('size','10px'); txtConc.setAttribute('id',`1${trows}1`); var col = row.insertCell(1); col.appendChild(txtConc);
+    var txtVol = document.createElement('input'); txtVol.setAttribute('type','text'); txtVol.setAttribute('readonly',true); txtVol.setAttribute('size','20px'); txtVol.setAttribute('id',`1${trows}2`); var col = row.insertCell(2); col.appendChild(txtVol);
+    var txtH2O = document.createElement('input'); txtH2O.setAttribute('type','text'); txtH2O.setAttribute('readonly',true); txtH2O.setAttribute('size','10px'); txtH2O.setAttribute('id',`1${trows}3`); var col = row.insertCell(3); col.appendChild(txtH2O);
 }
 function deleteRow() {
-    document.getElementById('table3').style="visibility:hidden";
     document.getElementById('calc1').value = "";
     document.getElementById('calc2').value = "";
     document.getElementById('calc3').value = "";
     document.getElementById('calc4').value = "";
+    document.getElementById('calc5').value = "";
+    document.getElementById('calc6').value = "";
     var table1 = document.getElementById('table1');
     var trows = table1.rows.length;
     if(trows>1) { table1.deleteRow(-1); }
 }
 function calculate() {
-    document.getElementById('table3').style="visibility:hidden";
     var count = 0;
     var table1 = document.getElementById('table1');
     var trows = table1.rows.length;
-    var tcols = table1.rows[1].cells.length;
+    var minConc = Number.POSITIVE_INFINITY;
     for(var i=1;i<trows;i++) {
-        var accText = document.getElementById('1'+`${i}`+'0').value;
-        var wtText = parseFloat(document.getElementById('1'+`${i}`+'1').value);
-        if( accText != '' && !isNaN(wtText) ) {
+        var txtAcc = document.getElementById('1'+`${i}`+'0').value;
+        var txtConc = parseFloat(document.getElementById('1'+`${i}`+'1').value);
+        if( txtAcc != '' && !isNaN(txtConc) ) {
             count++;
+            if( txtConc < minConc ) {
+                var minConc = txtConc;
+            }
         }
     }
-    if(count == (trows-1)) {
-        document.getElementById('calc1').value = (2.5 * count ).toFixed(1);
-        document.getElementById('calc2').value = (200 * ( 16 + count )).toFixed(1);
-        document.getElementById('calc3').value = (10 * ( 16 + count )).toFixed(1);
-        document.getElementById('calc4').value = (10 * ( 16 + count )).toFixed(1);
-        document.getElementById('calc5').value = (10 * ( 16 + count )).toFixed(1);
+    if( count == (trows-1) && minConc < Number.POSITIVE_INFINITY ) {
+        document.getElementById('calc1').value = (2.2 * count ).toFixed(2);
+        document.getElementById('calc2').value = (1.1 * count ).toFixed(2);
+        document.getElementById('calc3').value = (2.2 * count ).toFixed(2);
+        document.getElementById('calc4').value = (0.55 * count ).toFixed(2);
+        document.getElementById('calc5').value = (0.275 * count ).toFixed(2);
+        // compute volumes relative to the least available input mass; 1 ng to 1 μg total RNA, add them to readonly fields
+        var inputMass = minConc * 14.25;
+        if (inputMass >= 1) {
+            var inputMass = 1;
+        }
+        document.getElementById('calc6').value = inputMass.toFixed(2);
+        for(var i=1;i<trows;i++) {
+            var volI = (inputMass / parseFloat(document.getElementById('1'+`${i}`+'1').value)).toFixed(2);
+            document.getElementById('1'+`${i}`+'2').value = volI; 
+            document.getElementById('1'+`${i}`+'3').value = 14.25 - volI;
+        }
     }
 }
+function recalcWt() {
+    var table1 = document.getElementById('table1');
+    var trows = table1.rows.length;
+    var newWt = parseFloat(document.getElementById('calc6').value);
+    for(var i=1;i<trows;i++) {
+        var volI = (newWt / parseFloat(document.getElementById('1'+`${i}`+'1').value)).toFixed(2);
+        document.getElementById('1'+`${i}`+'2').value = volI; 
+        document.getElementById('1'+`${i}`+'3').value = 14.25 - volI;
+        if(volI > 14.25) {
+            document.getElementById('1'+`${i}`+'2').value = NaN;
+            document.getElementById('1'+`${i}`+'3').value = NaN;
+        }
+    }
+}
+</script>
+</body>
+</html>
 ~~~~
 
 ### procedures
