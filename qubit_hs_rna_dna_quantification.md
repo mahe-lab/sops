@@ -137,6 +137,6 @@ function calculate() {
 4. Vortex each tube x 5 seconds; incubate the tubes at room temperature x 2 minutes
 5. Tap to wake the Qubit; select the appropriate specimen and assay type
 6. Read the standards
-7. Read each query specimen one at a time, ensuring that specimen volume is set accordingly (ie at 5 uL); record the concentrations (in ng/uL)
+7. Read each query specimen one at a time, ensuring that specimen volume is set accordingly (ie at 1 uL); record the concentrations (in ng/uL)
 8. Update the specimen database with the concentrations
 9. Any leftover working solution should be stored in the 4C fridge
