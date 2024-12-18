@@ -22,6 +22,7 @@
 [Qubit hs dsDNA/RNA Quantification](qubit_hs_rna_dna_quantification.md)<br>
 [Qubit Protein Quantification](qubit_protein_quantification.md)<br>
 [Iron Extraction and Quantification](iron_extraction_quantification.md)<br>
+[Human sCD30 Instant ELIZA Kit](Human_sCD30_Instant_ELISA_Kit.md)<br>
 
 ## PCR Protocols:
 
