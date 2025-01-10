@@ -25,8 +25,8 @@
 - Pre-PCR bench
 
 ### references
-- QIACUBE Manual: 
-- QIACUBE RNeasy Protocol Sheet: 
+- QIACUBE Manual: https://github.com/mahe-lab/sops/blob/main/MAHELAB_SOP_Assets/QiaCUBE_Manual.pdf
+- QIACUBE RNeasy Protocol Sheet: https://github.com/mahe-lab/sops/blob/main/MAHELAB_SOP_Assets/ProtocolSheet_RNA_RNeasyMini_AnimalCells_QIAshredderDNaseDigest_V1.pdf
 
 ### emergency
 - Use spill kit to clean up small spills; Contact maintenance and log incident for large spills
@@ -37,14 +37,13 @@
 - Wipe down work surfaces with 70% isopropanol
 
 ### waste
-- Tips/Tubes should be disposed of in yellow biohazard bag
-- Reagent/flow through disposal in aqueous chemical waste container
+- Tips/Tubes/Rotor Adapters should be disposed of in yellow biohazard bucket
 
 ### maintenance
 - Wipe down work surfaces with 70% isopropanol
 
 ### before_starting
-- This protocol requires that the QIACUBE be loaded with the correct reagent solutions, tips, and spin cartridges (with RNEasy columns, QIAShredder columns and collection tubes)
+- This protocol requires that the QIACUBE be loaded with the correct reagent solutions, tips, and rotor adapters (with RNEasy columns, QIAShredder columns and collection tubes)
 - A maximum of 12 specimens can be processed per run
 - Ensure that sufficient tube labels are available (each collection tube should be labelled)
 -  
@@ -111,5 +110,14 @@ function calculate() {
 
 ### procedures
 1. Ensure that cell lysis steps are complete (ie buffer RLT and beta-mercaptoethanol have been added to a cell pellet/lysis, with total volume ~600 uL)
-2. 
-21. Proceed to RNA quantification & store specimen in -20C freezer
+2. Begin by assembling the QIACUBE rotor adapters (use the above Protocol Sheet as a guide if required)
+3. In the hole at the narrow end of the rotor adapter (facing left), place one RNEasy spin column and anchor the cap securely
+4. In the middle hole, place one QIAShredder column (cut off the cap)
+5. In the third hole, place one QIAgen collection tube (labelled); anchor the cap securely in the anchor facing down
+6. Load the specimens (in even numbers) starting at the top of the specimen rack columns
+7. Load the corresponding rotor adapters in the appropriate rotor positions
+8. Load one full rack of 1000 uL (regular) QIACUBE tips
+9. Load one full rack of 1000 uL wide-bore QIACUBE tips
+10. Place the DNAse1 in the rear tube slot A and anchor the cap securely
+11. Load the "RNEasy" reagent rack, ensuring that the caps of each reagent container are removed and that sufficient reagent volume is present (not exceeding the marker line): 70% ethanol in position 2; buffer RW1 in position 4; buffer RPE in position 5; and RNase-free (DEPC) water in position 6
+12. Proceed to RNA quantification & store specimen in -20C freezer
