@@ -1,6 +1,6 @@
 
 ### protocol
-- Protocol: RNA Extraction from Cell Pellet Materials (including RBC-Lysed Blood/Marrow)
+- Protocol: Manual RNA Extraction from Cell Pellet Materials (including RBC-Lysed Blood/Marrow)
 - Faculty: Cumming School of Medicine
 - Institute: Charbonneau Cancer Institute
 - Site: Arthur J.E. Child Comprehensive Cancer Center, YC083402
