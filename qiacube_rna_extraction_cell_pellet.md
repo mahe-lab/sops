@@ -75,9 +75,9 @@
 <!--- insert the necessary calculations here.--->
 <table id="table2">
 	<tr><td>DNase Working Solution:</td><td></td></tr>
-	<tr><td>Volume of DNase booster buffer required (uL):</td>
-	<td><input readonly type="text" size="10px" id="calc1"/></td></tr>
 	<tr><td>Volume of DNase I stock solution required (uL):</td>
+	<td><input readonly type="text" size="10px" id="calc1"/></td></tr>
+	<tr><td>Volume of DNase booster buffer required (uL):</td>
 	<td><input readonly type="text" size="10px" id="calc2"/></td></tr>
 </table>
 <br>
