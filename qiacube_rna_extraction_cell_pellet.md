@@ -116,8 +116,8 @@ function calculate() {
 5. In the third hole, place one QIAgen collection tube (labelled); anchor the cap securely in the anchor facing down
 6. Load the specimens (in even numbers) starting at the top of the specimen rack columns
 7. Load the corresponding rotor adapters in the appropriate rotor positions
-8. Load one full rack of 1000 uL (regular) QIACUBE tips
-9. Load one full rack of 1000 uL wide-bore QIACUBE tips
+8. Load one full rack of 1000 uL regular (light-gray) QIACUBE tips
+9. Load one full rack of 1000 uL wide-bore (dark-gray) QIACUBE tips
 10. Place the DNAse1 in the rear tube slot A and anchor the cap securely
 11. Load the "RNEasy" reagent rack, ensuring that the caps of each reagent container are removed and that sufficient reagent volume is present (not exceeding the marker line): 70% ethanol in position 2; buffer RW1 in position 4; buffer RPE in position 5; and RNase-free (DEPC) water in position 6
 12. Proceed to RNA quantification & store specimen in -20C freezer
