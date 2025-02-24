@@ -70,47 +70,25 @@
 <body>
 <!---configure reagent prep details here, with calculations based on the table inputs below--->
 <table id="table1">
-	<tr><td>Scan/enter the specimen accession numbers:</td><td></tr>
-	<tr><td><input type="text" size="10px" id="00"/></td></tr>
-  <tr><td><input type="text" size="10px" id="10"/></td></tr>
-  <tr><td><input type="text" size="10px" id="20"/></td></tr>
-  <tr><td><input type="text" size="10px" id="30"/></td></tr>
-	<tr><td><input type="text" size="10px" id="40"/></td></tr>
-  <tr><td><input type="text" size="10px" id="50"/></td></tr>
-  <tr><td><input type="text" size="10px" id="60"/></td></tr>
-  <tr><td><input type="text" size="10px" id="70"/></td></tr>
+	<tr><td><input type="text" size="10px" id="00"/></td><td><input type="text" size="10px" id="01"/></td><td><input type="text" size="10px" id="02"/></td><td><input type="text" size="10px" id="03"/></td></tr>
+	<tr><td><input type="text" size="10px" id="10"/></td><td><input type="text" size="10px" id="11"/></td><td><input type="text" size="10px" id="12"/></td><td><input type="text" size="10px" id="13"/></td></tr>
+  <tr><td><input type="text" size="10px" id="20"/></td><td><input type="text" size="10px" id="21"/></td><td><input type="text" size="10px" id="22"/></td><td><input type="text" size="10px" id="23"/></td></tr>
 </table>
-<br>
-<button type="button" class="button" onclick="addRows()">Add Rows</button>
 <br>
 <!--- insert the necessary calculations here.--->
 <table id="table2">
-	<tr><td></td><td></td></tr>
 	<tr><td>Volume of Xylene required (uL):</td>
 	<td><input readonly type="text" size="10px" id="calc1"/></td></tr>
 	<tr><td>Volume of 100% Ethanol required (uL):</td>
 	<td><input readonly type="text" size="10px" id="calc2"/></td></tr>
-	<tr><td></td><td></td></tr>
-	<tr><td>ATL/Proteinase Working Solution:</td><td></td></tr>
-	<tr><td>Volume of buffer ATL (uL):</td>
+	<tr><td>Volume of Buffer ATL required (uL):</td>
 	<td><input readonly type="text" size="10px" id="calc3"/></td></tr>
 	<tr><td>Volume of Proteinase K required (uL):</td>
 	<td><input readonly type="text" size="10px" id="calc4"/></td></tr>
-	<tr><td></td><td></td></tr>
-	</table>
+</table>
 <br>
 <button type="button" class="button" onclick="calculate()">Calculate</button>
 <script type='text/javascript'>
-function addRows() {
-    	var table = document.getElementById('table1');
-    	var trows = table.rows.length;
-    	var row = table.insertRow(trows);
-	var txt = document.createElement('input')
-	txt.setAttribute('type','text');
-	txt.setAttribute('size','10px');
-	txt.setAttribute('id',`${trows}0`);
-	row.appendChild(txt);
-}	
 function calculate() {
     var count = 0;
     var table = document.getElementById('table1');
@@ -126,12 +104,13 @@ function calculate() {
     }
     //console.log(count)
     if(count>0) {
-	document.getElementById('calc1').value = (1100 * (count)).toFixed(1); //xylene
-        document.getElementById('calc2').value = (1100 * (count)).toFixed(1); //ethanol
-        document.getElementById('calc3').value = (198 * (count)).toFixed(1); //ATL
-        document.getElementById('calc4').value = (22 * (count)).toFixed(1); //Proteinase K
+	document.getElementById('calc1').value = (1100 * (count)).toFixed(1);
+        document.getElementById('calc2').value = (1100 * (count)).toFixed(1);
+	document.getElementById('calc3').value = (198 * (count)).toFixed(1);
+        document.getElementById('calc4').value = (22 * (count)).toFixed(1);
     }
 }
+
 </script>
 </body>
 </html>
