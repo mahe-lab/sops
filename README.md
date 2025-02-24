@@ -11,10 +11,13 @@
 ## Extraction:
 
 [DNA Extraction from Cell Pellet Materials](dna_extraction_cell_pellet.md)<br>
-[Manual RNA Extraction from Cell Pellet Materials](manual_rna_extraction_cell_pellet.md)<br>
-[QIACUBE RNA Extraction from Cell Pellet Materials](qiacube_rna_extraction_cell_pellet.md)<br>
+[RNA Extraction from Cell Pellet Materials](manual_rna_extraction_cell_pellet.md)<br><br>
 [DNA Extraction from FFPE or Tissue Transfer Materials](dna_extraction_ffpe_tissue_transfer.md)<br>
-[RNA Extraction from FFPE or Tissue Transfer Materials](rna_extraction_ffpe_tissue_transfer.md)<br>
+[RNA Extraction from FFPE or Tissue Transfer Materials](rna_extraction_ffpe_tissue_transfer.md)<br><br>
+[QIACUBE RNA Extraction from Cell Pellet Materials](qiacube_rna_extraction_cell_pellet.md)<br>
+[QIACUBE DNA Extraction from Cell Pellet Materials](qiacube_dna_extraction_cell_pellet.md)<br><br>
+[QIACUBE DNA Extraction from FFPE Materials](qiacube_dna_extraction_ffpe_tissue_transfer.md)<br>
+[QIACUBE RNA Extraction from FFPE Materials](qiacube_rna_extraction_ffpe_tissue.md)<br><br>
 [SDS-DTT Protein Extraction From FFPE Material](sds_dtt_protein_extraction_from_ffpe_material.md)<br>
 [Acetone Protein Precipitation](acetone_protein_precipitation.md)<br>
 
