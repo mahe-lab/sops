@@ -102,18 +102,14 @@
 <button type="button" class="button" onclick="calculate()">Calculate</button>
 <script type='text/javascript'>
 function addRows() {
-    var table = document.getElementById('table1');
-    var trows = table.rows.length;
-    var tcols = table.rows[0].cells.length;
-    var row = table.insertRow(trows);
-    for (var i=0;i<tcols;i++) {
+    	var table = document.getElementById('table1');
+    	var trows = table.rows.length;
+    	var row = table.insertRow(trows);
 	var txt = document.createElement('input')
 	txt.setAttribute('type','text');
 	txt.setAttribute('size','10px');
-	txt.setAttribute('id',`${trows}${i}`);
-	var col = row.insertCell(i);
-	col.appendChild(txt);
-    }
+	txt.setAttribute('id',`${trows}0`);
+	row.appendChild(txt);
 }	
 function calculate() {
     var count = 0;
@@ -130,7 +126,7 @@ function calculate() {
     }
     //console.log(count)
     if(count>0) {
-	      document.getElementById('calc1').value = (1100 * (count)).toFixed(1); //xylene
+	document.getElementById('calc1').value = (1100 * (count)).toFixed(1); //xylene
         document.getElementById('calc2').value = (1100 * (count)).toFixed(1); //ethanol
         document.getElementById('calc3').value = (198 * (count)).toFixed(1); //ATL
         document.getElementById('calc4').value = (22 * (count)).toFixed(1); //Proteinase K
