@@ -8,18 +8,21 @@
 [RBC Lysis and Cell Pelleting of Blood and Bone Marrow](rbc_lysis_and_cell_pelleting_blood_and_marrow.md)<br>
 [Tissue Transfer for Extraction](tissue_transfer_extraction.md)<br>
 
-## Extraction:
+## Manual Extraction Protocols:
 
 [DNA Extraction from Cell Pellet Materials](dna_extraction_cell_pellet.md)<br>
-[RNA Extraction from Cell Pellet Materials](manual_rna_extraction_cell_pellet.md)<br><br>
+[RNA Extraction from Cell Pellet Materials](manual_rna_extraction_cell_pellet.md)<br>
 [DNA Extraction from FFPE or Tissue Transfer Materials](dna_extraction_ffpe_tissue_transfer.md)<br>
-[RNA Extraction from FFPE or Tissue Transfer Materials](rna_extraction_ffpe_tissue_transfer.md)<br><br>
-[QIACUBE RNA Extraction from Cell Pellet Materials](qiacube_rna_extraction_cell_pellet.md)<br>
-[QIACUBE DNA Extraction from Cell Pellet Materials](qiacube_dna_extraction_cell_pellet.md)<br><br>
-[QIACUBE DNA Extraction from FFPE Materials](qiacube_dna_extraction_ffpe_tissue_transfer.md)<br>
-[QIACUBE RNA Extraction from FFPE Materials](qiacube_rna_extraction_ffpe_tissue.md)<br><br>
+[RNA Extraction from FFPE or Tissue Transfer Materials](rna_extraction_ffpe_tissue_transfer.md)<br>
 [SDS-DTT Protein Extraction From FFPE Material](sds_dtt_protein_extraction_from_ffpe_material.md)<br>
 [Acetone Protein Precipitation](acetone_protein_precipitation.md)<br>
+
+## QIACUBE Extraction Protocols:
+
+[QIACUBE RNA Extraction from Cell Pellet Materials](qiacube_rna_extraction_cell_pellet.md)<br>
+[QIACUBE DNA Extraction from Cell Pellet Materials](qiacube_dna_extraction_cell_pellet.md)<br>
+[QIACUBE DNA Extraction from FFPE Materials](qiacube_dna_extraction_ffpe_tissue_transfer.md)<br>
+[QIACUBE RNA Extraction from FFPE Materials](qiacube_rna_extraction_ffpe_tissue.md)<br>
 
 ## Quantification:
 
