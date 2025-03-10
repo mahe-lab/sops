@@ -34,6 +34,7 @@
 ## PCR Protocols:
 
 [NEB Reverse Transcription Protocol](neb_rt.md)<br>
+[Basic PCR (ROCHE PCR Master)](pcr.md)<br>
 
 ## Electrophoresis:
 
