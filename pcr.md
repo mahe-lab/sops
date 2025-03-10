@@ -25,7 +25,7 @@
 - Post-PCR Bench Thermocycler
 
 ### references
-- ROCHE Master: 
+- ROCHE PCR Master: https://github.com/mahe-lab/sops/blob/main/MAHELAB_SOP_Assets/ROCHE_PCR_Master.pdf
 
 ### emergency
 - If skin/eye contact with chemicals, flush aggressively and continuously with water using an eyewash, sink or shower
@@ -43,9 +43,11 @@
 - 5 minute Dead-air UV exposure
 
 ### before_starting
+- This protocol assumes that each PCR reaction is meant to employ the same pair (or multiplex pair) of primers; if different combinations of primer pairs (or multiplex primer pairs) are planned, apply this protocol in parallel for each primer pair (or multiplex pair) of primers
+-  
 - Obtain some ice and place in the dead-air box ice box; the aluminum tube tray can be chilled in the dead-air box ice box
 - Obtain sufficient tubes/strips/plates to accomodate the specimens & label appropriately
-- Remove specimens, ROCHE PCR Master (Vial #1) and Primers from the freezer and thaw slowly on ice
+- Remove specimens, ROCHE PCR Master (Vial #1) and Primers from the freezer and thaw slowly on ice in the dead-air box
 - Use the calculator below to plan the PCR layout
 
 ### calculator
