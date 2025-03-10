@@ -13,7 +13,7 @@
 - Requires Pre-Authorization by PI
 
 ### hazards
-- ...insert details here...
+- Ensure that the dead-air box is closed shut prior to engaging UV treatment
 
 ### ppe
 - Lab Coat
@@ -21,27 +21,32 @@
 - Nitrile Gloves
 
 ### where
-- ...insert details here...
+- Dead-air isolation box
+- Post-PCR Bench Thermocycler
 
 ### references
-- ...insert details here...
+- ROCHE Master: 
 
 ### emergency
-- ...insert details here...
+- If skin/eye contact with chemicals, flush aggressively and continuously with water using an eyewash, sink or shower
+- Contact emergency services and log any injuries if required
 
 ### cleanup
 - Wipe down work surfaces with 70% isopropanol
-- ...insert details here...
+- 5 minute Dead-air UV exposure
 
 ### waste
-- Tips/Tubes should be disposed of in yellow biohazard bag/tub
-- ...insert details here...
+- Tips/Tubes should be disposed of in biohazard bag/tub
 
 ### maintenance
-- ...insert details here...
+- Wipe down work surfaces with 70% isopropanol
+- 5 minute Dead-air UV exposure
 
 ### before_starting
-- ...insert details here...
+- Obtain some ice and place in the dead-air box ice box; the aluminum tube tray can be chilled in the dead-air box ice box
+- Obtain sufficient tubes/strips/plates to accomodate the specimens & label appropriately
+- Remove specimens, ROCHE PCR Master (Vial #1) and Primers from the freezer and thaw slowly on ice
+- Use the calculator below to plan the PCR layout
 
 ### calculator
 ~~~~
