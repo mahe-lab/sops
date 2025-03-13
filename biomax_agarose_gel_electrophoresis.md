@@ -92,8 +92,8 @@ function calculate() {
 	var size = 50;
 	var perc = parseFloat(document.getElementById('04').value);
 	if (document.getElementById('03').value === "Large") {size = 100;}
-	document.getElementById('calc20').value = (1.1 * count * size * 6 * (1/50));
-	document.getElementById('calc21').value = "" + Math.round(1.1 * count * size * 6) + " mL \(" + Math.round(1.1 * count * size * 6 * (49/50)) + " mL ddH2O\)";
+	document.getElementById('calc20').value = (1.5 * count * size * 6 * (1/50));
+	document.getElementById('calc21').value = "" + Math.round(1.5 * count * size * 6) + " mL \(" + Math.round(1.5 * count * size * 6 * (49/50)) + " mL ddH2O\)";
 	document.getElementById('calc22').value = (count * size * perc * (1/100));
 	document.getElementById('calc23').value = Math.round(count * size);
 	document.getElementById('calc24').value = Math.round(count * (size/50) * 25);
